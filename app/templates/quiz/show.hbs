@@ -1,10 +1,22 @@
 <div class="row">
   <div class="large-12 columns clearfix">
-    <label class="left">{{title}} </label>
+    <label class="left">{{model.title}} </label>
   </div>
 </div>
 
 <div class="row">
-  <div class="large-12 columns">
-  </div>
+  {{#if model.questions.length}}
+    {{#each question in model.questions}}
+      <p> Question: {{question.title}} </p>
+      {{#if question.answers.length}}
+        <div class="large-10 columns end">
+          <p>
+            {{#each answer in question.answers}}
+              <button> {{answer.title}} </button> <br>
+            {{/each}}
+          </p>
+        </div>
+      {{/if}}
+    {{/each}}
+  {{/if}}
 </div>

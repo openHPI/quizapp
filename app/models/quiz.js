@@ -2,15 +2,14 @@ import DS from 'ember-data';
 
 var Quiz = DS.Model.extend({
   title: DS.attr('string'),
-  isCompleted: DS.attr('boolean'),
-  questions: DS.hasMany('question'),
+  questions: DS.hasMany('question', {async:true}),
   languague: DS.attr('string')
 });
 
 Quiz.reopenClass({
   FIXTURES: [
-    { id: 1, title: 'Quiz A', isCompleted: true },
-    { id: 2, title: 'Quiz B' }
+    { id: 1, title: 'Quiz A', questions: [1, 2, 3] },
+    { id: 2, title: 'Quiz B', questions: [4, 5, 6] },
   ]
 });
 
