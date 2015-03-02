@@ -4,17 +4,14 @@
   </div>
 </div>
 
+{{points}}
+
 <div class="row">
-  {{#if model.questions.length}}
-  {{#each question in model.questions}}  
-  {{#if question.visible }}
   <p> Question {{question.id}}: {{question.title}} </p>
   {{#if question.answers.length}}
 
-    {{show-answers action="answerSelector" answers=question.answers}}    
+    {{show-answers action="answerSelector" question=question}}    
 
   {{/if}}
-  {{/if}}
-  {{/each}}
-  {{/if}}
+   <button {{action 'start'}} class="answerButton"> start</button>
 </div>
