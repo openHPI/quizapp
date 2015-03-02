@@ -10,13 +10,9 @@
   {{#if question.visible }}
   <p> Question {{question.id}}: {{question.title}} </p>
   {{#if question.answers.length}}
-  <div class="large-10 columns end">
-    <p>
-      {{#each answer in question.answers}}
-      <button class="answerButton"> {{answer.title}} </button> <br>
-      {{/each}}
-    </p>
-  </div>
+
+    {{show-answers action="answerSelector" answers=question.answers}}    
+
   {{/if}}
   {{/if}}
   {{/each}}

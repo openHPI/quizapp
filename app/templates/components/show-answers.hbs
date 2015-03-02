@@ -1,0 +1,7 @@
+ <div>
+  <p>
+    {{#each answer in answers}}
+    <button {{action 'selectAnswer' answer.id}} class="answerButton"> {{answer.title}} </button> <br>
+    {{/each}}
+  </p>
+</div>
