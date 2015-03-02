@@ -6,17 +6,19 @@
 
 <div class="row">
   {{#if model.questions.length}}
-    {{#each question in model.questions}}
-      <p> Question: {{question.title}} </p>
-      {{#if question.answers.length}}
-        <div class="large-10 columns end">
-          <p>
-            {{#each answer in question.answers}}
-              <button> {{answer.title}} </button> <br>
-            {{/each}}
-          </p>
-        </div>
-      {{/if}}
-    {{/each}}
+  {{#each question in model.questions}}  
+  {{#if question.visible }}
+  <p> Question {{question.id}}: {{question.title}} </p>
+  {{#if question.answers.length}}
+  <div class="large-10 columns end">
+    <p>
+      {{#each answer in question.answers}}
+      <button class="answerButton"> {{answer.title}} </button> <br>
+      {{/each}}
+    </p>
+  </div>
+  {{/if}}
+  {{/if}}
+  {{/each}}
   {{/if}}
 </div>
