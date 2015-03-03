@@ -11,8 +11,8 @@ export default Ember.ObjectController.extend({
         console.log(question.get("title"));
         console.log(question.get("answers"));
         if (answer.get("correct") === true) {
-          console.log(self.get("points"));
-          self.set("points", self.get("points")+1);
+          console.log('Grant Points');
+          question.get('quiz').set('points', 1);
         }
       });
     }
