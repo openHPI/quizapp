@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 var Quiz = DS.Model.extend({
   title: DS.attr('string'),
-  questions: DS.hasMany('question'),
+  questions: DS.hasMany('question', { async: true }),
   languague: DS.attr('string')
 });
 
