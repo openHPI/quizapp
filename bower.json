@@ -13,6 +13,7 @@
     "ember-qunit-notifications": "0.0.7",
     "qunit": "~1.17.1",
     "bootstrap-sass-official": "~3.3.3",
-    "bootstrap": "~3.3.2"
+    "bootstrap": "~3.3.2",
+    "qr-js": "~1.1.3"
   }
 }

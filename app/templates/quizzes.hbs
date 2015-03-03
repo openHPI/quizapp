@@ -1,7 +1,8 @@
+<div class="row">
 {{#each quiz in model}}
-  <p>
-    {{#link-to 'quiz.index' quiz.id}} {{quiz.title}} {{quiz.id}} {{/link-to}}
-  </p>
+    <div class="col-md-4">
+      {{qr-code quiz=quiz}}
+    </div>  
 {{/each}}
-
+</div>
 {{outlet}}
