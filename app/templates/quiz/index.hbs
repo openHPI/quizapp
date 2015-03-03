@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="large-12 columns clearfix">
+    <label class="left">{{model.title}} </label>
+  </div>
+</div>
+
+{{points}} Points
+
+<div class="row">
+  <p> Question {{question.id}}: {{question.title}} </p>
+  {{#if question.answers.length}}
+
+    {{show-answers action="answerSelector" question=question}}
+
+  {{/if}}
+   <button {{action 'start'}} class="answerButton"> start</button>
+</div>

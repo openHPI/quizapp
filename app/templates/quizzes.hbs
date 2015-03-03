@@ -1,0 +1,5 @@
+{{#each quiz in model}}
+  <p>
+    {{#link-to 'quiz.index' quiz}} {{quiz.title}} {{quiz.id}} {{/link-to}}
+  </p>
+{{/each}}
