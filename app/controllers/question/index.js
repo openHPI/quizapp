@@ -12,9 +12,11 @@ export default Ember.ObjectController.extend({
         console.log(question.get("answers"));
         if (answer.get("correct") === true) {
           console.log('Update Points');
-          question.get('quiz').updatePoints();
+          question.get('quiz').updatePoints();          
         }
       });
+
+      self.transitionToRoute('quiz.waiting');
     }
   }
 });
