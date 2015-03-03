@@ -1,5 +1,12 @@
 import Ember from 'ember';
-export default Ember.Route.extend({
+import socketMixin from 'ember-websockets/mixins/sockets';
+
+export default Ember.Route.extend(socketMixin, {
+  socketConfigurations: [{
+    key: 'socket1',
+    socketURL: 'ws://127.0.0.1:8080',
+	}],
+
   model: function(params) {
     console.log('Question SHOW');
     console.log(params);
@@ -7,5 +14,6 @@ export default Ember.Route.extend({
   },
   setupController: function(controller, model) {
     controller.set('model', model);
+    this._super.apply(this, [controller, model.channels]);
   }
 });
