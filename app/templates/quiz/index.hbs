@@ -6,12 +6,6 @@
 
 {{points}} Points
 
-<div class="row">
-  <p> Question {{question.id}}: {{question.title}} </p>
-  {{#if question.answers.length}}
+<button {{action 'start'}} class="answerButton"> start</button>
 
-    {{show-answers action="answerSelector" question=question}}
-
-  {{/if}}
-   <button {{action 'start'}} class="answerButton"> start</button>
-</div>
+{{outlet}}

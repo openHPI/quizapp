@@ -1,0 +1,10 @@
+<div>
+  <p> Question {{model.id}}: {{model.title}} </p>
+  {{#if model.answers.length}}
+
+    {{show-answers action="answerSelector" question=model}}
+
+  {{/if}}
+</div>
+
+{{outlet}}
