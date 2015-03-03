@@ -8,7 +8,11 @@ var Quiz = DS.Model.extend({
 
   updatePoints: function(p) {
     console.log('Grant Points');
-  	this.set('points', this.get('points') + 1);
+		if (p) {
+			this.set('points', this.get('points') + p);
+		} else {
+  		this.set('points', this.get('points') + 1);
+		}   
   }
 });
 
