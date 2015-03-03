@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
         }
       });
 
-      this.get('controllers.quiz/index').send('nextQuestion');      
+      this.get('controllers.quiz/index').send('nextQuestion', question_id);      
     }
   }  
 });

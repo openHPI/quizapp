@@ -11,9 +11,9 @@ export default Ember.Controller.extend({
         self.transitionToRoute('question', questions.objectAt(0));
       });      
     },
-    nextQuestion: function() {
+    nextQuestion: function(question_id) {
       console.log('nextQuestion - call Websocket');
-      this.send('emit', "hello socket", 'socket1');
+      this.send('emit', question_id, 'socket1');
     }
   }
 });
