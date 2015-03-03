@@ -1,19 +1,10 @@
 import Ember from 'ember';
-import socketMixin from 'ember-websockets/mixins/sockets';
 
-export default Ember.Route.extend(socketMixin, {
-  socketConfigurations: [{
-    key: 'socket1',
-    socketURL: 'ws://127.0.0.1:8080',
-	}],
-
-  model: function(params) {
-    console.log('Question SHOW');
-    console.log(params);
-    return this.store.find('question', 1);
+export default Ember.Route.extend({
+  model: function(param, transition) {
+    return this.store.find('question', transition.params.question.question_id);
   },
   setupController: function(controller, model) {
     controller.set('model', model);
-    this._super.apply(this, [controller, model.channels]);
   }
 });

@@ -1,5 +1,4 @@
 import Ember from "ember";
-//import DS from 'ember-data';
 
 export default Ember.Controller.extend({
   points: 0,
@@ -11,6 +10,10 @@ export default Ember.Controller.extend({
       this.model.get("questions").then( function(questions) {                        
         self.transitionToRoute('question', questions.objectAt(0));
       });      
-    }      
+    },
+    nextQuestion: function() {
+      console.log('nextQuestion - call Websocket');
+      this.send('emit', "hello socket", 'socket1');
+    }
   }
 });

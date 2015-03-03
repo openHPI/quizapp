@@ -1,6 +1,8 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
+  needs: ["quiz/index"],
+
   actions: {
     answerSelector: function(answer, question_id) {
       this.store.find("question", question_id).then( function(question) {
@@ -14,17 +16,7 @@ export default Ember.Controller.extend({
         }
       });
 
-      this.send('emit', "hello socket", 'socket1');
-      this.transitionToRoute('quiz.waiting');
-    },
-    // Websocket actions
-    onopen: function(socketEvent) {
-      console.log('On open has been called!');
-      console.log(socketEvent);
-    },
-    onmessage: function(socketEvent) {
-      console.log('On message has been called!');
-      console.log(socketEvent);
+      this.get('controllers.quiz/index').send('nextQuestion');      
     }
-  }
+  }  
 });
