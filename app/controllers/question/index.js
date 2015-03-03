@@ -1,6 +1,6 @@
 import Ember from "ember";
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
   actions: {
     answerSelector: function(answer, question_id) {
       var self = this;
