@@ -18,4 +18,7 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 app.import('bower_components/qr-js/qr.js');
+app.import('bower_components/bootstrap/dist/css/bootstrap.css.map', {
+    destDir: 'assets'
+});
 module.exports = app.toTree();

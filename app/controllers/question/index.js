@@ -1,10 +1,8 @@
 import Ember from "ember";
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
   actions: {
     answerSelector: function(answer, question_id) {
-      var self = this;
-
       this.store.find("question", question_id).then( function(question) {
         console.log("Question " + question_id + " selected");
         console.log(answer.get("correct"));
@@ -16,7 +14,17 @@ export default Ember.ObjectController.extend({
         }
       });
 
-      self.transitionToRoute('quiz.waiting');
+      this.send('emit', "hello socket", 'socket1');
+      this.transitionToRoute('quiz.waiting');
+    },
+    // Websocket actions
+    onopen: function(socketEvent) {
+      console.log('On open has been called!');
+      console.log(socketEvent);
+    },
+    onmessage: function(socketEvent) {
+      console.log('On message has been called!');
+      console.log(socketEvent);
     }
   }
 });
