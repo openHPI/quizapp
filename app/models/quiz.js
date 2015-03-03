@@ -4,7 +4,12 @@ var Quiz = DS.Model.extend({
   title: DS.attr('string'),
   questions: DS.hasMany('question', { async: true }),
   languague: DS.attr('string'),
-  points: DS.attr('integer', { defaultValue: 0 })
+  points: DS.attr('integer', { defaultValue: 0 }),
+
+  updatePoints: function(p) {
+    console.log('Grant Points');
+  	this.set('points', this.get('points') + 1);
+  }
 });
 
 Quiz.reopenClass({
