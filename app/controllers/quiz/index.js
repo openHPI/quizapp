@@ -10,7 +10,11 @@ export default Ember.ObjectController.extend({
       self = this;
       this.model.get("questions").then( function(questions) {                        
         self.transitionToRoute('question', questions.objectAt(0));
-      });
-    },    
+      });      
+    },   
+    grantPoints: function() {
+      console.log('Points +1');
+      return false;
+    } 
   }
 });
