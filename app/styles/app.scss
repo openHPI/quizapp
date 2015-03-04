@@ -24,3 +24,14 @@ a {
 	position: absolute;
 	left:0;
 }
+.user table {
+	width: 100%;
+}
+
+.user table tr td{
+	padding: 5px;
+	text-align: left;
+}
+.user table tr td.points{
+	text-align: right;
+}
