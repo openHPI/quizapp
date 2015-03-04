@@ -1,0 +1,23 @@
+<div id="topscore">
+  <h3>TOP</h3>
+  <hr >
+  {{#each user in arrangedContent}}
+    <div class="row">
+      <div class="user col-md-12">
+        <table>
+          <tr>
+            <td width="64">
+              <img class="avatar img-circle img-thumbnail" src="/images/guest.png" width="64" alt="Generic placeholder image">
+            </td>
+            <td class="name">
+              {{user.name}}<br />
+            </td>
+            <td class="points">
+              {{user.points}}<br />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  {{/each}}
+</div>
