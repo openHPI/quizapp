@@ -1,10 +1,15 @@
 <div>
   <div class="questionText">{{model.title}}</div>
+  {{#if model.submitted}}
+    Waiting for others to complete....
+  {{else}}
   {{#if model.answers.length}}
 
     {{show-answers action="answerSelector" question=model}}
 
   {{/if}}
+  {{/if}}
+
 </div>
 
 {{outlet}}

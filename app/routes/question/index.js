@@ -5,6 +5,7 @@ export default Ember.Route.extend({
     return this.store.find('question', transition.params.question.question_id);
   },
   setupController: function(controller, model) {
+    model.set('submitted', false);
     controller.set('model', model);
   }
 });
