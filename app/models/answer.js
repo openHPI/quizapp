@@ -20,6 +20,18 @@ Answer.reopenClass({
     { id: 10, question_id: 3, title: 'Plant a tree', correct: false },
     { id: 11, question_id: 3, title: 'Doing that damm quiz', correct: true },
     { id: 12, question_id: 3, title: "I don't care", correct: false },
+    { id: 13, question_id: 4, title: 'A', correct: true },
+    { id: 14, question_id: 4, title: 'b', correct: false },
+    { id: 15, question_id: 4, title: 'c', correct: false },
+    { id: 16, question_id: 4, title: 'd', correct: false },
+    { id: 17, question_id: 5, title: 'e', correct: false },
+    { id: 18, question_id: 5, title: 'F', correct: true },
+    { id: 19, question_id: 5, title: 'g', correct: false },
+    { id: 20, question_id: 5, title: 'h', correct: false },
+    { id: 21, question_id: 6, title: 'i', correct: false },
+    { id: 22, question_id: 6, title: 'j', correct: false },
+    { id: 23, question_id: 6, title: 'K', correct: true },
+    { id: 24, question_id: 6, title: 'l', correct: false },
   ]
 });
 

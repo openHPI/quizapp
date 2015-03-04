@@ -4,6 +4,13 @@
   </div>
 </div>
 
-<button {{action 'start'}} class="answerButton"> Restart </button>
+<div class="row">
+  <div class="col-md-3">
+		<button {{action 'restart'}} class="answerButton"> Restart </button>
+	</div>	
+	<div class="col-md-3">	
+		{{#link-to 'quizzes'}} <button class="answerButton"> Show all quizzes </button> {{/link-to}}
+	</div>
+</div>
 
 {{outlet}}
