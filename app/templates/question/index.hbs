@@ -1,5 +1,5 @@
 <div>
-  <p> Question {{model.id}}: {{model.title}} </p>
+  <div class="questionText">{{model.title}}</div>
   {{#if model.answers.length}}
 
     {{show-answers action="answerSelector" question=model}}
