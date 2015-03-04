@@ -6,6 +6,6 @@ export default Ember.Route.extend({
   },
   setupController: function(controller, model) {
     model.set('submitted', false);
-    controller.set('model', model);    
+    controller.set('model', model);
   }
 });

@@ -22,7 +22,7 @@ var Quiz = DS.Model.extend({
     if (this.get('current_position') === this.get('questions').get('length')) {
       return false;
     } else {      
-      this.set('current_position', this.get('current_position') + 1);         
+      this.set('current_position', this.get('current_position') + 1);
       return this.get('questions').objectAt(this.get('current_position'));
     }
   },

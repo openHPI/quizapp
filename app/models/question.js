@@ -5,7 +5,7 @@ var Question = DS.Model.extend({
   quiz: DS.belongsTo('quiz'),
   answers: DS.hasMany('answer', {async: true}),
   submitted: DS.attr('boolean', {defaultValue: false}),
-  timer: DS.attr('integer'), 
+  timer: DS.attr('integer', {defaultValue: 10}),
 });
 
 Question.reopenClass({

@@ -10,7 +10,7 @@ export default Ember.Controller.extend({
 
       this.model.reset();
       
-      this.model.get("questions").then( function(questions) {                        
+      this.model.get("questions").then( function(questions) {
         self.transitionToRoute('question', questions.objectAt(0));
       });      
     },

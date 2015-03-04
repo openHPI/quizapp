@@ -1,6 +1,8 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({  
+  needs: ["question/index"],
+
   actions: {
     // Websocket actions
     onopen: function(socketEvent) {
@@ -15,6 +17,7 @@ export default Ember.Controller.extend({
       if (data.hasOwnProperty('new_question_id')) {
         var new_question_id = data["new_question_id"];
         this.transitionToRoute('question', new_question_id);
+        this.get('controllers.question/index').send('resetCountdown');
       }
     },
     onclose: function(socketEvent) {
@@ -24,6 +27,6 @@ export default Ember.Controller.extend({
     onerror: function(socketEvent) {
       console.log('On error has been called! :-(');
       console.log(socketEvent);
-    }      
+    }
   }
 });

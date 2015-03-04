@@ -13,6 +13,9 @@ export default Ember.Controller.extend({
       });
 
       this.get('controllers.quiz/index').send('nextQuestion');
+    },
+    resetCountdown: function() {
+      this.get('progress-bar').renderElement();
     }
   }
 });
