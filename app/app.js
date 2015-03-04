@@ -9,14 +9,14 @@ var App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver: Resolver,
-  LOG_TRANSITIONS: true,
-  LOG_VIEW_LOOKUPS: true,
-  LOG_RESOLVER: true,
+  LOG_TRANSITIONS: false,
+  LOG_VIEW_LOOKUPS: false,
+  LOG_RESOLVER: false,
 // Extremely detailed logging, highlighting every internal
 // step made while transitioning into a route, including
 // `beforeModel`, `model`, and `afterModel` hooks, and
 // information about redirects and aborted transitions
-  LOG_TRANSITIONS_INTERNAL: true
+  LOG_TRANSITIONS_INTERNAL: false
 });
 loadInitializers(App, config.modulePrefix);
 
