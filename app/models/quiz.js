@@ -25,6 +25,11 @@ var Quiz = DS.Model.extend({
       this.set('current_position', this.get('current_position') + 1);         
       return this.get('questions').objectAt(this.get('current_position'));
     }
+  },
+
+  reset: function() {
+    this.set('points', 0);
+    this.set('current_position', 0);
   }
 });
 
