@@ -1,7 +1,8 @@
 import Ember from "ember";
 
 export default Ember.Component.extend(Ember.SortableMixin, {
-  sortProperties:  ['points:DESC'],
+  sortProperties:  ['points'],
+  sortAscending: false,
   actions: {
     sortPoints: function(){
       // sort by age
