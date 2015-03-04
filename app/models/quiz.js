@@ -18,10 +18,10 @@ var Quiz = DS.Model.extend({
 		}
   },
 
-  getNextQuestion: function() {    
+  getNextQuestion: function() {
     if (this.get('current_position') === this.get('questions').get('length')) {
       return false;
-    } else {      
+    } else {
       this.set('current_position', this.get('current_position') + 1);
       return this.get('questions').objectAt(this.get('current_position'));
     }
@@ -35,7 +35,7 @@ var Quiz = DS.Model.extend({
 
 Quiz.reopenClass({
   FIXTURES: [
-    { id: 1, title: 'Test your knowledge', description: "Basics knowledge about the Internet (eng.)", questions: [1, 2, 3], participants: [1,2] },
+    { id: 1, title: 'Test your knowledge', description: "Basics knowledge about the Internet (eng.)", questions: [1, 2, 3], participants: [1,2,3] },
     { id: 2, title: 'Teste Dein Wissen', description: "Internet Grundlagen und Datenbanken (de.)", questions: [4, 5, 6] },
     { id: 3, title: 'Quiz C', description: "TODO (cn.)", questions: [] },
   ]

@@ -4,7 +4,7 @@
   <div class="row">
     <div class="user leaderboard col-md-12">
       {{#each arrangedContent as |user index|}}
-        <table style='margin-top:{{flex-topmargin index 70}}px'>
+        <table class="animate" style="margin-top: {{flex-topmargin index 70}}px" data-anim={{index}}>
           <tr>
             <td width="64">
               <img class="avatar img-circle img-thumbnail" src="/images/guest.png" width="64" alt="Generic placeholder image">
