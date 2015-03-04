@@ -24,14 +24,25 @@ a {
 	position: absolute;
 	left:0;
 }
-.user table {
+.leaderboard {
+  position: relative;
+}
+.leaderboard table {
 	width: 100%;
+	position: absolute;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .user table tr td{
 	padding: 5px;
 	text-align: left;
+	font-size:200%;
 }
 .user table tr td.points{
 	text-align: right;
+	font-size:200%;
+	padding-right:25px;
 }

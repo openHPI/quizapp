@@ -1,10 +1,10 @@
 <div id="topscore">
   <h3>TOP</h3>
   <hr >
-  {{#each user in arrangedContent}}
-    <div class="row">
-      <div class="user col-md-12">
-        <table>
+  <div class="row">
+    <div class="user leaderboard col-md-12">
+      {{#each arrangedContent as |user index|}}
+        <table style='margin-top:{{flex-topmargin index 70}}px'>
           <tr>
             <td width="64">
               <img class="avatar img-circle img-thumbnail" src="/images/guest.png" width="64" alt="Generic placeholder image">
@@ -17,7 +17,7 @@
             </td>
           </tr>
         </table>
-      </div>
-    </div>
-  {{/each}}
+     {{/each}}
+</div>
+</div>
 </div>

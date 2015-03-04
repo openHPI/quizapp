@@ -12,5 +12,14 @@ export default Ember.Component.extend(Ember.SortableMixin, {
       // sort by name
       this.set('sortProperties', ['name']);
     }
-  }
+  },
+  animate: function() {
+    var self = this;
+    console.log(this.$('.animate'));
+    this.$('.animate').each(function(){
+      console.log(self.$(this).data("animatetarget")+'px');
+    self.$(this).css('margin-top', self.$(this).data("animatetarget")+'px');
+    });
+   }.on('didInsertElement')
+
 });
