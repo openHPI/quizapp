@@ -8,7 +8,6 @@ export default Ember.Controller.extend({
       this.store.find("question", question_id).then( function(question) {
         question.set('submitted', true);
         if (answer.get("correct") === true) {
-
           question.get('quiz').updatePoints();
         }
       });

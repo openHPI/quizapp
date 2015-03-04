@@ -10,10 +10,11 @@ export default Ember.Controller.extend({
     onmessage: function(socketEvent) {
       console.log('On message has been called!');
       console.log(socketEvent);
-      
-      if (!isNaN(socketEvent.data)) {
-        var question_id = Number(socketEvent.data);
-        this.transitionToRoute('question', question_id);
+      var data = JSON.parse(socketEvent.data);
+
+      if (data.hasOwnProperty('new_question_id')) {
+        var new_question_id = data["new_question_id"];
+        this.transitionToRoute('question', new_question_id);
       }
     },
     onclose: function(socketEvent) {

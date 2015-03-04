@@ -8,6 +8,7 @@ var Quiz = DS.Model.extend({
   status: DS.attr('string'),
   points: DS.attr('integer', { defaultValue: 0 }),
   participants: DS.hasMany('user', { async: true }),
+  current_position: DS.attr('integer', { defaultValue: 0 }),
 
   updatePoints: function(p) {
 		if (p) {
@@ -15,6 +16,15 @@ var Quiz = DS.Model.extend({
 		} else {
   		this.set('points', this.get('points') + 1);
 		}
+  },
+
+  getNextQuestion: function() {    
+    if (this.get('current_position') === this.get('questions').get('length')) {
+      return false;
+    } else {      
+      this.set('current_position', this.get('current_position') + 1);         
+      return this.get('questions').objectAt(this.get('current_position'));
+    }
   }
 });
 
