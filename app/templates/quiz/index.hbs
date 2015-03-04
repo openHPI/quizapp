@@ -1,9 +1,13 @@
-<div class="row">
-  <div class="large-12 columns clearfix">
-    <label class="left">{{model.title}} </label>
-  </div>
-</div>
+
+<label class="left">{{model.title}} </label>
+
 
 <button {{action 'start'}} class="answerButton"> start</button>
-
-{{outlet}}
+<div class='row'>
+  <div class='col-md-9'>
+     {{outlet}}
+  </div>
+  <div class='col-md-3'>
+    USER
+  </div>
+</div>

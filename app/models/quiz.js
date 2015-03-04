@@ -7,6 +7,7 @@ var Quiz = DS.Model.extend({
   languague: DS.attr('string'),
   status: DS.attr('string'),
   points: DS.attr('integer', { defaultValue: 0 }),
+  participants: DS.hasMany('user', { async: true }),
 
   updatePoints: function(p) {
 		if (p) {

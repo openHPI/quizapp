@@ -2,6 +2,7 @@ body {
 	background-color: orange;
 	color: white;
 	font-family: 'Arial';
+	position: relative;
 }
 a {
 	color: white;
@@ -18,4 +19,10 @@ a {
 }
 .questionText {
 	font-size:1.5em;
+}
+.bar {
+	background-color: white;
+	height: 20px;
+	position: absolute;
+	left:0;
 }
