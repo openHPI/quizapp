@@ -11,8 +11,9 @@ export default Ember.Controller.extend({
   },
   actions: {
     ready: function() {
-      console.log('Adding currentUser '+ this.get('currentUser.name'));
-      this.model.get('participants').addObject(this.get('currentUser'));
+      var currentUser = this.get('currentUser');
+      console.log('Notify server about new_quiz_participant: '+ currentUser.name);
+      this.send('emit', {new_quiz_participant: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
       this.set('userReady', true);
     },
     start: function() {

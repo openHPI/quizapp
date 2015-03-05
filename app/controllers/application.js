@@ -19,6 +19,15 @@ export default Ember.Controller.extend({
         var new_question_id = data["new_question_id"];
         this.transitionToRoute('question', new_question_id);
         this.get('controllers.question/index').send('resetCountdown');
+      } else if (data.hasOwnProperty('new_quiz_participant')) {
+        var participant = data['new_quiz_participant'];
+        
+        var self = this;
+        this.store.find('user', participant['user_id']).then( function(user) {
+          self.store.find('quiz', participant['quiz_id']).then( function(quiz) {
+            quiz.get('participants').addObject(user);
+          });
+        });
       }
     },
     onclose: function(socketEvent) {
