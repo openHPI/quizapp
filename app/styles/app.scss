@@ -1,3 +1,4 @@
+
 body {
 	background-color: orange;
 	color: white;
@@ -9,8 +10,10 @@ a {
 	text-decoration: 'none';
 }
 .answerButton {
-  background-color: white;
-	color: gray;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	font-size: large;
 	width: 100%;
 	padding: 10px;
 	margin: 5px;
