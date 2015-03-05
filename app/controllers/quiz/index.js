@@ -3,13 +3,7 @@ import Ember from "ember";
 export default Ember.Controller.extend({
   points: 0,
 
-  question_array: [],
-
-  init: function() {
-
-  },
   sortedUserItems: function(){
-    debugger;
     return this.store.find('user');
     //return this.model.get('participants').sortBy('points');
   },
@@ -18,7 +12,6 @@ export default Ember.Controller.extend({
     start: function() {
       console.log('Start - Get first quiz question');
       var self = this;
-
 
       this.model.reset();
 

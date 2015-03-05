@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 var User = DS.Model.extend({
   name: DS.attr('string'),
-  points: DS.attr('integer', { defaultValue: 0 }),
+  points: DS.attr('number', { defaultValue: 0 }),
 });
 
 User.reopenClass({

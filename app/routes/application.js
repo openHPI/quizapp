@@ -6,5 +6,5 @@ export default Ember.Route.extend(socketMixin, {
     key: 'socket1',
     socketURL: 'ws://127.0.0.1:8080',
     keepSocketAlive: true
-	}]
+	}],
 });

@@ -1,6 +1,7 @@
 import Ember from "ember";
 
-export default Ember.Controller.extend({  
+export default Ember.Controller.extend({
+  currentUser: null,
   needs: ["question/index"],
 
   actions: {
@@ -27,6 +28,22 @@ export default Ember.Controller.extend({
     onerror: function(socketEvent) {
       console.log('On error has been called! :-(');
       console.log(socketEvent);
+    },
+    login: function() {
+      var name = username.value;
+      console.log('Logged in as ' + name);
+      var user = this.store.createRecord('user', {
+        name: name
+      });
+
+      user.save();
+
+      this.set('currentUser', name);
+
+      this.send('emit', {new_user: name}, true, 'socket1');
+    },
+    logout: function() {
+      this.set('currentUser', null);
     }
   }
 });
