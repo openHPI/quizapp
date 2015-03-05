@@ -23,7 +23,14 @@ export default Ember.Controller.extend({
         var participant = data['new_quiz_participant'];
         
         var self = this;
-        this.store.find('user', participant['user_id']).then( function(user) {
+        this.store.findQuery('user', { name: participant['user_name'] }).then( function(user) {
+          if (user.objectAt(0) === undefined) {
+            user = self.store.createRecord('user', {
+              name: participant['user_name']
+            });  
+          } else {
+            user = user.objectAt(0);
+          }
           self.store.find('quiz', participant['quiz_id']).then( function(quiz) {
             quiz.get('participants').addObject(user);
           });

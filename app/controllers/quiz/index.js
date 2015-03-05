@@ -12,7 +12,6 @@ export default Ember.Controller.extend({
   actions: {
     ready: function() {
       var currentUser = this.get('currentUser');
-      console.log('Notify server about new_quiz_participant: '+ currentUser.name);
       this.send('emit', {new_quiz_participant: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
       this.set('userReady', true);
     },
@@ -22,9 +21,7 @@ export default Ember.Controller.extend({
 
       this.model.reset();
 
-      this.model.get("questions").then( function(questions) {
-        self.transitionToRoute('question', questions.objectAt(0));
-      });
+      this.send('emit', {question_id: 1}, true, 'socket1');
     },
 
     nextQuestion: function() {
