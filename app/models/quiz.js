@@ -10,14 +10,6 @@ var Quiz = DS.Model.extend({
   participants: DS.hasMany('user', { async: true }),
   current_position: DS.attr('integer', { defaultValue: 0 }),
 
-  updatePoints: function(p) {
-		if (p) {
-			this.set('points', this.get('points') + p);
-		} else {
-  		this.set('points', this.get('points') + 1);
-		}
-  },
-
   getNextQuestion: function() {
     if (this.get('current_position') === this.get('questions').get('length')) {
       return false;

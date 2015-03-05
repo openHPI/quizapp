@@ -3,6 +3,15 @@ import DS from 'ember-data';
 var User = DS.Model.extend({
   name: DS.attr('string'),
   points: DS.attr('number', { defaultValue: 0 }),
+
+  updatePoints: function(p) {
+		if (p) {
+			this.set('points', this.get('points') + p);
+		} else {
+  		this.set('points', this.get('points') + 1);
+		}
+  },
+
 });
 
 User.reopenClass({

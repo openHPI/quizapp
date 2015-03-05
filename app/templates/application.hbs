@@ -2,8 +2,8 @@
   <div class="row">
     <div class="col-md-12">
       {{#if currentUser}}
-        Hey {{currentUser}}! 
-        <button {{action 'logout'}} class="logoutButton"> Logut </button>
+        Hey {{currentUser.name}}! 
+        <button {{action 'logout'}} class="logoutButton"> Logout </button>
         {{outlet}}
       {{else}}
         {{render 'login'}}

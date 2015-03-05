@@ -1,7 +1,7 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-  currentUser: null,
+  currentUser: null,  
   needs: ["question/index"],
 
   actions: {
@@ -35,15 +35,15 @@ export default Ember.Controller.extend({
       var user = this.store.createRecord('user', {
         name: name
       });
-
       user.save();
 
-      this.set('currentUser', name);
+      this.set('currentUser', user);
 
       this.send('emit', {new_user: name}, true, 'socket1');
     },
     logout: function() {
       this.set('currentUser', null);
+      this.transitionToRoute('/');
     }
   }
 });

@@ -1,6 +1,9 @@
 
 <label class="left">{{model.title}} </label>
 
-
-<button {{action 'start'}} class="answerButton"> start</button>
+{{#if userReady}}
+	<button {{action 'start'}} class="answerButton"> start</button>
+{{else}}
+	<button {{action 'ready'}} class="answerButton"> ready</button>
+{{/if}}
 {{outlet}}
