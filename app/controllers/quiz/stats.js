@@ -5,7 +5,6 @@ export default Ember.Controller.extend({
 
   actions: {
     restart: function() {
-      console.log('Restart Quiz');
       this.transitionToRoute('quiz', this.model);
     },
     announceWinner: function(winner_name) {

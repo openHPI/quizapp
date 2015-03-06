@@ -58,6 +58,7 @@ export default Ember.Controller.extend({
       
       } else if (data.hasOwnProperty('start_quiz')) {
         this.store.find('quiz', data["start_quiz"]).then( function(quiz) {
+          quiz.reset();
           var question = quiz.get('questions').objectAt(0);
           self.transitionToRoute('question', question);
         });
