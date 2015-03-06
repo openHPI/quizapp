@@ -49,8 +49,24 @@ a {
 	font-size:200%;
 	padding-right:25px;
 }
-form {
+form.login {
 	color: black;
+}
+form.login input{
+	width:50%;
+	height:60px;
+	font-size:200%;
+	color: white;
+	background-color: transparent;
+	border: none;
+	border-bottom: 3px solid white;
+}
+form.login button{
+	height:60px;
+	background-color: transparent;
+	color: white;
+	border: 3px solid white;
+	font-size: large;
 }
 .logoutButton {
 	background-color: transparent;

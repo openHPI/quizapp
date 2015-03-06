@@ -1,7 +1,7 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-  currentUser: null,  
+  currentUser: null,
   needs: ["question/index"],
 
   actions: {
@@ -21,13 +21,13 @@ export default Ember.Controller.extend({
         this.get('controllers.question/index').send('resetCountdown');
       } else if (data.hasOwnProperty('new_quiz_participant')) {
         var participant = data['new_quiz_participant'];
-        
+
         var self = this;
         this.store.findQuery('user', { name: participant['user_name'] }).then( function(user) {
           if (user.objectAt(0) === undefined) {
             user = self.store.createRecord('user', {
               name: participant['user_name']
-            });  
+            });
           } else {
             user = user.objectAt(0);
           }
@@ -56,6 +56,7 @@ export default Ember.Controller.extend({
       this.set('currentUser', user);
 
       this.send('emit', {new_user: name}, true, 'socket1');
+      this.transitionToRoute('quizzes');
     },
     logout: function() {
       this.set('currentUser', null);
