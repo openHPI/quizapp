@@ -23,7 +23,7 @@ export default Ember.Controller.extend({
       this.send('emit', {start_quiz: this.model.id}, true, 'socket1');
     },
 
-    nextQuestion: function() {
+    nextQuestion: function(correctAnswer) {
       console.log('nextQuestion');
 
       var nextQuestion = this.model.getNextQuestion();
@@ -31,10 +31,10 @@ export default Ember.Controller.extend({
       if (nextQuestion === undefined) {
         console.log('Quiz finished');
         this.set('userReady', false);
-        this.send('emit', {finish_quiz: this.model.id}, true, 'socket1');
+        this.send('emit', {finish_quiz: this.model.id, correct_answer: correctAnswer}, true, 'socket1');
       } else {
         console.log('Call websocket server for nextQuestion');
-        this.send('emit', {question_id: nextQuestion.id}, true, 'socket1');
+        this.send('emit', {question_id: nextQuestion.id, correct_answer: correctAnswer}, true, 'socket1');
       }
     }
   }

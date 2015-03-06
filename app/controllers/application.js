@@ -2,7 +2,24 @@ import Ember from "ember";
 
 export default Ember.Controller.extend({
   currentUser: null,
+  username: null,
   needs: ["question/index"],
+
+  setOrCreateUser: function(self, user, username) {
+    if (user === undefined) {
+      user = self.store.createRecord('user', {
+        name: username
+      });
+      user.save();
+    }
+    return user;
+  },
+  updateParticipantPoints: function(self, participant, points) {
+    this.store.findQuery('user', { name: participant }).then( function(user) {
+      user = self.setOrCreateUser(self, user.objectAt(0), participant);
+      user.set('points', points);
+    });
+  },
 
   actions: {
     // Websocket actions
@@ -14,28 +31,48 @@ export default Ember.Controller.extend({
       console.log('On message has been called!');
       console.log(socketEvent);
       var data = JSON.parse(socketEvent.data);
+      var self = this;
+      var user = null;
+      var participant = null;
+      var participants = null;
 
-      if (data.hasOwnProperty('new_question_id')) {
+      if (data.hasOwnProperty('client_name')) {
+        console.log('Logged in as ' + data["client_name"]);
+        user = this.store.createRecord('user', {
+          name: data["client_name"]
+        });
+        user.save();
+        this.set('currentUser', user);
+        this.transitionToRoute('quizzes');
+
+      } else if (data.hasOwnProperty('new_question_id')) {
         var new_question_id = data["new_question_id"];
+        participants = data["participants"];
+
+        for(participant in participants) { 
+          self.updateParticipantPoints(self, participant, participants[participant]['points']);
+        }
+
         this.transitionToRoute('question', new_question_id);
         this.get('controllers.question/index').send('resetCountdown');
+      
       } else if (data.hasOwnProperty('start_quiz')) {
         this.transitionToRoute('question', 1);
+      
       } else if (data.hasOwnProperty('finish_quiz')) {
-        this.transitionToRoute('quiz.stats');
-      } else if (data.hasOwnProperty('new_quiz_participant')) {
-        var participant = data['new_quiz_participant'];
+        participants = data["participants"];
 
-        var self = this;
-        this.store.findQuery('user', { name: participant['user_name'] }).then( function(user) {
-          if (user.objectAt(0) === undefined) {
-            user = self.store.createRecord('user', {
-              name: participant['user_name']
-            });
-          } else {
-            user = user.objectAt(0);
-          }
-          self.store.find('quiz', participant['quiz_id']).then( function(quiz) {
+        for(participant in participants) { 
+          self.updateParticipantPoints(self, participant, participants[participant]['points']);
+        }
+
+        this.transitionToRoute('quiz.stats');
+      
+      } else if (data.hasOwnProperty('new_quiz_participant')) {
+        var new_quiz_participant = data['new_quiz_participant'];
+        this.store.findQuery('user', { name: new_quiz_participant['user_name'] }).then( function(user) {
+          user = self.setOrCreateUser(self, user.objectAt(0), new_quiz_participant['user_name']);
+          self.store.find('quiz', new_quiz_participant['quiz_id']).then( function(quiz) {
             quiz.get('participants').addObject(user);
           });
         });
@@ -51,16 +88,7 @@ export default Ember.Controller.extend({
     },
     login: function() {
       var name = username.value;
-      console.log('Logged in as ' + name);
-      var user = this.store.createRecord('user', {
-        name: name
-      });
-      user.save();
-
-      this.set('currentUser', user);
-
       this.send('emit', {new_user: name}, true, 'socket1');
-      this.transitionToRoute('quizzes');
     },
     logout: function() {
       this.set('currentUser', null);
