@@ -25,9 +25,7 @@ export default Ember.Controller.extend({
 
     nextQuestion: function(correctAnswer) {
       console.log('nextQuestion');
-
       var nextQuestion = this.model.getNextQuestion();
-
       if (nextQuestion === undefined) {
         console.log('Quiz finished');
         this.set('userReady', false);

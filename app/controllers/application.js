@@ -3,7 +3,7 @@ import Ember from "ember";
 export default Ember.Controller.extend({
   currentUser: null,
   username: null,
-  needs: ["question/index"],
+  needs: ["question/index", "quiz/stats"],
 
   setOrCreateUser: function(self, user, username) {
     if (user === undefined) {
@@ -57,7 +57,10 @@ export default Ember.Controller.extend({
         this.get('controllers.question/index').send('resetCountdown');
       
       } else if (data.hasOwnProperty('start_quiz')) {
-        this.transitionToRoute('question', 1);
+        this.store.find('quiz', data["start_quiz"]).then( function(quiz) {
+          var question = quiz.get('questions').objectAt(0);
+          self.transitionToRoute('question', question);
+        });
       
       } else if (data.hasOwnProperty('finish_quiz')) {
         participants = data["participants"];
@@ -66,8 +69,9 @@ export default Ember.Controller.extend({
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
 
+        this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"]);
         this.transitionToRoute('quiz.stats');
-      
+
       } else if (data.hasOwnProperty('new_quiz_participant')) {
         var new_quiz_participant = data['new_quiz_participant'];
         this.store.findQuery('user', { name: new_quiz_participant['user_name'] }).then( function(user) {
