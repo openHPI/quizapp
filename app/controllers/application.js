@@ -43,6 +43,19 @@ export default Ember.Controller.extend({
         });
         user.save();
         this.set('currentUser', user);
+
+        var all_participants = data["all_participants"];
+        for(var quiz_id in all_participants) { 
+          self.store.find('quiz', quiz_id).then( function(quiz) {
+            for(participant in all_participants[quiz_id]) { 
+              self.store.findQuery('user', { name: participant }).then( function(user) {
+                user = self.setOrCreateUser(self, user.objectAt(0), participant);
+                quiz.get('participants').addObject(user);
+              });
+            }
+          });
+        }
+
         this.transitionToRoute('quizzes');
 
       } else if (data.hasOwnProperty('new_question_id')) {
@@ -81,6 +94,11 @@ export default Ember.Controller.extend({
             quiz.get('participants').addObject(user);
           });
         });
+        participants = data["participants"];
+
+        for(participant in participants) { 
+          self.updateParticipantPoints(self, participant, participants[participant]['points']);
+        }
       }
     },
     onclose: function(socketEvent) {

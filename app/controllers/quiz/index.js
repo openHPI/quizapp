@@ -23,7 +23,7 @@ export default Ember.Controller.extend({
         this.set('userReady', false);
         this.send('emit', {finish_quiz: this.model.id, correct_answer: correctAnswer}, true, 'socket1');
       } else {
-        this.send('emit', {question_id: nextQuestion.id, correct_answer: correctAnswer}, true, 'socket1');
+        this.send('emit', {question_id: nextQuestion.id, correct_answer: correctAnswer, quiz_id: this.model.id}, true, 'socket1');
       }
     }
   }
