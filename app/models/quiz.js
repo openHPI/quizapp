@@ -18,10 +18,14 @@ var Quiz = DS.Model.extend({
       return this.get('questions').objectAt(this.get('current_position'));
     }
   },
-
   reset: function() {
     this.set('points', 0);
     this.set('current_position', 0);
+  },
+  removeAllParticipants: function() {
+    var participants = this.get('participants'),
+        list = participants.toArray();
+    participants.removeObjects(list);
   }
 });
 

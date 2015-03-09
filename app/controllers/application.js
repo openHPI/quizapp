@@ -18,6 +18,7 @@ export default Ember.Controller.extend({
     this.store.findQuery('user', { name: participant }).then( function(user) {
       user = self.setOrCreateUser(self, user.objectAt(0), participant);
       user.set('points', points);
+      user.save();
     });
   },
 
@@ -86,19 +87,30 @@ export default Ember.Controller.extend({
         this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"]);
         this.transitionToRoute('quiz.stats');
 
+        this.store.find('quiz', data['finish_quiz']).then( function(quiz) {
+          quiz.removeAllParticipants();
+        });
+
+        // TODO Decide how to show result leaderboard after deleting particpants list
+
       } else if (data.hasOwnProperty('new_quiz_participant')) {
         var new_quiz_participant = data['new_quiz_participant'];
-        this.store.findQuery('user', { name: new_quiz_participant['user_name'] }).then( function(user) {
-          user = self.setOrCreateUser(self, user.objectAt(0), new_quiz_participant['user_name']);
-          self.store.find('quiz', new_quiz_participant['quiz_id']).then( function(quiz) {
+        this.store.find('quiz', new_quiz_participant['quiz_id']).then( function(quiz) {
+          self.store.findQuery('user', { name: new_quiz_participant['user_name'] }).then( function(user) {
+            user = self.setOrCreateUser(self, user.objectAt(0), new_quiz_participant['user_name']);
+            user.set('points', 0);
+            user.save();
             quiz.get('participants').addObject(user);
           });
         });
-        participants = data["participants"];
 
-        for(participant in participants) { 
-          self.updateParticipantPoints(self, participant, participants[participant]['points']);
-        }
+      } else if (data.hasOwnProperty('disconnected_client')) {
+        this.store.findQuery('user', { name: data['disconnected_client'] }).then( function(user) {
+          user = user.objectAt(0);
+          if (user !== undefined) {
+            user.destroyRecord();
+          }
+        });
       }
     },
     onclose: function(socketEvent) {
