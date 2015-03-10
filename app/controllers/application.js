@@ -84,14 +84,12 @@ export default Ember.Controller.extend({
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
 
-        this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"]);
+        this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"], participants);
         this.transitionToRoute('quiz.stats');
 
         this.store.find('quiz', data['finish_quiz']).then( function(quiz) {
           quiz.removeAllParticipants();
         });
-
-        // TODO Decide how to show result leaderboard after deleting particpants list
 
       } else if (data.hasOwnProperty('new_quiz_participant')) {
         var new_quiz_participant = data['new_quiz_participant'];

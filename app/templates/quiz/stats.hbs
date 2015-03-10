@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-md-3">
+  <div>
     <h2> Quiz completed - the winner is {{winner_name}}. Congratulations! </h2>
   </div>
 </div>
@@ -10,6 +10,12 @@
 	</div>	
 	<div class="col-md-3">	
 		{{#link-to 'quizzes'}} <button class="answerButton"> Show all quizzes </button> {{/link-to}}
+	</div>
+</div>
+
+<div class="row">
+	<div>
+		{{quiz-leaderboard content=participants title='Leaderboard'}}
 	</div>
 </div>
 

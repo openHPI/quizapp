@@ -1,5 +1,6 @@
 <div id="topscore">
-  <h3>Participants Leaderboard</h3>
+  {{#if arrangedContent.length}}
+  <h3>{{title}}</h3>
   <hr >
   <div class="row">
     <div class="user leaderboard col-md-12">
@@ -17,7 +18,8 @@
             </td>
           </tr>
         </table>
-     {{/each}}
-</div>
-</div>
+      {{/each}}
+    </div>
+  </div>
+  {{/if}}
 </div>
