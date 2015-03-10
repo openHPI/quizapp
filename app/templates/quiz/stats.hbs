@@ -1,9 +1,10 @@
 <div class="row">
   <div>
-    <h2> Quiz completed - the winner is {{winner_name}}. Congratulations! </h2>
+    <h3> Quiz completed - the winner is {{winner_name}}. Congratulations! </h3>
   </div>
 </div>
 
+{{#unless currentUser.is_tv}}
 <div class="row">
   <div class="col-md-3">
 		<button {{action 'restart'}} class="answerButton"> Restart </button>
@@ -12,6 +13,10 @@
 		{{#link-to 'quizzes'}} <button class="answerButton"> Show all quizzes </button> {{/link-to}}
 	</div>
 </div>
+{{else}}
+	<h3> Do you want to start a new quiz? </h3>
+	{{render 'quizzes'}}
+{{/unless}}
 
 <div class="row">
 	<div>

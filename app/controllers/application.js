@@ -44,7 +44,6 @@ export default Ember.Controller.extend({
         });
         user.save();
         this.set('currentUser', user);
-
         var all_participants = data["all_participants"];
         for(var quiz_id in all_participants) { 
           self.store.find('quiz', quiz_id).then( function(quiz) {
@@ -56,17 +55,14 @@ export default Ember.Controller.extend({
             }
           });
         }
-
         this.transitionToRoute('quizzes');
 
       } else if (data.hasOwnProperty('new_question_id')) {
         var new_question_id = data["new_question_id"];
         participants = data["participants"];
-
         for(participant in participants) { 
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
-
         this.transitionToRoute('question', new_question_id);
         this.get('controllers.question/index').send('resetCountdown');
       
@@ -76,17 +72,15 @@ export default Ember.Controller.extend({
           var question = quiz.get('questions').objectAt(0);
           self.transitionToRoute('question', question);
         });
-      
+
       } else if (data.hasOwnProperty('finish_quiz')) {
         participants = data["participants"];
-
         for(participant in participants) { 
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
-
+        this.get('currentUser').set('within_quiz', false);
         this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"], participants);
         this.transitionToRoute('quiz.stats');
-
         this.store.find('quiz', data['finish_quiz']).then( function(quiz) {
           quiz.removeAllParticipants();
         });
@@ -101,6 +95,10 @@ export default Ember.Controller.extend({
             quiz.get('participants').addObject(user);
           });
         });
+        user = this.get('currentUser');
+        if (user.get('is_tv') && !user.get('within_quiz')) {this.transitionToRoute('quiz', new_quiz_participant['quiz_id']);
+          user.set('within_quiz', true);
+        }
 
       } else if (data.hasOwnProperty('disconnected_client')) {
         this.store.findQuery('user', { name: data['disconnected_client'] }).then( function(user) {
@@ -109,6 +107,17 @@ export default Ember.Controller.extend({
             user.destroyRecord();
           }
         });
+
+      // TV Screen Methods
+      } else if (data.hasOwnProperty('tv_client')) {
+        console.log('Logged in as ' + data["tv_client"]);
+        user = this.store.createRecord('user', {
+          name: data["tv_client"],
+          is_tv: true,
+        });
+        user.save();
+        this.set('currentUser', user);
+        this.transitionToRoute('/quizzes');
       }
     },
     onclose: function(socketEvent) {

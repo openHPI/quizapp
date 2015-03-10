@@ -3,6 +3,8 @@ import DS from 'ember-data';
 var User = DS.Model.extend({
   name: DS.attr('string'),
   points: DS.attr('number', { defaultValue: 0 }),
+  within_quiz: DS.attr('boolean', { defaultValue: false }),
+  is_tv: DS.attr('boolean', { defaultValue: false }),
 
   updatePoints: function(p) {
 		if (p) {

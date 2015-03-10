@@ -1,9 +1,16 @@
 
-<label class="left">{{model.title}} </label>
+<h3> Quiz: {{model.title}} </h3>
 
-{{#if userReady}}
-	<button {{action 'start'}} class="answerButton"> start</button>
+{{#unless currentUser.is_tv}}
+	{{#if userReady}}
+		<button {{action 'start'}} class="answerButton"> start</button>
+	{{else}}
+		<button {{action 'ready'}} class="answerButton"> ready</button>
+	{{/if}}
 {{else}}
-	<button {{action 'ready'}} class="answerButton"> ready</button>
-{{/if}}
+	<h4> Waiting for other participants to join ... </h4>
+	<div>
+  	{{qr-code quiz=quiz}}
+  </div>
+{{/unless}}
 {{outlet}}

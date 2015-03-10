@@ -2,8 +2,12 @@
   <div class="row">
     <div class="col-md-12">
       {{#if currentUser}}
+        {{#unless currentUser.is_tv}}
         Hey {{currentUser.name}}! 
         <button {{action 'logout'}} class="logoutButton"> Logout </button>
+        {{else}}
+          <h2 id="title">Welcome to the openHPI QuizBattle</h2>
+        {{/unless}}
         {{outlet}}
       {{else}}
         {{render 'login'}}
