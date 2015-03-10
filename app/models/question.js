@@ -10,12 +10,10 @@ var Question = DS.Model.extend({
 
 Question.reopenClass({
   FIXTURES: [
-    { id: 1, quiz_id: 1, title: 'What is the answer of everything?', answers: [1, 2, 3, 4] },
-    { id: 2, quiz_id: 1, title: 'Who are you?', answers: [5, 6, 7, 8] },
-    { id: 3, quiz_id: 1, title: 'Why are we here?', answers: [9, 10, 11, 12] },
-    { id: 4, quiz_id: 2, title: 'What are security issues in the internet?', answers: [13, 14, 15, 16] },
-    { id: 5, quiz_id: 2, title: 'Why was security not a big topic when the internet was created?', answers: [17, 18, 19, 20] },
-    { id: 6, quiz_id: 2, title: 'What are possible security attacks?', answers: [21, 22, 23, 24] },
+    { id: 1, quiz_id: 1, title: 'Which order of magnitude fits best for describing how many Internet users there are today?', answers: [1, 2, 3, 4, 5] },
+    { id: 2, quiz_id: 1, title: 'Which layer of the TCP/IP stack performs this task: Providing logical addresses for communication peers', answers: [6, 7, 8, 9, 10] },
+    { id: 3, quiz_id: 1, title: 'Which of the following measure increases the security of a web browser?', answers: [11, 12, 13, 14, 15] },
+    { id: 4, quiz_id: 1, title: 'Which of the following weak points are the most frequently (top 3) on the web?', answers: [16, 17, 18, 19] },
   ]
 });
 
