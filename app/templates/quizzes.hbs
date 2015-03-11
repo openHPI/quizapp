@@ -9,11 +9,16 @@
       <h4>
         Participants: {{quiz.participants.length}}
       </h4>
-      <br />
-      {{qr-code quiz=quiz}}
-      <br />
-      {{#link-to 'quiz.index' quiz.id}} JOIN{{/link-to}}
+      <div class="row">
+        <div class="col-sm-2 col-md-4">
+          {{qr-code quiz=quiz}}
+        </div>
+        <div class="col-sm-2 col-md-4">
+          <button class="button"> {{#link-to 'quiz.index' quiz.id}} JOIN {{/link-to}} </button>
+        </div>
+      </div>
     </div>
 {{/each}}
 </div>
+
 {{outlet}}

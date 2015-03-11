@@ -7,10 +7,10 @@
 {{#unless currentUser.is_tv}}
 <div class="row">
   <div class="col-md-3">
-		<button {{action 'restart'}} class="answerButton"> Restart </button>
+		<button {{action 'restart'}} class="button"> Restart </button>
 	</div>	
 	<div class="col-md-3">	
-		{{#link-to 'quizzes'}} <button class="answerButton"> Show all quizzes </button> {{/link-to}}
+		{{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
 	</div>
 </div>
 {{else}}

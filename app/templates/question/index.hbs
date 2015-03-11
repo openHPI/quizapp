@@ -4,11 +4,11 @@
   {{#if model.submitted}}
     Waiting for others to complete....
   {{else}}
+  	{{progress-bar time=model.timer register-as=progress-bar}}
     {{#if model.answers.length}}
       {{show-answers action="answerSelector" question=model}}
     {{/if}}
   {{/if}}
-  {{progress-bar time=model.timer register-as=progress-bar}}
 </div>
 
 {{outlet}}

@@ -9,15 +9,6 @@ a {
 	color: white;
 	text-decoration: 'none';
 }
-.answerButton {
-	background-color: transparent;
-	color: white;
-	border: 3px solid white;
-	font-size: large;
-	width: 100%;
-	padding: 10px;
-	margin: 5px;
-}
 .questionText {
 	font-size:1.5em;
 }
@@ -61,15 +52,26 @@ form.login input{
 	border: none;
 	border-bottom: 3px solid white;
 }
-form.login button{
-	height:60px;
+.button {
 	background-color: transparent;
 	color: white;
 	border: 3px solid white;
 	font-size: large;
+	width: 100%;
+	padding: 10px;
+	margin: 5px;
+}
+form.login button{
+	height:60px;
+	width: 100px;
 }
 .logoutButton {
-	background-color: transparent;
-	color: white;
+	width: 100px;
+	padding: 5px;
+	margin: 5px;
+	font-size: small;
 	border: 1px solid white;
+}
+.answer {
+	opacity: 0;
 }

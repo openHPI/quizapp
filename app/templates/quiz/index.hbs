@@ -3,9 +3,9 @@
 
 {{#unless currentUser.is_tv}}
 	{{#if userReady}}
-		<button {{action 'start'}} class="answerButton"> start</button>
+		<button {{action 'start'}} class="button"> start</button>
 	{{else}}
-		<button {{action 'ready'}} class="answerButton"> ready</button>
+		<button {{action 'ready'}} class="button"> ready</button>
 	{{/if}}
 {{else}}
 	<h4> Waiting for other participants to join ... </h4>

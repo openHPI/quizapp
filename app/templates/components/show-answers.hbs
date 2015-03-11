@@ -1,9 +1,7 @@
 <div class="row">
-
   {{#each answer in question.answers}}
-  <div class="col-md-3">
-    <button {{action 'selectAnswer' answer question.id}} class="answerButton"> {{answer.title}} </button> <br>
+  <div class="col-md-12 answer">
+    <button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
   </div>
   {{/each}}
-
 </div>
