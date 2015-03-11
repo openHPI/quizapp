@@ -90,9 +90,9 @@ export default Ember.Controller.extend({
         this.store.find('quiz', new_quiz_participant['quiz_id']).then( function(quiz) {
           self.store.findQuery('user', { name: new_quiz_participant['user_name'] }).then( function(user) {
             user = self.setOrCreateUser(self, user.objectAt(0), new_quiz_participant['user_name']);
+            quiz.get('participants').addObject(user);
             user.set('points', 0);
             user.save();
-            quiz.get('participants').addObject(user);
           });
         });
         user = this.get('currentUser');

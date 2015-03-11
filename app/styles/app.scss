@@ -1,6 +1,6 @@
 
 body {
-	background-color: orange;
+	background-color: #3D3D3D;
 	color: white;
 	font-family: 'Arial';
 	position: relative;
@@ -9,14 +9,26 @@ a {
 	color: white;
 	text-decoration: 'none';
 }
+a:hover {
+	color: white;
+	text-decoration: 'none';
+}
 .questionText {
 	font-size:1.5em;
+	min-height: 60px;
 }
 .bar {
 	background-color: white;
 	height: 20px;
+	width: 100%;
 	position: absolute;
 	left:0;
+}
+.progress-bar-wrapper {
+	height: 30px;
+	position: relative;
+	padding: 5px;
+	margin-left: 10px;
 }
 .leaderboard {
   position: relative;

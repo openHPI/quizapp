@@ -1,10 +1,10 @@
 <div>
 	<h2> Question {{model.id}} / {{quiz.questions.length}} </h2>
   <div class="questionText">{{model.title}}</div>
+  {{progress-bar time=model.timer register-as=progress-bar}}
   {{#if model.submitted}}
     Waiting for others to complete....
   {{else}}
-  	{{progress-bar time=model.timer register-as=progress-bar}}
     {{#if model.answers.length}}
       {{show-answers action="answerSelector" question=model}}
     {{/if}}
