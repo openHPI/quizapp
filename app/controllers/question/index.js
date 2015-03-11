@@ -3,6 +3,7 @@ import Ember from "ember";
 export default Ember.Controller.extend({
   needs: ['quiz/index','application'],
   currentUser: Ember.computed.alias('controllers.application.currentUser'),
+  quiz: Ember.computed.alias('controllers.quiz/index.model'),
 
   actions: {
     answerSelector: function(answer, question_id) {
