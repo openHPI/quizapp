@@ -3,7 +3,7 @@ import Ember from "ember";
 export default Ember.Controller.extend({
   currentUser: null,
   username: null,
-  needs: ["question/index", "quiz/stats"],
+  needs: ["question/index", "quiz/stats", "quiz/index"],
 
   setOrCreateUser: function(self, user, username) {
     if (user === undefined) {
@@ -56,6 +56,13 @@ export default Ember.Controller.extend({
           });
         }
         this.transitionToRoute('quizzes');
+
+      } else if (data.hasOwnProperty('finish_question')) {
+        this.store.find('question', data["finish_question"]).then( function(question) {
+          question.updateSelectionCount(data['question_answers']);
+          self.get('controllers.quiz/index').send('nextQuestion');
+          self.transitionToRoute('question.results', question);
+        });
 
       } else if (data.hasOwnProperty('new_question_id')) {
         var new_question_id = data["new_question_id"];

@@ -6,6 +6,23 @@ var Question = DS.Model.extend({
   answers: DS.hasMany('answer', {async: true}),
   submitted: DS.attr('boolean', {defaultValue: false}),
   timer: DS.attr('integer', {defaultValue: 15}),
+
+  reset: function() {
+    this.set('submitted', false);
+    this.get('answers').then( function(answers) {
+      for (var i = 0; i < answers.get('length'); i++) {
+        answers.objectAt(i).reset();
+      }
+    });
+  },
+  updateSelectionCount: function(question_answers) {
+    this.get('answers').then( function(answers) {
+      for (var i = 0; i < answers.get('length'); i++) {
+        var answer = answers.objectAt(i);
+        answer.set('selectionCount', question_answers[answer.id]);
+      }
+    });
+  }
 });
 
 Question.reopenClass({

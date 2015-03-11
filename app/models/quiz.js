@@ -21,6 +21,11 @@ var Quiz = DS.Model.extend({
   reset: function() {
     this.set('points', 0);
     this.set('current_position', 0);
+    this.get('questions').then( function(questions) {
+      for (var i = 0; i < questions.get('length'); i++) {
+        questions.objectAt(i).reset();
+      }
+    });
   },
   removeAllParticipants: function() {
     var participants = this.get('participants'),

@@ -17,13 +17,13 @@ export default Ember.Controller.extend({
     start: function() {
       this.send('emit', {start_quiz: this.model.id}, true, 'socket1');
     },
-    nextQuestion: function(correctAnswer) {
+    nextQuestion: function() {
       var nextQuestion = this.model.getNextQuestion();
       if (nextQuestion === undefined) {
         this.set('userReady', false);
-        this.send('emit', {finish_quiz: this.model.id, correct_answer: correctAnswer}, true, 'socket1');
+        this.send('emit', {finish_quiz: this.model.id}, true, 'socket1');
       } else {
-        this.send('emit', {question_id: nextQuestion.id, correct_answer: correctAnswer, quiz_id: this.model.id}, true, 'socket1');
+        this.send('emit', {next_question: nextQuestion.id, quiz_id: this.model.id}, true, 'socket1');
       }
     }
   }

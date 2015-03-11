@@ -1,0 +1,9 @@
+<div>
+	<h2> Question {{model.id}} / {{model.quiz.questions.length}} </h2>
+  <div class="questionText">{{model.title}}</div>
+  {{#if model.answers.length}}
+    {{show-answers action="answerSelector" question=model}}
+  {{/if}}
+</div>
+
+{{outlet}}

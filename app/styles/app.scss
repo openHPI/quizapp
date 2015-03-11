@@ -73,6 +73,18 @@ form.login input{
 	padding: 10px;
 	margin: 5px;
 }
+.selectedButton {
+	color: gold;
+	border: 3px solid gold;
+}
+.wrongButton {
+	color: red;
+	border: 3px solid red;
+}
+.correctButton {
+	color: green;
+	border: 3px solid green;
+}
 form.login button{
 	height:60px;
 	width: 100px;

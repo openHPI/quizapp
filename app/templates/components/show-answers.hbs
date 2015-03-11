@@ -1,7 +1,27 @@
 <div class="row">
   {{#each answer in question.answers}}
   <div class="col-md-12 answer">
-    <button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
+    {{#if results}}
+      {{#if answer.correct}}
+        <button class="button correctButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+      {{else}}
+        {{#if answer.selected}}
+          <button class="button wrongButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+        {{else}}
+          <button class="button"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+        {{/if}}
+      {{/if}}
+    {{else}}
+    	{{#unless question.submitted}}
+      	<button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
+      {{else}}
+      	{{#unless answer.selected}}
+  	    	<button class="button"> {{answer.title}} </button> <br>
+  	    {{else}}
+  	    	<button class="button selectedButton"> {{answer.title}} </button> <br>
+      	{{/unless}}
+      {{/unless}}
+    {{/if}}
   </div>
   {{/each}}
 </div>
