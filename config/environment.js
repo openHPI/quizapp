@@ -20,6 +20,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'img-src': "'self' data:",
       'style-src': "'self' 'unsafe-inline' use.typekit.net",
+      'script-src': "*",
     },
   };
 
