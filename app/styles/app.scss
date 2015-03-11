@@ -1,6 +1,11 @@
 
 body {
 	background-color: #3D3D3D;
+	background-image: url(/images/open_hpi_logo.png);
+	background-position: 99% 1%;
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: white;
 	font-family: 'Arial';
 	position: relative;
@@ -63,6 +68,7 @@ form.login input{
 	background-color: transparent;
 	border: none;
 	border-bottom: 3px solid white;
+	text-align: center;
 }
 .button {
 	background-color: transparent;
@@ -101,4 +107,11 @@ form.login button{
 }
 #qrcode img {
 	border: 2px solid white;
+}
+.login-area {
+	text-align: center;
+	display: block;
+  top: 50%;
+  left: 50%;
+  margin-top: 15%;
 }
