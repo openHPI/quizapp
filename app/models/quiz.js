@@ -36,9 +36,9 @@ var Quiz = DS.Model.extend({
 
 Quiz.reopenClass({
   FIXTURES: [
-    { id: 1, title: 'Internet 101: TCP/IP and Security', description: "Basic knowledge about the Internet (eng.)", questions: [1, 2, 3, 4] },
-    { id: 2, title: 'Teste Dein Wissen', description: "Internet Grundlagen und Datenbanken (de.)" },
-    { id: 3, title: 'Quiz C', description: "TODO (cn.)", questions: [] },
+    { id: 1, title: 'openHPI 101 (EN)', description: "A best of collection of questions from past openHPI courses.", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+    { id: 2, title: 'openHPI Grundlagen (DE)', description: "Die besten Fragen aus aktuellen und vergangenen openHPI Kursen. (Bald)" },
+    { id: 3, title: '???', description: "More quizzes coming soon...", questions: [] },
   ]
 });
 

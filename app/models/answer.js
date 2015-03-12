@@ -38,6 +38,42 @@ Answer.reopenClass({
     { id: 14, question_id: 4, title: 'MAN, PAN, LAN, Internet, WAN', correct: false },
     { id: 15, question_id: 4, title: 'LAN, MAN, PAN, WAN, Internet', correct: true },
     { id: 16, question_id: 4, title: 'PAN, LAN, MAN, WAN, Internet', correct: false },
+
+    // Question: Which of the following configuration options  for WLANs make them (adequately) secure?
+    { id: 17, question_id: 5, title: 'MAC addressfilter', correct: false },
+    { id: 18, question_id: 5, title: 'WEP encryption', correct: false },
+    { id: 19, question_id: 5, title: 'Hiding ESSID', correct: false },
+    { id: 20, question_id: 5, title: 'WPA2 encryption ', correct: true },
+
+    // What is the output of the method "range(10)" in the programming language python?
+    { id: 21, question_id: 6, title: '1,2,3,4,5,6,6,7,9', correct: false },
+    { id: 22, question_id: 6, title: '0,1,2,3,4,5,6,7,8,9', correct: true },
+    { id: 23, question_id: 6, title: '1,2,3,4,5,6,7,8,9,10', correct: false },
+    { id: 24, question_id: 6, title: '0,1,2,3,4,5,6,7,8,9,10 ', correct: false },
+
+    // Punchcards were the early predecessors of enterprise data management systems. What basic operations were already supported by punchcards?
+    { id: 25, question_id: 7, title: 'open, solve, close', correct: false },
+    { id: 26, question_id: 7, title: 'extract, transform, load', correct: false },
+    { id: 27, question_id: 7, title: 'delete, update, drop', correct: false },
+    { id: 28, question_id: 7, title: 'sort, filter, merge, aggregate', correct: true },
+
+    // Translate the information "John likes football." into RDF and match the parts to subject, property, and object.
+    { id: 29, question_id: 8, title: 'Subject = football, Property = likes, Object = John', correct: false },
+    { id: 30, question_id: 8, title: 'Subject = John, Property = likes, Object = football', correct: true },
+    { id: 31, question_id: 8, title: 'Subject = John, Property = football, Object = likes', correct: false },
+    { id: 32, question_id: 8, title: 'Subject = likes, Property = football, Object = John', correct: false },
+
+    // In semantic web technologies a formula is satisfiable if ...
+    { id: 33, question_id: 9, title: 'all interpretations are true.', correct: false },
+    { id: 34, question_id: 9, title: 'no interpretation is true.', correct: false },
+    { id: 35, question_id: 9, title: 'some interpretations are true.', correct: true },
+    { id: 36, question_id: 9, title: 'not all interpretations are true.', correct: false },
+
+    // What describes a problem of the traditional WWW?
+    { id: 37, question_id: 10, title: 'unclear syntax', correct: false },
+    { id: 38, question_id: 10, title: 'adjustable context', correct: false },
+    { id: 39, question_id: 10, title: 'authoritative semantics', correct: false },
+    { id: 40, question_id: 10, title: 'lacking personalization', correct: true },
   ]
 });
 
