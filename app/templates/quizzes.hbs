@@ -1,7 +1,6 @@
 <div class="row">
 {{#each quiz in model}}
     <div class="col-md-4">
-
       {{#link-to 'quiz.index' quiz.id}} <h3>{{quiz.title}}</h3>{{/link-to}}
       <div class="desc">
         {{quiz.description}}

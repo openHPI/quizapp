@@ -16,10 +16,12 @@ var Question = DS.Model.extend({
     });
   },
   updateSelectionCount: function(question_answers) {
+    var participants = this.get('quiz').get('participants').get('length');
     this.get('answers').then( function(answers) {
       for (var i = 0; i < answers.get('length'); i++) {
         var answer = answers.objectAt(i);
         answer.set('selectionCount', question_answers[answer.id]);
+        answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
       }
     });
   }

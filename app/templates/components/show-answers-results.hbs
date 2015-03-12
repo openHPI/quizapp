@@ -2,12 +2,22 @@
   {{#each answer in question.answers}}
     <div class="col-md-12">
       {{#if answer.correct}}
-        <button class="button correctButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+        <button class="button correctButton resultButton">
+          <div class="resultButtonFilling" style="width:{{answer.selectionPercentage}}%"></div>
+          <div class="resultButtonText">{{answer.title}}</div>
+        </button>
+        <br>
       {{else}}
         {{#if answer.selected}}
-          <button class="button wrongButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+          <button class="button wrongButton resultButton">
+            <div class="resultButtonFilling" style="width:{{answer.selectionPercentage}}%"></div>
+            <div class="resultButtonText">{{answer.title}}</div>
+            </button><br>
         {{else}}
-          <button class="button"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+          <button class="button resultButton">
+            <div class="resultButtonFilling" style="width:{{answer.selectionPercentage}}%"></div>
+            <div class="resultButtonText">{{answer.title}}</div>
+          </button><br>
         {{/if}}
       {{/if}}
     </div>
