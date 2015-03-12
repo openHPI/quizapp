@@ -1,8 +1,9 @@
 <div>
 	<h2> Question {{model.id}} / {{model.quiz.questions.length}} </h2>
   <div class="questionText">{{model.title}}</div>
+  {{progress-bar time=10}}
   {{#if model.answers.length}}
-    {{show-answers action="answerSelector" question=model results=true}}
+  	{{show-answers-results question=model}}
   {{/if}}
 </div>
 

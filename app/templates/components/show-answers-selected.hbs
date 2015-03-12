@@ -1,0 +1,11 @@
+<div class="row">
+  {{#each answer in question.answers}}
+  	<div class="col-md-12">
+  		{{#unless answer.selected}}
+    		<button class="button"> {{answer.title}} </button> <br>
+	    {{else}}
+	    	<button class="button selectedButton"> {{answer.title}} </button> <br>
+    	{{/unless}}
+    </div>
+  {{/each}}
+ </div>
