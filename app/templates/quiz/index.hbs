@@ -5,7 +5,8 @@
 	{{#if userReady}}
 		<button {{action 'start'}} class="button"> start</button>
 	{{else}}
-		<button {{action 'ready'}} class="button"> ready</button>
+		{{#link-to 'quizzes'}} <button class="button"> Back to all quizzes </button> {{/link-to}}
+		<button {{action 'ready'}} class="button selectedButton"> ready</button>
 	{{/if}}
 {{else}}
 	<h4> Waiting for other participants to join ... </h4>

@@ -2,7 +2,6 @@ import Ember from "ember";
 
 export default Ember.Controller.extend({
   currentUser: null,
-  username: null,
   needs: ["question/index", "quiz/stats", "quiz/index"],
 
   setOrCreateUser: function(self, user, username) {
@@ -140,6 +139,8 @@ export default Ember.Controller.extend({
       this.send('emit', {new_user: name}, true, 'socket1');
     },
     logout: function() {
+      this.send('emit', {user_logout: this.get('currentUser').get('name')}, true, 'socket1');
+      this.get('controllers.quiz/index').set('userReady', false);
       this.set('currentUser', null);
       this.transitionToRoute('/');
     }
