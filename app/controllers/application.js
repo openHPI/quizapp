@@ -63,13 +63,13 @@ export default Ember.Controller.extend({
           self.get('controllers.quiz/index').send('nextQuestion');
           self.transitionToRoute('question.results', question);
         });
-
-      } else if (data.hasOwnProperty('new_question_id')) {
-        var new_question_id = data["new_question_id"];
         participants = data["participants"];
         for(participant in participants) { 
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
+
+      } else if (data.hasOwnProperty('new_question_id')) {
+        var new_question_id = data["new_question_id"];
         this.transitionToRoute('question', new_question_id);
         this.get('controllers.question/index').send('resetCountdown');
       

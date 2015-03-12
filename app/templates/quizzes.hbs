@@ -14,7 +14,9 @@
           {{qr-code quiz=quiz}}
         </div>
         <div class="col-sm-2 col-md-4">
-          <button class="button"> {{#link-to 'quiz.index' quiz.id}} JOIN {{/link-to}} </button>
+          {{#link-to 'quiz.index' quiz.id}}
+            <button class="button">  JOIN </button>
+          {{/link-to}} 
         </div>
       </div>
     </div>
