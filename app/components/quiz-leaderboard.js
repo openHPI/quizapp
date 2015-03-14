@@ -9,6 +9,5 @@ export default Ember.Component.extend(Ember.SortableMixin, {
         $( element ).css('margin-top', $( element ).attr("data-anim")*70+'px');
       });
       //todo: we need an element that is fired on every change
-   }.on('didInsertElement')
-
+   }.on('didInsertElement'),
 });

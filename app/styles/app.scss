@@ -55,11 +55,18 @@ a:hover {
 	padding: 5px;
 	text-align: left;
 	font-size:200%;
+	vertical-align: initial;
 }
 .user table tr td.points{
 	text-align: right;
 	font-size:200%;
 	padding-right:25px;
+}
+.userAnswered {
+	color: rgb(255, 174, 0);
+}
+.userNotAnswered {
+	color: white;
 }
 form.login {
 	color: black;

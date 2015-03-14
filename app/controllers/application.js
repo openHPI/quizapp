@@ -17,6 +17,7 @@ export default Ember.Controller.extend({
     this.store.findQuery('user', { name: participant }).then( function(user) {
       user = self.setOrCreateUser(self, user.objectAt(0), participant);
       user.set('points', points);
+      user.set('answered', false);
       user.save();
     });
   },
@@ -57,6 +58,13 @@ export default Ember.Controller.extend({
           });
         }
         this.transitionToRoute('quizzes');
+
+      } else if (data.hasOwnProperty('user_answered')) {
+        var user_name = data['user_answered'];
+        this.store.findQuery('user', { name: user_name }).then( function(user) {
+          user = self.setOrCreateUser(self, user.objectAt(0), user_name);
+          user.set('answered', true);
+        });
 
       } else if (data.hasOwnProperty('finish_question')) {
         this.store.find('question', data["finish_question"]).then( function(question) {

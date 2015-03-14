@@ -5,6 +5,7 @@ var User = DS.Model.extend({
   points: DS.attr('number', { defaultValue: 0 }),
   within_quiz: DS.attr('boolean', { defaultValue: false }),
   is_tv: DS.attr('boolean', { defaultValue: false }),
+  answered: DS.attr('boolean', { defaultValue: false }),
 
   updatePoints: function(p) {
 		if (p) {
