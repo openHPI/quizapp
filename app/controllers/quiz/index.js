@@ -21,7 +21,8 @@ export default Ember.Controller.extend({
       this.set('userReady', false);
     },
     start: function() {
-      this.send('emit', {start_quiz: this.model.id}, true, 'socket1');
+      var first_question = this.model.get('questions').objectAt(0);
+      this.send('emit', {start_quiz: this.model.id, first_question: first_question.id}, true, 'socket1');
     },
     nextQuestion: function() {
       var nextQuestion = this.model.getNextQuestion();

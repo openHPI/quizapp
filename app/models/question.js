@@ -19,10 +19,8 @@ var Question = DS.Model.extend({
       this.get('answers').then( function(answers) {
         for (var i = 0; i < answers.get('length'); i++) {
           var answer = answers.objectAt(i);
-          if (question_answers[answer.id]) {
-            answer.set('selectionCount', question_answers[answer.id]);
-            answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
-          }
+          answer.set('selectionCount', question_answers[answer.id]);
+          answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
         }
       });
     }
