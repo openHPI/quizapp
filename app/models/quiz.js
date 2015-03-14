@@ -33,7 +33,20 @@ var Quiz = DS.Model.extend({
     var participants = this.get('participants'),
         list = participants.toArray();
     participants.removeObjects(list);
-  }
+  },
+  removeParticipant: function(participant) {
+    var participants = this.get('participants'),
+        participant_array = participant.toArray();
+    participants.removeObjects(participant_array);
+  },
+  enoughParticipants: function() {
+    if (this.get('participants').get('length') >= 2) {
+      this.set('ready', true);
+    } else {
+      this.set('ready', false);
+    }
+  }.observes('participants'),
+
 });
 
 Quiz.reopenClass({

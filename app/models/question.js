@@ -14,7 +14,7 @@ var Question = DS.Model.extend({
     });
   },
   updateSelectionCount: function(question_answers) {
-    if (question_answers) {
+    if (question_answers !== null) {
       var participants = this.get('quiz').get('participants').get('length');
       this.get('answers').then( function(answers) {
         for (var i = 0; i < answers.get('length'); i++) {
