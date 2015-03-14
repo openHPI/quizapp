@@ -19,6 +19,10 @@ export default Ember.Controller.extend({
         self.transitionToRoute('question.waiting', question);
       });
     },
+    timeUp: function() {
+      this.send('emit', {question_answered: this.model.id, quiz_id: this.model.get('quiz').id, correct_answer: false, answer_id: null}, true, 'socket1');
+      this.transitionToRoute('question.waiting', this.model);
+    },
     resetCountdown: function() {
       this.get('progress-bar').renderElement();
     }

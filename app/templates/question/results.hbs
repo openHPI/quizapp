@@ -1,7 +1,7 @@
 <div class='question-results'>
 	<h2> Question {{model.id}} / {{model.quiz.questions.length}} </h2>
   <div class="questionText">{{model.title}}</div>
-	{{progress-bar time=10}}
+	{{progress-bar time=model.quiz.resultsTimer}}
   {{#if model.answers.length}}
   	{{show-answers-results question=model}}
   {{/if}}

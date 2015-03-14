@@ -4,11 +4,9 @@ var Question = DS.Model.extend({
   title: DS.attr('string'),
   quiz: DS.belongsTo('quiz'),
   answers: DS.hasMany('answer', {async: true}),
-  submitted: DS.attr('boolean', {defaultValue: false}),
   timer: DS.attr('integer', {defaultValue: 15}),
 
   reset: function() {
-    this.set('submitted', false);
     this.get('answers').then( function(answers) {
       for (var i = 0; i < answers.get('length'); i++) {
         answers.objectAt(i).reset();
@@ -16,14 +14,18 @@ var Question = DS.Model.extend({
     });
   },
   updateSelectionCount: function(question_answers) {
-    var participants = this.get('quiz').get('participants').get('length');
-    this.get('answers').then( function(answers) {
-      for (var i = 0; i < answers.get('length'); i++) {
-        var answer = answers.objectAt(i);
-        answer.set('selectionCount', question_answers[answer.id]);
-        answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
-      }
-    });
+    if (question_answers) {
+      var participants = this.get('quiz').get('participants').get('length');
+      this.get('answers').then( function(answers) {
+        for (var i = 0; i < answers.get('length'); i++) {
+          var answer = answers.objectAt(i);
+          if (question_answers[answer.id]) {
+            answer.set('selectionCount', question_answers[answer.id]);
+            answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
+          }
+        }
+      });
+    }
   }
 });
 

@@ -27,9 +27,9 @@ export default Ember.Controller.extend({
       var nextQuestion = this.model.getNextQuestion();
       if (nextQuestion === undefined) {
         this.set('userReady', false);
-        this.send('emit', {finish_quiz: this.model.id}, true, 'socket1');
+        this.send('emit', {finish_quiz: this.model.id, show_results_timer: this.model.get('resultsTimer')}, true, 'socket1');
       } else {
-        this.send('emit', {next_question: nextQuestion.id, quiz_id: this.model.id}, true, 'socket1');
+        this.send('emit', {next_question: nextQuestion.id, quiz_id: this.model.id, show_results_timer: this.model.get('resultsTimer')}, true, 'socket1');
       }
     }
   }
