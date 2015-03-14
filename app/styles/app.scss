@@ -144,8 +144,9 @@ form.login button{
 .answer {
 	opacity: 0;
 }
-#qrcode img {
-	border: 2px solid white;
+.qrcode-wrapper img {
+	border-top: 12px solid white;
+  border-left: 12px solid white;
 }
 .login-area {
 	text-align: center;
