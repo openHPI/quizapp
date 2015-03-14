@@ -6,10 +6,10 @@
 
 {{#unless currentUser.is_tv}}
 <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-6">
 		<button {{action 'restart'}} class="button"> Restart </button>
 	</div>	
-	<div class="col-md-3">	
+	<div class="col-md-6">	
 		{{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
 	</div>
 </div>
@@ -19,7 +19,7 @@
 {{/unless}}
 
 <div class="row">
-	<div>
+	<div class="hidden-xs hidden-sm">
 		{{quiz-leaderboard content=participants title='Leaderboard'}}
 	</div>
 </div>
