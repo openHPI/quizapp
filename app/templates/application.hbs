@@ -3,8 +3,8 @@
     <div class="row">
       <div class="col-md-12">
           {{#unless currentUser.is_tv}}
-          Hey {{currentUser.name}}! 
           <button {{action 'logout'}} class="button logoutButton"> Logout </button>
+          Hey {{currentUser.name}}!
           {{else}}
             <div id="title">Welcome to the openHPI QuizBattle</div>
           {{/unless}}

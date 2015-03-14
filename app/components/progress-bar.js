@@ -9,5 +9,5 @@ export default Ember.Component.extend({
     this.$('.bar').stop();
     this.$('.bar').animate({width: "0px"}, this.time*1000, 'linear');
    }.on('didInsertElement')
-   
+
 });

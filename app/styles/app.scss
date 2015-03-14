@@ -23,11 +23,15 @@ a:hover {
 	min-height: 60px;
 }
 .bar {
-	background-color: white;
+	background-color: '#3D3D3D';
 	height: 20px;
 	width: 100%;
 	position: absolute;
 	left:0;
+}
+.question-results .bar {
+	background-color: white;
+	height: 2px;
 }
 .progress-bar-wrapper {
 	height: 30px;
@@ -79,29 +83,39 @@ form.login input{
 	padding: 10px;
 	margin: 5px;
 }
-.selectedButton {
-	color: rgb(255, 174, 0);
-	border: 3px solid rgb(255, 174, 0);
-}
+
 .wrongButton {
-	color: red;
+	color: white;
 	border: 3px solid red;
+	background-color: red;
+	-webkit-animation: background-color  2s ease-in-out;
+	-moz-animation: background-color  2s ease-in-out;
+	animation: background-color  2s ease-in-out;
 }
 .correctButton {
-	color: green;
-	border: 3px solid green;
+	color: white;
+	border: 3px solid white;
+	background-color: green;
+	-webkit-animation: background-color  2s ease-in-out;
+	-moz-animation: background-color  2s ease-in-out;
+	animation: background-color  2s ease-in-out;
+}
+.selectedButton {
+	color: white;
+	border: 3px solid #FFFFFF;
 }
 .resultButton {
 	padding: 0;
+	z-index: -2;
 	height: 51px;
 	position: relative;
 }
 .resultButtonFilling {
 	z-index: -1;
 	position: absolute;
-	margin-top: -10px;
+  height:10px;
+	bottom:0px;
 	width: inherit;
-	height: 47px;
 	background-color: rgb(255, 174, 0);
   width:0%; /* End width.. */
   -webkit-animation: filler 2s ease-in-out;
@@ -131,7 +145,7 @@ form.login button{
 	opacity: 0;
 }
 #qrcode img {
-	border: 12px 2px 2px 12px solid white;
+	border: 2px solid white;
 }
 .login-area {
 	text-align: center;
