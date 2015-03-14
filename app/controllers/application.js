@@ -102,9 +102,26 @@ export default Ember.Controller.extend({
           });
         });
         user = this.get('currentUser');
-        if (user.get('is_tv') && !user.get('within_quiz')) {this.transitionToRoute('quiz', new_quiz_participant['quiz_id']);
+        if (user.get('is_tv') && !user.get('within_quiz')) {
+          this.transitionToRoute('quiz', new_quiz_participant['quiz_id']);
           user.set('within_quiz', true);
         }
+
+      } else if (data.hasOwnProperty('quiz_participant_quit')) {
+        var quiz_participant_quit = data['quiz_participant_quit'];
+        this.store.find('quiz', quiz_participant_quit['quiz_id']).then( function(quiz) {
+          self.store.findQuery('user', { name: quiz_participant_quit['user_name'] }).then( function(user) {
+            quiz.removeParticipant(user);
+
+            user = self.get('currentUser');
+            if (user.get('is_tv') && user.get('within_quiz')) {
+              if(quiz.get('participants').get('length') === 0) {
+                self.transitionToRoute('quizzes');
+                user.set('within_quiz', false);
+              }
+            }
+          });
+        });
 
       } else if (data.hasOwnProperty('disconnected_client')) {
         this.store.findQuery('user', { name: data['disconnected_client'] }).then( function(user) {

@@ -8,11 +8,17 @@ export default Ember.Controller.extend({
   sortedUserItems: function(){
     return this.store.find('user');
   },
+
   actions: {
     ready: function() {
       var currentUser = this.get('currentUser');
       this.send('emit', {new_quiz_participant: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
       this.set('userReady', true);
+    },
+    quit: function() {
+      var currentUser = this.get('currentUser');
+      this.send('emit', {quiz_participant_quit: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
+      this.set('userReady', false);
     },
     start: function() {
       this.send('emit', {start_quiz: this.model.id}, true, 'socket1');

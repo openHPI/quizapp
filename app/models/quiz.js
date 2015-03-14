@@ -9,6 +9,7 @@ var Quiz = DS.Model.extend({
   points: DS.attr('integer', { defaultValue: 0 }),
   participants: DS.hasMany('user', { async: true }),
   current_position: DS.attr('integer', { defaultValue: 0 }),
+  ready: DS.attr('boolean', {defaultValue: false}),
 
   getNextQuestion: function() {
     if (this.get('current_position') === this.get('questions').get('length')) {
