@@ -86,7 +86,7 @@ form.login input{
 
 .wrongButton {
 	color: white;
-	border: 3px solid red;
+	border: 3px solid white;
 	background-color: red;
 	-webkit-animation: background-color  2s ease-in-out;
 	-moz-animation: background-color  2s ease-in-out;
@@ -101,8 +101,8 @@ form.login input{
 	animation: background-color  2s ease-in-out;
 }
 .selectedButton {
-	color: white;
-	border: 3px solid #FFFFFF;
+	color: rgb(255, 174, 0);
+	border: 3px solid rgb(255, 174, 0);
 }
 .resultButton {
 	padding: 0;

@@ -7,11 +7,11 @@
 			<button {{action 'start'}} class="button"> start</button>
 		{{else}}
 			<div class="questionText"> Waiting for more participants to join ... </div>
-			<button {{action 'quit'}} class="button selectedButton"> quit </button>
+			<button {{action 'quit'}} class="button"> quit </button>
 		{{/if}}
 	{{else}}
 		{{#link-to 'quizzes'}} <button class="button"> Back to all quizzes </button> {{/link-to}}
-		<button {{action 'ready'}} class="button selectedButton"> ready</button>
+		<button {{action 'ready'}} class="button"> ready</button>
 	{{/if}}
 {{else}}
 	<h4> Waiting for other participants to join ... </h4>

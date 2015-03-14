@@ -45,11 +45,13 @@ export default Ember.Controller.extend({
         this.set('currentUser', user);
         var all_participants = data["all_participants"];
         for(var quiz_id in all_participants) { 
-          self.store.find('quiz', quiz_id).then( function(quiz) {
+          this.store.find('quiz', quiz_id).then( function(quiz) {
             for(participant in all_participants[quiz_id]) { 
               self.store.findQuery('user', { name: participant }).then( function(user) {
-                user = self.setOrCreateUser(self, user.objectAt(0), participant);
-                quiz.get('participants').addObject(user);
+                if (quiz.id === quiz_id) {
+                  user = self.setOrCreateUser(self, user.objectAt(0), participant);
+                  quiz.get('participants').addObject(user);
+                }
               });
             }
           });
