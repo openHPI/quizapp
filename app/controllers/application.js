@@ -57,7 +57,12 @@ export default Ember.Controller.extend({
             }
           });
         }
-        this.transitionToRoute(window.location.pathname);
+        var path = window.location.pathname.split("/");
+        if (path[1] === 'quiz' && !isNaN(path[2])) {
+          this.transitionToRoute(window.location.pathname.substring(0,7));
+        } else {
+          this.transitionToRoute("quizzes");
+        }
 
       } else if (data.hasOwnProperty('user_answered')) {
         var user_name = data['user_answered'];
