@@ -1,6 +1,6 @@
 <div class="row">
 {{#each quiz in model}}
-    <div class="col-md-6">
+    <div class="col-md-4">
       {{#link-to 'quiz.index' quiz.id}} <h3>{{quiz.title}}</h3>{{/link-to}}
       <div class="desc">
         {{quiz.description}}
@@ -15,7 +15,7 @@
         <div class="col-xs-5 col-sm-2 col-md-5">
           {{#link-to 'quiz.index' quiz.id}}
             <button class="button"> JOIN </button>
-          {{/link-to}} 
+          {{/link-to}}
         </div>
       </div>
     </div>

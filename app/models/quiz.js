@@ -53,7 +53,7 @@ Quiz.reopenClass({
   FIXTURES: [
     { id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best of collection of questions from past openHPI courses.", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
     { id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet.", questions: [11, 12, 13, 14, 15, 16] },
-    // { id: 3, title: 'openHPI Einsteiger Quiz (DE)', description: "Kommt bald...", questions: [] },
+    { id: 3, title: 'HPI@CeBIT Quiz (DE)', description: "Fragen über das HPI auf der CeBIT 2015", questions: [21, 22, 23, 24] },
   ]
 });
 

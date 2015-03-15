@@ -112,6 +112,27 @@ Answer.reopenClass({
     { id: 62, question_id: 16, title: 'Universal Resource Language', correct: false },
     { id: 63, question_id: 16, title: 'Universe Restful Location', correct: false },
     { id: 64, question_id: 16, title: 'University Related Langauge ', correct: false },
+
+    { id: 101, question_id: 21, title: 'Der Ausruf einer Kuh', correct: false },
+    { id: 102, question_id: 21, title: 'Kostenlose Online Kurse', correct: true },
+    { id: 103, question_id: 21, title: 'Ein Berliner Fussballverein', correct: false },
+    { id: 104, question_id: 21, title: 'Eine Hauptspeicherdatenbank', correct: false },
+
+    { id: 111, question_id: 22, title: 'HTML Programmier Internat', correct: false },
+    { id: 112, question_id: 22, title: 'Hasso Plattner Institut', correct: true },
+    { id: 113, question_id: 22, title: 'Hans Peters Imkerschule', correct: false },
+    { id: 114, question_id: 22, title: 'Hasso Plattner International', correct: false },
+
+    { id: 121, question_id: 22, title: 'Billiard', correct: false },
+    { id: 122, question_id: 22, title: 'Pogo Stab Hüpfen', correct: false },
+    { id: 123, question_id: 22, title: 'Dart', correct: false },
+    { id: 124, question_id: 22, title: 'Fussball', correct: true },
+
+    { id: 131, question_id: 22, title: 'Tropfende Wasserhähne', correct: false },
+    { id: 132, question_id: 22, title: 'Im Netz kursierende Identitätsdaten', correct: true },
+    { id: 133, question_id: 22, title: 'Festplatten mit Datenverlust', correct: false },
+    { id: 134, question_id: 22, title: 'Verblassende Personalausweise', correct: true },
+
   ]
 });
 

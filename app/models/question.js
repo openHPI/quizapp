@@ -40,7 +40,7 @@ Question.reopenClass({
     { id: 8, quiz_id: 1, title: 'Translate the information "John likes football." into RDF and match the parts to subject, property, and object.', answers: [29, 30, 31, 32] },
     { id: 9, quiz_id: 1, title: 'In semantic web technologies a formula is satisfiable if ...', answers: [33, 34, 35, 36] },
     { id: 10, quiz_id: 1, title: 'What describes a problem of the traditional WWW?', answers: [37, 38, 39, 40] },
-    
+
     // Beginner Quiz
     { id: 11, quiz_id: 2, title: 'What is the internet?', answers: [41, 42, 43, 44] },
     { id: 12, quiz_id: 2, title: 'Who is Inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
@@ -48,6 +48,12 @@ Question.reopenClass({
     { id: 14, quiz_id: 2, title: 'Which of the following is NOT a browser?', answers: [53, 54, 55, 56] },
     { id: 15, quiz_id: 2, title: 'Which of the following is the oldest computer company?', answers: [57, 58, 59, 60] },
     { id: 16, quiz_id: 2, title: 'What is an URL?', answers: [61, 62, 63, 64] },
+
+    // HPI Cebit Quiz
+    { id: 21, quiz_id: 3, title: 'Was ist ein MOOC?', answers: [101, 102, 103, 104] },
+    { id: 22, quiz_id: 3, title: 'HPI steht für?', answers: [111, 112, 113, 114] },
+    { id: 23, quiz_id: 3, title: 'Welche Sportart analysiert das Team am HPI Stand?', answers: [121, 122, 123, 124] },
+    { id: 24, quiz_id: 3, title: 'Was findet der Identy Leak Checker?', answers: [131, 132, 133, 134] },
   ]
 });
 
