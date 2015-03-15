@@ -6,9 +6,11 @@
           <button {{action 'logout'}} class="button logoutButton"> Logout </button>
           Hey {{currentUser.name}}!
           {{else}}
-            <div id="title">Welcome to the openHPI QuizBattle</div>
+            <div id="title">Welcome to the openHPI QuizBattle (beta)</div>
           {{/unless}}
-          {{outlet}}
+          <div style="margin-top:35px;">
+            {{outlet}}
+          </div>
       </div>
     </div>
   </div>
