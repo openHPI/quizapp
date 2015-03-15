@@ -21,6 +21,13 @@ a:hover {
 .questionText {
 	font-size:1.5em;
 	min-height: 60px;
+	text-align: center;
+}
+.readyText {
+	font-size: 1.2em;
+	min-height: 60px;
+	text-align: center;
+	color: gray;
 }
 .bar {
 	background-color: white;
