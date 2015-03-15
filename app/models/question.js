@@ -45,8 +45,8 @@ Question.reopenClass({
 
     // Beginner Quiz
     { id: 11, relativeId: 1, quiz_id: 2, title: 'What is the internet?', answers: [41, 42, 43, 44],  },
-    { id: 12, relativeId: 2, quiz_id: 2, title: 'Who is Inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
-    { id: 13, relativeId: 3, quiz_id: 2, title: 'What is a Browser?', answers: [49, 50, 51, 52] },
+    { id: 12, relativeId: 2, quiz_id: 2, title: 'Who is the inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
+    { id: 13, relativeId: 3, quiz_id: 2, title: 'What is a browser?', answers: [49, 50, 51, 52] },
     { id: 14, relativeId: 4, quiz_id: 2, title: 'Which of the following is NOT a browser?', answers: [53, 54, 55, 56] },
     { id: 15, relativeId: 5, quiz_id: 2, title: 'Which of the following is the oldest computer company?', answers: [57, 58, 59, 60] },
     { id: 16, relativeId: 6, quiz_id: 2, title: 'What is an URL?', answers: [61, 62, 63, 64] },
