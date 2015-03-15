@@ -29,6 +29,7 @@ var Question = DS.Model.extend({
 
 Question.reopenClass({
   FIXTURES: [
+    // Advanced Quiz
     { id: 1, quiz_id: 1, title: 'Which order of magnitude fits best for describing how many Internet users there are today?', answers: [1, 2, 3, 4] },
     { id: 2, quiz_id: 1, title: 'Which layer of the TCP/IP stack performs this task: Providing logical addresses for communication peers', answers: [5, 6, 7, 8] },
     { id: 3, quiz_id: 1, title: 'Which of the following measure increases the security of a web browser?', answers: [9, 10, 11, 12] },
@@ -39,6 +40,14 @@ Question.reopenClass({
     { id: 8, quiz_id: 1, title: 'Translate the information "John likes football." into RDF and match the parts to subject, property, and object.', answers: [29, 30, 31, 32] },
     { id: 9, quiz_id: 1, title: 'In semantic web technologies a formula is satisfiable if ...', answers: [33, 34, 35, 36] },
     { id: 10, quiz_id: 1, title: 'What describes a problem of the traditional WWW?', answers: [37, 38, 39, 40] },
+    
+    // Beginner Quiz
+    { id: 11, quiz_id: 2, title: 'What is the internet?', answers: [41, 42, 43, 44] },
+    { id: 12, quiz_id: 2, title: 'Who is Inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
+    { id: 13, quiz_id: 2, title: 'What is a Browser?', answers: [49, 50, 51, 52] },
+    { id: 14, quiz_id: 2, title: 'Which of the following is NOT a browser?', answers: [53, 54, 55, 56] },
+    { id: 15, quiz_id: 2, title: 'Which of the following is the oldest computer company?', answers: [57, 58, 59, 60] },
+    { id: 16, quiz_id: 2, title: 'What is an URL?', answers: [61, 62, 63, 64] },
   ]
 });
 

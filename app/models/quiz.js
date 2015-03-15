@@ -51,9 +51,9 @@ var Quiz = DS.Model.extend({
 
 Quiz.reopenClass({
   FIXTURES: [
-    { id: 1, title: 'openHPI 101 (EN)', description: "A best of collection of questions from past openHPI courses.", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
-    { id: 2, title: 'openHPI Grundlagen (DE)', description: "Die besten Fragen aus aktuellen und vergangenen openHPI Kursen. (Bald)" },
-    { id: 3, title: '???', description: "More quizzes coming soon...", questions: [] },
+    { id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best of collection of questions from past openHPI courses.", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+    { id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet.", questions: [11, 12, 13, 14, 15, 16] },
+    // { id: 3, title: 'openHPI Einsteiger Quiz (DE)', description: "Kommt bald...", questions: [] },
   ]
 });
 

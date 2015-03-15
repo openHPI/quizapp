@@ -76,6 +76,42 @@ Answer.reopenClass({
     { id: 38, question_id: 10, title: 'adjustable context', correct: false },
     { id: 39, question_id: 10, title: 'authoritative semantics', correct: false },
     { id: 40, question_id: 10, title: 'lacking personalization', correct: true },
+
+    // { id: 11, quiz_id: 2, title: 'What is the internet?', answers: [41, 42, 43, 44] },
+    { id: 41, question_id: 11, title: 'World Wide Web', correct: false },
+    { id: 42, question_id: 11, title: 'Computers that are all linked together in a network', correct: true },
+    { id: 43, question_id: 11, title: 'Facebook and WhatsApp', correct: false },
+    { id: 44, question_id: 11, title: 'All of the above', correct: false },
+
+    // { id: 12, quiz_id: 2, title: 'Who is Inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
+    { id: 45, question_id: 12, title: 'Bill Gates', correct: false },
+    { id: 46, question_id: 12, title: 'Steve Jobs', correct: false },
+    { id: 47, question_id: 12, title: 'Tim Berners-Lee', correct: true },
+    { id: 48, question_id: 12, title: 'Larry Page', correct: false },
+
+    // { id: 13, quiz_id: 2, title: 'What is a Browser?', answers: [49, 50, 51, 52] },
+    { id: 49, question_id: 13, title: 'An HTLM system', correct: false },
+    { id: 50, question_id: 13, title: 'A Server', correct: false },
+    { id: 51, question_id: 13, title: 'A software program that enables you to view www documents', correct: true },
+    { id: 52, question_id: 13, title: 'All', correct: false },
+
+    // { id: 14, quiz_id: 2, title: 'Which of the following is NOT a browser?', answers: [53, 54, 55, 56] },
+    { id: 53, question_id: 14, title: 'Chrome', correct: false },
+    { id: 54, question_id: 14, title: 'Internet Experiencer', correct: true },
+    { id: 55, question_id: 14, title: 'Firefox', correct: false },
+    { id: 56, question_id: 14, title: 'Opera', correct: false },
+
+    // { id: 15, quiz_id: 2, title: 'Which of the following is the oldest computer company?', answers: [57, 58, 59, 60] },
+    { id: 57, question_id: 15, title: 'Google', correct: false },
+    { id: 58, question_id: 15, title: 'Yahoo', correct: false },
+    { id: 59, question_id: 15, title: 'Facebook', correct: false },
+    { id: 60, question_id: 15, title: 'Microsoft', correct: true },
+
+    // { id: 16, quiz_id: 2, title: 'What is an URL?', answers: [61, 62, 63, 64] },
+    { id: 61, question_id: 16, title: 'Uniform Resource Locator', correct: true },
+    { id: 62, question_id: 16, title: 'Universal Resource Language', correct: false },
+    { id: 63, question_id: 16, title: 'Universe Restful Location', correct: false },
+    { id: 64, question_id: 16, title: 'University Related Langauge ', correct: false },
   ]
 });
 
