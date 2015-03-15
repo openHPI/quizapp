@@ -6,7 +6,7 @@
 		{{#if model.ready}}
 			<button {{action 'start'}} class="button"> start</button>
 		{{else}}
-			<div class="questionText"> Waiting for more participants to join ... </div>
+			<div class="questionText"> Waiting for more participants (at least two) to join ... </div>
 			<button {{action 'quit'}} class="button"> quit </button>
 		{{/if}}
 	{{else}}
