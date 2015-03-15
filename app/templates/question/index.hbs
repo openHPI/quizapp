@@ -1,5 +1,5 @@
 <div>
-	<h2> Question {{model.id}} / {{model.quiz.questions.length}} </h2>
+  <h2> Question {{model.relativeId}} / {{model.quiz.questions.length}} </h2>
   <div class="questionText">{{model.title}}</div>
   {{progress-bar time=model.timer register-as=progress-bar action="timeUp"}}
   {{#if model.answers.length}}
