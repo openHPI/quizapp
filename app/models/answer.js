@@ -131,7 +131,7 @@ Answer.reopenClass({
     { id: 131, question_id: 22, title: 'Tropfende Wasserhähne', correct: false },
     { id: 132, question_id: 22, title: 'Im Netz kursierende Identitätsdaten', correct: true },
     { id: 133, question_id: 22, title: 'Festplatten mit Datenverlust', correct: false },
-    { id: 134, question_id: 22, title: 'Verblassende Personalausweise', correct: true },
+    { id: 134, question_id: 22, title: 'Verblassende Personalausweise', correct: false },
 
   ]
 });
