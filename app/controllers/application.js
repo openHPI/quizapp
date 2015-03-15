@@ -57,7 +57,7 @@ export default Ember.Controller.extend({
             }
           });
         }
-        this.transitionToRoute('quizzes');
+        this.transitionToRoute(window.location.pathname);
 
       } else if (data.hasOwnProperty('user_answered')) {
         var user_name = data['user_answered'];
