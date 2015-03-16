@@ -1,19 +1,22 @@
-{{#if currentUser}}
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-          {{#unless currentUser.is_tv}}
-          <button {{action 'logout'}} class="button logoutButton"> Logout </button>
-          Hey {{currentUser.name}}!
-          {{else}}
-            <div id="title">Welcome to the openHPI QuizBattle (beta)</div>
-          {{/unless}}
-          <div style="margin-top:35px;">
-            {{outlet}}
-          </div>
+<div class="pageContainer">
+  {{#if currentUser}}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            {{#unless currentUser.is_tv}}
+              <button {{action 'logout'}} class="button logoutButton"> Logout </button> Hey {{currentUser.name}}!
+              <img class="logo clientLogo" src='/images/open_hpi_logo.png'/>
+            {{else}}
+              <div id="title">Welcome to the openHPI QuizBattle (beta)</div>
+              <img class="logo tvLogo" src='/images/open_hpi_logo.png'/>
+            {{/unless}}
+            <div style="margin-top:35px;">
+              {{outlet}}
+            </div>
+        </div>
       </div>
     </div>
-  </div>
-{{else}}
-  {{render 'login'}}
-{{/if}}
+  {{else}}
+    {{render 'login'}}
+  {{/if}}
+</div>
