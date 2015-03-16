@@ -158,8 +158,15 @@ form.login button{
 .answer {
 	opacity: 0;
 }
+.qrcode-wrapper {
+	height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
 .qrcode-wrapper img {
 	border: 1px solid white;
+	height: 114px;
+  width: 114px;
 }
 .login-area {
 	text-align: center;
