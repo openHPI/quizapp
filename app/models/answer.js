@@ -84,10 +84,10 @@ Answer.reopenClass({
     { id: 44, question_id: 11, title: 'All of the above', correct: false },
 
     // { id: 12, quiz_id: 2, title: 'Who is Inventor of the WWW, the World Wide Web?', answers: [45, 46, 47, 48] },
-    { id: 45, question_id: 12, title: 'Bill Gates', correct: false },
-    { id: 46, question_id: 12, title: 'Steve Jobs', correct: false },
-    { id: 47, question_id: 12, title: 'Tim Berners-Lee', correct: true },
-    { id: 48, question_id: 12, title: 'Larry Page', correct: false },
+    { id: 45, question_id: 12, title: 'Bill Gates and Steve Ballmer', correct: false },
+    { id: 46, question_id: 12, title: 'Steve Jobs, Steve Wozniak and Tim Cook', correct: false },
+    { id: 47, question_id: 12, title: 'Tim Berners-Lee, Larry Roberts and Vint Cerf', correct: true },
+    { id: 48, question_id: 12, title: 'Larry Page, Sergey Brin and Eric Schmidt', correct: false },
 
     // { id: 13, quiz_id: 2, title: 'What is a Browser?', answers: [49, 50, 51, 52] },
     { id: 49, question_id: 13, title: 'An HTLM system', correct: false },
