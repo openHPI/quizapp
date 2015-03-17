@@ -38,8 +38,8 @@ Answer.reopenClass({
     // Question: Order the following network classifications in increasing size.
     { id: 13, question_id: 4, title: 'LAN, PAN, WAN, MAN, Internet', correct: false },
     { id: 14, question_id: 4, title: 'MAN, PAN, LAN, Internet, WAN', correct: false },
-    { id: 15, question_id: 4, title: 'LAN, MAN, PAN, WAN, Internet', correct: true },
-    { id: 16, question_id: 4, title: 'PAN, LAN, MAN, WAN, Internet', correct: false },
+    { id: 15, question_id: 4, title: 'LAN, MAN, PAN, WAN, Internet', correct: false },
+    { id: 16, question_id: 4, title: 'PAN, LAN, MAN, WAN, Internet', correct: true },
 
     // Question: Which of the following configuration options  for WLANs make them (adequately) secure?
     { id: 17, question_id: 5, title: 'MAC addressfilter', correct: false },
