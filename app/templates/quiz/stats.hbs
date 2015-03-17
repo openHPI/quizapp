@@ -15,7 +15,9 @@
 </div>
 {{else}}
 	<h3> Do you want to start a new quiz? </h3>
-	{{render 'quizzes'}}
+	<div class="quiz-results">
+		{{progress-bar time=30 register-as=progress-bar action="backToIndex"}}
+	</div>
 {{/unless}}
 
 <div class="row">

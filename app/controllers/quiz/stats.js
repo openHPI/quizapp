@@ -16,6 +16,9 @@ export default Ember.Controller.extend({
     	for(var participant in participants) {
     		this.get('participants').push({name: participant, points: participants[participant]['points']});
     	}
+    },
+    backToIndex: function() {
+      this.transitionToRoute('quizzes');
     }
   }
 });
