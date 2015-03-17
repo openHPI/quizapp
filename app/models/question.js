@@ -4,7 +4,7 @@ var Question = DS.Model.extend({
   title: DS.attr('string'),
   quiz: DS.belongsTo('quiz'),
   answers: DS.hasMany('answer', {async: true}),
-  timer: DS.attr('integer', {defaultValue: 15}),
+  timer: DS.attr('integer', {defaultValue: 20}),
   relativeId: DS.attr('integer'),
 
   reset: function() {
