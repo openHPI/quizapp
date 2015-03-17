@@ -1,9 +1,16 @@
 
+html {
+	height: 100%;
+}
 body {
 	background-color: #3D3D3D;
 	color: white;
 	font-family: 'Arial';
 	position: relative;
+	height: 100%;
+}
+.ember-view {
+	height: 100%;
 }
 a {
 	color: white;
@@ -186,6 +193,7 @@ form.login button{
 }
 .pageContainer {
 	overflow-x: hidden;
+	height: 100%;
 }
 .logo {
 	width: 20%;
