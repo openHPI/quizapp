@@ -113,26 +113,47 @@ Answer.reopenClass({
     { id: 63, question_id: 16, title: 'Universe Restful Location', correct: false },
     { id: 64, question_id: 16, title: 'University Related Langauge ', correct: false },
 
-    { id: 101, question_id: 21, title: 'Der Ausruf einer Kuh', correct: false },
-    { id: 102, question_id: 21, title: 'Kostenlose Online Kurse', correct: true },
-    { id: 103, question_id: 21, title: 'Ein Berliner Fussballverein', correct: false },
-    { id: 104, question_id: 21, title: 'Eine Hauptspeicherdatenbank', correct: false },
+    { id: 111, question_id: 21, title: 'HTML Programmier Internat', correct: false },
+    { id: 112, question_id: 21, title: 'Hasso Plattner Institut', correct: true },
+    { id: 113, question_id: 21, title: 'Hans Peters Imkerschule', correct: false },
+    { id: 114, question_id: 21, title: 'Hasso Plattner International', correct: false },
 
-    { id: 111, question_id: 22, title: 'HTML Programmier Internat', correct: false },
-    { id: 112, question_id: 22, title: 'Hasso Plattner Institut', correct: true },
-    { id: 113, question_id: 22, title: 'Hans Peters Imkerschule', correct: false },
-    { id: 114, question_id: 22, title: 'Hasso Plattner International', correct: false },
+    // { id: 22, relativeId: 2, quiz_id: 3, title: 'Welchen Studiengang kann man am HPI studieren?', answers: [141, 142, 143, 144] },
+    { id: 141, question_id: 22, title: 'Medieninformatik', correct: false },
+    { id: 142, question_id: 22, title: 'IT Special Force Engineering', correct: false },
+    { id: 143, question_id: 22, title: 'Wirtschaftsinformatik', correct: false },
+    { id: 144, question_id: 22, title: 'IT-Systems Engineering', correct: true },
 
-    { id: 121, question_id: 22, title: 'Billiard', correct: false },
-    { id: 122, question_id: 22, title: 'Pogo Stab Hüpfen', correct: false },
-    { id: 123, question_id: 22, title: 'Dart', correct: false },
-    { id: 124, question_id: 22, title: 'Fussball', correct: true },
+    { id: 101, question_id: 23, title: 'Der Ausruf einer Kuh', correct: false },
+    { id: 102, question_id: 23, title: 'Kostenlose Online Kurse', correct: true },
+    { id: 103, question_id: 23, title: 'Ein Berliner Fussballverein', correct: false },
+    { id: 104, question_id: 23, title: 'Eine Hauptspeicherdatenbank', correct: false },
 
-    { id: 131, question_id: 22, title: 'Tropfende Wasserhähne', correct: false },
-    { id: 132, question_id: 22, title: 'Im Netz kursierende Identitätsdaten', correct: true },
-    { id: 133, question_id: 22, title: 'Festplatten mit Datenverlust', correct: false },
-    { id: 134, question_id: 22, title: 'Verblassende Personalausweise', correct: false },
+    { id: 121, question_id: 24, title: 'Billiard', correct: false },
+    { id: 122, question_id: 24, title: 'Pogo Stab Hüpfen', correct: false },
+    { id: 123, question_id: 24, title: 'Dart', correct: false },
+    { id: 124, question_id: 24, title: 'Fussball', correct: true },
 
+    { id: 131, question_id: 25, title: 'Tropfende Wasserhähne', correct: false },
+    { id: 132, question_id: 25, title: 'Im Netz kursierende Identitätsdaten', correct: true },
+    { id: 133, question_id: 25, title: 'Festplatten mit Datenverlust', correct: false },
+    { id: 134, question_id: 25, title: 'Verblassende Personalausweise', correct: false },
+
+    // { id: 26, relativeId: 6, quiz_id: 3, title: 'Wfür steht Design Thinking?', answers: [151, 152, 153, 154] },
+    { id: 151, question_id: 26, title: 'Einen Studentenklub am HPI, der sich stets neue Designs ausdenkt', correct: false },
+    { id: 152, question_id: 26, title: 'Ein Konzept zum intensiveren Nachdenken', correct: false },
+    { id: 153, question_id: 26, title: 'Eine Methode die kollaborative Kreativität fördert und Probleme nutzerzentriert löst', correct: true },
+    { id: 154, question_id: 26, title: 'Ein neues Forschungsgebiet über Designer die zu viel denken', correct: false },
+
+    { id: 161, question_id: 27, title: '8', correct: false },
+    { id: 162, question_id: 27, title: '9', correct: false },
+    { id: 163, question_id: 27, title: '10', correct: true },
+    { id: 164, question_id: 27, title: '11', correct: false },
+
+    { id: 171, question_id: 28, title: 'IBM', correct: false },
+    { id: 172, question_id: 28, title: 'SAP', correct: true },
+    { id: 173, question_id: 28, title: 'SEP', correct: false },
+    { id: 174, question_id: 28, title: 'Google', correct: false },
   ]
 });
 
