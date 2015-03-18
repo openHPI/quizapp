@@ -100,7 +100,7 @@ export default Ember.Controller.extend({
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
         this.get('currentUser').set('within_quiz', false);
-        this.get('controllers.quiz/stats').send('announceWinner', data["winner_name"], participants);
+        this.get('controllers.quiz/stats').send('announceWinners', data["winner_names"], participants);
         this.transitionToRoute('quiz.stats');
         this.store.find('quiz', data['finish_quiz']).then( function(quiz) {
           quiz.removeAllParticipants();
