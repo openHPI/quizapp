@@ -1,8 +1,8 @@
-import Ember from "ember";
-import DS from 'ember-data';
+import Ember from 'ember';
+import FixtureAdapter from 'ember-data-fixture-adapter';
 
-export default DS.FixtureAdapter.extend({
-  plurals:{
+export default FixtureAdapter.extend({
+  plurals: {
     'quiz':'quizzes'
   },
   queryFixtures: function(fixtures, query) {
