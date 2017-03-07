@@ -1,4 +1,4 @@
-# Frontend
+# QuizBattle
 
 The QuizApp frontend is based on Ember CLI.
 
@@ -24,3 +24,9 @@ You will need the following things properly installed on your computer.
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Make sure the backend server is running as well
 
+## The Game
+
+Controls:
+- Player 1: up, left, down, right
+- Player 2: w, a, s, d
+- With buzzers: yellow, red, green, blue
