@@ -8,15 +8,15 @@
 <div class="row">
   <div class="col-md-6">
 		<button {{action 'restart'}} class="button"> Restart </button>
-	</div>	
-	<div class="col-md-6">	
+	</div>
+	<div class="col-md-6">
 		{{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
 	</div>
 </div>
 {{else}}
 	<h3> Do you want to start a new quiz? </h3>
 	<div class="quiz-results">
-		{{progress-bar time=30 register-as=progress-bar action="backToIndex"}}
+		{{progress-bar time=30 action="backToIndex"}}
 	</div>
 {{/unless}}
 

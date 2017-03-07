@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
   quiz: Ember.computed.alias('controllers.quiz/index.model'),
 
   actions: {
-    answerSelector: function(answer, question_id) {
+    answerSelector(answer, question_id) {
       var self = this;
       answer.set('selected', true);
       var correctAnswer = false;
@@ -20,7 +20,7 @@ export default Ember.Controller.extend({
       });
     },
     timeUp: function() {
-      this.send('emit', {question_answered: this.model.id, quiz_id: this.model.get('quiz').id, correct_answer: false, answer_id: null}, true, 'socket1');
+      //this.send('emit', {question_answered: this.model.id, quiz_id: this.model.get('quiz').id, correct_answer: false, answer_id: null}, true, 'socket1');
       this.transitionToRoute('question.waiting', this.model);
     },
     resetCountdown: function() {

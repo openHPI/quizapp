@@ -1,5 +1,6 @@
+<h1>Hi JAN!</h1>
 <div class="row">
-{{#each quiz in model}}
+  {{#each model as |quiz|}}
     <div class="col-md-4">
       {{#link-to 'quiz.index' quiz.id}} <h3>{{quiz.title}}</h3>{{/link-to}}
       <div class="desc">
@@ -10,16 +11,13 @@
       </h4>
       <div class="row">
         <div class="col-xs-5 col-sm-2 col-md-5">
-          {{qr-code quiz=quiz}}
-        </div>
-        <div class="col-xs-5 col-sm-2 col-md-5">
           {{#link-to 'quiz.index' quiz.id}}
             <button class="button"> JOIN </button>
           {{/link-to}}
         </div>
       </div>
     </div>
-{{/each}}
+  {{/each}}
 </div>
 
 {{outlet}}

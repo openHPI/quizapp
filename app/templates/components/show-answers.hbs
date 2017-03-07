@@ -1,5 +1,5 @@
 <div class="row">
-  {{#each answer in question.answers}}
+  {{#each question.answers as |answer|}}
   <div class="col-md-12 answer">
     {{#if results}}
       {{#if answer.correct}}
