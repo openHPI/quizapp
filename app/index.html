@@ -6,26 +6,27 @@
     <title>QuizBattle</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="icon_192.png">
     <link rel="icon" href="icon.png">
     <link rel="apple-touch-icon"  href="icon.png">
     <link rel="apple-touch-icon-precomposed" href="icon.png">
-    {{content-for 'head'}}
 
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/frontend.css">
+    {{content-for "head"}}
 
-    {{content-for 'head-footer'}}
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/frontend.css">
+
+    {{content-for "head-footer"}}
   </head>
   <body>
+    {{content-for "body"}}
 
-      {{content-for 'body'}}
-      <script src="assets/vendor.js"></script>
-      <script src="assets/frontend.js"></script>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/frontend.js"></script>
 
-      {{content-for 'body-footer'}}
-
+    {{content-for "body-footer"}}
   </body>
 </html>
