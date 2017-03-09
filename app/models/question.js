@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var Question = DS.Model.extend({
+const Question = DS.Model.extend({
   title: DS.attr('string'),
   quiz: DS.belongsTo('quiz'),
   answers: DS.hasMany('answer', {async: true}),
@@ -8,24 +8,24 @@ var Question = DS.Model.extend({
   relativeId: DS.attr('number'),
 
   reset() {
-    this.get('answers').then( function(answers) {
-      for (var i = 0; i < answers.get('length'); i++) {
-        answers.objectAt(i).reset();
-      }
+    this.get('answers').then(answers => {
+      answers.forEach(answer => answer.reset())
     });
   },
-  updateSelectionCount(question_answers) {
-    if (question_answers !== null) {
-      var participants = this.get('quiz').get('participants').get('length');
-      this.get('answers').then( function(answers) {
-        for (var i = 0; i < answers.get('length'); i++) {
-          var answer = answers.objectAt(i);
-          answer.set('selectionCount', question_answers[answer.id]);
-          answer.set('selectionPercentage', question_answers[answer.id]/participants * 100);
-        }
-      });
+
+  updateSelectionCount(questionAnswers) {
+    if (questionAnswers === null) {
+      return;
     }
-  },
+
+    const numParticipants = this.get('quiz.participants.length');
+    this.get('answers').then(answers => {
+      answers.forEach(answer => {
+        answer.set('selectionCount', questionAnswers[answer.id]);
+        answer.set('selectionPercentage', (questionAnswers[answer.id] / numParticipants) * 100);
+      });
+    });
+  }
 });
 
 Question.reopenClass({
