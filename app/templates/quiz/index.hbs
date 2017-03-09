@@ -1,6 +1,8 @@
-<h3> Quiz: {{model.title}} </h3>
+<h3>Quiz: {{model.title}}</h3>
 
-<h4> Waiting for other participants (at least two) to join ... </h4>
+<h4>Waiting for other participants (at least two) to join...</h4>
+
+{{after-x-seconds seconds=10 action=(action 'start')}}
 
 <p>Player X, press any button to join.</p>
 <p>You have X seconds...</p>
