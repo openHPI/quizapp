@@ -4,26 +4,26 @@
   </div>
 </div>
 
-{{#unless currentUser.is_tv}}
-<div class="row">
-  <div class="col-md-6">
-		<button {{action 'restart'}} class="button"> Restart </button>
-	</div>
-	<div class="col-md-6">
-		{{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
-	</div>
-</div>
+{{#if currentUser.is_tv}}
+  <h3> Do you want to start a new quiz? </h3>
+  <div class="quiz-results">
+    {{progress-bar time=30 action="backToIndex"}}
+  </div>
 {{else}}
-	<h3> Do you want to start a new quiz? </h3>
-	<div class="quiz-results">
-		{{progress-bar time=30 action="backToIndex"}}
-	</div>
-{{/unless}}
+  <div class="row">
+    <div class="col-md-6">
+      <button {{action 'restart'}} class="button"> Restart </button>
+    </div>
+    <div class="col-md-6">
+      {{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
+    </div>
+  </div>
+{{/if}}
 
 <div class="row">
-	<div class="hidden-xs hidden-sm">
-		{{quiz-leaderboard content=participants title='Leaderboard'}}
-	</div>
+  <div class="hidden-xs hidden-sm">
+    {{quiz-leaderboard content=participants title='Leaderboard'}}
+  </div>
 </div>
 
 {{outlet}}

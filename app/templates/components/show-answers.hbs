@@ -1,27 +1,27 @@
 <div class="row">
   {{#each question.answers as |answer|}}
-  <div class="col-md-12 answer">
-    {{#if results}}
-      {{#if answer.correct}}
-        <button class="button correctButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
-      {{else}}
-        {{#if answer.selected}}
-          <button class="button wrongButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+    <div class="col-md-12 answer">
+      {{#if results}}
+        {{#if answer.correct}}
+          <button class="button correctButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
         {{else}}
-          <button class="button"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+          {{#if answer.selected}}
+            <button class="button wrongButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+          {{else}}
+            <button class="button"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
+          {{/if}}
+        {{/if}}
+      {{else}}
+        {{#if question.submitted}}
+          {{#if answer.selected}}
+            <button class="button selectedButton"> {{answer.title}} </button> <br>
+          {{else}}
+            <button class="button"> {{answer.title}} </button> <br>
+          {{/if}}
+        {{else}}
+          <button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
         {{/if}}
       {{/if}}
-    {{else}}
-    	{{#unless question.submitted}}
-      	<button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
-      {{else}}
-      	{{#unless answer.selected}}
-  	    	<button class="button"> {{answer.title}} </button> <br>
-  	    {{else}}
-  	    	<button class="button selectedButton"> {{answer.title}} </button> <br>
-      	{{/unless}}
-      {{/unless}}
-    {{/if}}
-  </div>
+    </div>
   {{/each}}
 </div>

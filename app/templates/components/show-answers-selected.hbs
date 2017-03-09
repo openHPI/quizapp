@@ -1,11 +1,12 @@
 <div class="row">
   {{#each question.answers as |answer|}}
-  	<div class="col-md-12">
-  		{{#if answer.selected}}
-        <button class="button selectedButton"> {{answer.title}} </button> <br>
+    <div class="col-md-12">
+      {{#if answer.selected}}
+        <button class="button selectedButton">{{answer.title}}</button>
       {{else}}
-        <button class="button"> {{answer.title}} </button> <br>
-    	{{/if}}
+        <button class="button">{{answer.title}}</button>
+      {{/if}}
+      <br>
     </div>
   {{/each}}
  </div>

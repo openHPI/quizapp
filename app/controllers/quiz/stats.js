@@ -1,16 +1,16 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-	needs: ['application'],
+  needs: ['application'],
   currentUser: Ember.computed.alias('controllers.application.currentUser'),
-	winner_phrase: "...",
-	participants: [],
+  winner_phrase: "...",
+  participants: [],
 
   actions: {
-    restart: function() {
+    restart() {
       this.transitionToRoute('quiz', this.model);
     },
-    announceWinners: function(winner_names, participants) {
+    announceWinners(winner_names, participants) {
 	   	this.set('participants', []);
       if (winner_names.length === 1) {
         this.set('winner_phrase', 'the winner is ' + winner_names[0]);
@@ -20,11 +20,11 @@ export default Ember.Controller.extend({
           this.set('winner_phrase', this.get('winner_phrase') + ' and ' + winner_names[i]);
         }
       }
-    	for(var participant in participants) {
-    		this.get('participants').push({name: participant, points: participants[participant]['points']});
-    	}
+      for(var participant in participants) {
+        this.get('participants').push({name: participant, points: participants[participant]['points']});
+      }
     },
-    backToIndex: function() {
+    backToIndex() {
       this.transitionToRoute('quizzes');
     }
   }

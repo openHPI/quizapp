@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   userReady: false,
 
-  sortedUserItems: function(){
+  sortedUserItems() {
     return this.store.find('user');
   },
 

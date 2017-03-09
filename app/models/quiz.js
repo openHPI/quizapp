@@ -12,7 +12,7 @@ var Quiz = DS.Model.extend({
   ready: DS.attr('boolean', {defaultValue: false}),
   resultsTimer: DS.attr('integer', {defaultValue: 5}),
 
-  getNextQuestion: function() {
+  getNextQuestion() {
     if (this.get('current_position') === this.get('questions').get('length')) {
       return false;
     } else {
@@ -20,7 +20,7 @@ var Quiz = DS.Model.extend({
       return this.get('questions').objectAt(this.get('current_position'));
     }
   },
-  reset: function() {
+  reset() {
     this.set('points', 0);
     this.set('current_position', 0);
     this.get('questions').then( function(questions) {
@@ -29,12 +29,12 @@ var Quiz = DS.Model.extend({
       }
     });
   },
-  removeAllParticipants: function() {
+  removeAllParticipants() {
     var participants = this.get('participants'),
         list = participants.toArray();
     participants.removeObjects(list);
   },
-  removeParticipant: function(participant) {
+  removeParticipant(participant) {
     var participants = this.get('participants'),
         participant_array = participant.toArray();
     participants.removeObjects(participant_array);

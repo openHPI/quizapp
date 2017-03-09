@@ -5,8 +5,8 @@ export default FixtureAdapter.extend({
   plurals: {
     'quiz':'quizzes'
   },
-  queryFixtures: function(fixtures, query) {
-    var key = Ember.keys(query)[0];
+  queryFixtures(fixtures, query) {
+    const key = Ember.keys(query)[0];
     return fixtures.filterBy(key, query[key]);
   },
   findRecord(store, typeClass, id) {

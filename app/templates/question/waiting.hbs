@@ -1,7 +1,7 @@
 <div>
-	<h4> Question {{model.relativeId}} / {{model.quiz.questions.length}} </h4>
+  <h4> Question {{model.relativeId}} / {{model.quiz.questions.length}} </h4>
   <div class="questionText">{{model.title}}</div>
-	<div class="row progress-bar-wrapper"></div>
+  <div class="row progress-bar-wrapper"></div>
   {{#if model.answers.length}}
     {{show-answers-selected question=model}}
   {{/if}}

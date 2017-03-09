@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   currentUser: null,
   needs: ["question/index", "quiz/stats", "quiz/index"],
 
-  setOrCreateUser: function(self, user, username) {
+  setOrCreateUser(self, user, username) {
     if (user === undefined) {
       user = self.store.createRecord('user', {
         name: username
@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
     }
     return user;
   },
-  updateParticipantPoints: function(self, participant, points) {
+  updateParticipantPoints(self, participant, points) {
     this.store.findQuery('user', { name: participant }).then( function(user) {
       user = self.setOrCreateUser(self, user.objectAt(0), participant);
       user.set('points', points);
@@ -24,11 +24,11 @@ export default Ember.Controller.extend({
 
   actions: {
     // Websocket actions
-    onopen: function(socketEvent) {
+    onopen(socketEvent) {
       console.log('On open has been called!');
       console.log(socketEvent);
     },
-    onmessage: function(socketEvent) {
+    onmessage(socketEvent) {
       console.log('On message has been called!');
       console.log(socketEvent);
       var data = JSON.parse(socketEvent.data);
@@ -45,9 +45,9 @@ export default Ember.Controller.extend({
         user.save();
         this.set('currentUser', user);
         var all_participants = data["all_participants"];
-        for(var quiz_id in all_participants) { 
+        for(var quiz_id in all_participants) {
           this.store.find('quiz', quiz_id).then( function(quiz) {
-            for(participant in all_participants[quiz_id]) { 
+            for(participant in all_participants[quiz_id]) {
               self.store.findQuery('user', { name: participant }).then( function(user) {
                 if (quiz.id === quiz_id) {
                   user = self.setOrCreateUser(self, user.objectAt(0), participant);
@@ -78,7 +78,7 @@ export default Ember.Controller.extend({
           self.transitionToRoute('question.results', question);
         });
         participants = data["participants"];
-        for(participant in participants) { 
+        for(participant in participants) {
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
 
@@ -86,7 +86,6 @@ export default Ember.Controller.extend({
         var new_question_id = data["new_question_id"];
         this.transitionToRoute('question', new_question_id);
         this.get('controllers.question/index').send('resetCountdown');
-      
       } else if (data.hasOwnProperty('start_quiz')) {
         this.store.find('quiz', data["start_quiz"]).then( function(quiz) {
           quiz.reset();
@@ -96,7 +95,7 @@ export default Ember.Controller.extend({
 
       } else if (data.hasOwnProperty('finish_quiz')) {
         participants = data["participants"];
-        for(participant in participants) { 
+        for(participant in participants) {
           self.updateParticipantPoints(self, participant, participants[participant]['points']);
         }
         this.get('currentUser').set('within_quiz', false);
@@ -157,24 +156,6 @@ export default Ember.Controller.extend({
         this.set('currentUser', user);
         this.transitionToRoute('/quizzes');
       }
-    },
-    onclose: function(socketEvent) {
-      console.log('On close has been called!');
-      console.log(socketEvent);
-    },
-    onerror: function(socketEvent) {
-      console.log('On error has been called! :-(');
-      console.log(socketEvent);
-    },
-    login: function() {
-      var name = username.value;
-      this.send('emit', {new_user: name}, true, 'socket1');
-    },
-    logout: function() {
-      this.send('emit', {user_logout: this.get('currentUser').get('name')}, true, 'socket1');
-      this.get('controllers.quiz/index').set('userReady', false);
-      this.set('currentUser', null);
-      this.transitionToRoute('/');
     }
   }
 });

@@ -8,7 +8,7 @@ var Answer = DS.Model.extend({
   selection_count: DS.attr('number', {defaultValue: 0}),
   selection_percentage: DS.attr('number', {defaultValue: 0}),
 
-  reset: function() {
+  reset() {
     this.set('selection_count', 0);
     this.set('selection_percentage', 0);
     this.set('selected', false);

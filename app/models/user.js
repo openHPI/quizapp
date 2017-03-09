@@ -7,12 +7,8 @@ var User = DS.Model.extend({
   is_tv: DS.attr('boolean', { defaultValue: false }),
   answered: DS.attr('boolean', { defaultValue: false }),
 
-  updatePoints: function(p) {
-		if (p) {
-			this.set('points', this.get('points') + p);
-		} else {
-  		this.set('points', this.get('points') + 1);
-		}
+  updatePoints(p = 1) {
+    this.set('points', this.get('points') + p);
   },
 
 });
