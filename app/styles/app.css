@@ -207,3 +207,19 @@ form.login button{
   padding-right: 15px;
   margin: 20px;
 }
+
+.questionAnswer-color-yellow {
+  background-color: yellow;
+}
+
+.questionAnswer-color-red {
+  background-color: red;
+}
+
+.questionAnswer-color-green {
+  background-color: green;
+}
+
+.questionAnswer-color-blue {
+  background-color: blue;
+}

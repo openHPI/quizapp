@@ -1,26 +1,24 @@
 <div class="row">
-  {{#each question.answers as |answer|}}
+  {{#each answers as |answer|}}
     <div class="col-md-12 answer">
       {{#if results}}
-        {{#if answer.correct}}
-          <button class="button correctButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
-        {{else}}
-          {{#if answer.selected}}
-            <button class="button wrongButton"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
-          {{else}}
-            <button class="button"> {{answer.title}} ({{answer.selectionCount}})</button> <br>
-          {{/if}}
-        {{/if}}
+        show results!!!
       {{else}}
-        {{#if question.submitted}}
-          {{#if answer.selected}}
-            <button class="button selectedButton"> {{answer.title}} </button> <br>
+        <div class="questionAnswer questionAnswer-color-{{ answer.color }}">
+          {{#if question.submitted}}
+            {{#if answer.selected}}
+              <button class="button selectedButton"> {{answer.text}} </button> <br>
+            {{else}}
+              <button class="button"> {{answer.text}} </button> <br>
+            {{/if}}
           {{else}}
-            <button class="button"> {{answer.title}} </button> <br>
+            <button class="button"> {{answer.text}} </button> <br>
           {{/if}}
-        {{else}}
-          <button {{action 'selectAnswer' answer question.id}} class="button"> {{answer.title}} </button> <br>
-        {{/if}}
+        </div>
+
+        {{#each-in answer.userKeys as |user key|}}
+          {{on-keypress key=key handler=(action 'selectAnswer' answer.model user)}}
+        {{/each-in}}
       {{/if}}
     </div>
   {{/each}}
