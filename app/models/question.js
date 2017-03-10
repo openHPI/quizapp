@@ -9,7 +9,7 @@ const Question = DS.Model.extend({
 
   reset() {
     this.get('answers').then(answers => {
-      answers.forEach(answer => answer.reset())
+      answers.forEach(answer => answer.reset());
     });
   },
 
