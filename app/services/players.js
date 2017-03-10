@@ -1,10 +1,11 @@
 import Ember from 'ember';
 
-class ArrowPlayer {
-  constructor(name) {
-    this.name = name;
-  }
+const Player = Ember.Object.extend({
+  active: false,
+  name: null
+});
 
+const ArrowPlayer = Player.extend({
   getKeyForColor(color) {
     return {
       yellow: 'ArrowUp',
@@ -13,13 +14,9 @@ class ArrowPlayer {
       red: 'ArrowRight'
     }[color];
   }
-}
+});
 
-class WasdPlayer {
-  constructor(name) {
-    this.name = name;
-  }
-
+const WasdPlayer = Player.extend({
   getKeyForColor(color) {
     return {
       yellow: 'KeyW',
@@ -28,18 +25,22 @@ class WasdPlayer {
       red: 'KeyD'
     }[color];
   }
-}
+});
 
 export default Ember.Service.extend({
   players: [],
 
   init() {
     this.get('players').pushObject(
-      new WasdPlayer('player1')
+      WasdPlayer.create({name: 'player1'})
     );
 
     this.get('players').pushObject(
-      new ArrowPlayer('player2')
+      ArrowPlayer.create({name: 'player2'})
     );
-  }
+  },
+
+  activePlayers: Ember.computed('players.@each.active', function() {
+    return this.get('players').filter(player => player.get('active'));
+  })
 });
