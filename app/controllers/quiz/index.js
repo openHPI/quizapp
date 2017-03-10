@@ -21,7 +21,7 @@ export default Ember.Controller.extend({
     start() {
       this.model.reset();
       const firstQuestion = this.model.get('questions').objectAt(0);
-      this.transitionToRoute('question', firstQuestion);
+      this.transitionToRoute('quiz.question', this.model, firstQuestion);
     },
     nextQuestion() {
       const nextQuestion = this.model.getNextQuestion();

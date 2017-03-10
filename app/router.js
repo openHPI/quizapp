@@ -7,11 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource('quizzes');
-  this.resource('quiz', {path: "/quiz/:quiz_id/"}, function() {
+  this.route('quizzes');
+  this.route('quiz', { path: '/quizzes/:quiz_id' }, function() {
     this.route('show');
     this.route('stats');
-    this.resource('question', {path: "/question/:question_id/"}, function() {
+    this.route('question', { path: '/questions/:question_id' }, function() {
       this.route('waiting');
       this.route('results');
     });

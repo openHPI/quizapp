@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
     question.set('submitted', true);
     answer.set('selected', true);
 
-    this.transitionToRoute('question.waiting', question);
+    this.transitionToRoute('quiz.question.waiting', question.get('quiz'), question);
   },
 
   actions: {
@@ -19,10 +19,11 @@ export default Ember.Controller.extend({
       console.log('keyPressed', ...arguments);
     },
     selectAnswer(answer) {
+      console.log('selectAnswer', ...arguments);
       this.registerAnswer(answer);
     },
     timeUp() {
-      this.transitionToRoute('question.waiting', this.model);
+      this.transitionToRoute('quiz.question.waiting', this.model.get('quiz'), this.model);
     },
     resetCountdown() {
       this.get('progress-bar').renderElement();

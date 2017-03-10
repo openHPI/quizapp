@@ -13,7 +13,8 @@ export default Ember.Controller.extend({
 
   actions: {
     selectQuiz(quiz, player) {
-      this.transitionToRoute('quiz.index', quiz.id);
+      console.log('player', player, 'selected a quiz');
+      this.transitionToRoute('quiz.index', quiz);
     }
   }
 });

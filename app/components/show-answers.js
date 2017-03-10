@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import DS from 'ember-data';
 
 export default Ember.Component.extend({
   timeout: null,
@@ -15,11 +16,15 @@ export default Ember.Component.extend({
   },
 
   answers: Ember.computed('question.answers', function() {
-    return this.get('question.answers').map((answer, index) => ({
-      text: answer.get('title'),
-      color: ['yellow', 'green', 'red', 'blue'][index],
-      model: answer
-    }));
+    return DS.PromiseArray.create({
+      promise: this.get('question.answers').then(
+        answers => answers.map((answer, index) => ({
+          text: answer.get('title'),
+          color: ['yellow', 'green', 'red', 'blue'][index],
+          model: answer
+        }))
+      )
+    });
   }),
 
   actions: {
