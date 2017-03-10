@@ -41,6 +41,6 @@ export default Ember.Service.extend({
   },
 
   activePlayers: Ember.computed('players.@each.active', function() {
-    return this.get('players').filter(player => player.get('active'));
+    return this.get('players').filterBy('active');
   })
 });

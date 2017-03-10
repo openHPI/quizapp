@@ -5,7 +5,8 @@ export default Ember.Controller.extend({
 
   actions: {
     selectQuiz(quiz, player) {
-      console.log('player', player, 'selected a quiz');
+      console.log('player', player.get('name'), 'selected the quiz', quiz.get('title'));
+      player.set('active', true);
       this.transitionToRoute('quiz.index', quiz);
     }
   }

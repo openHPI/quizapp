@@ -1,8 +1,12 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
+  players: Ember.inject.service(),
+
   currentUser: null,
   needs: ["question/index", "quiz/stats", "quiz/index"],
+
+  activePlayers: Ember.computed.alias('players.activePlayers'),
 
   setOrCreateUser(self, user, username) {
     if (user === undefined) {
