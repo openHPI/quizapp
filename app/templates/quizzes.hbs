@@ -1,11 +1,11 @@
 <div class="row">
-  {{#each quizzes as |quiz|}}
+  {{#each quizzes as |quiz index|}}
     <div class="col-md-4">
       <h3>{{quiz.title}}</h3>
       <div class="desc">
         {{quiz.description}}
       </div>
-      {{colored-player-choice-button text='Start quiz' color=quiz.color onselect=(action 'selectQuiz' quiz.model)}}
+      {{colored-player-choice-button index=index text='Start quiz' onselect=(action 'selectQuiz' quiz)}}
     </div>
   {{/each}}
 </div>

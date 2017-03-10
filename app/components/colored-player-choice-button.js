@@ -16,6 +16,10 @@ export default Ember.Component.extend({
     );
   }),
 
+  color: Ember.computed('index', function() {
+    return ['yellow', 'green', 'red', 'blue'][this.get('index')];
+  }),
+
   actions: {
     selectedByPlayer(player) {
       this.sendAction('onselect', player);
