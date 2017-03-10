@@ -1,20 +1,11 @@
 <div class="row">
-  {{#each model as |quiz|}}
+  {{#each quizzes as |quiz|}}
     <div class="col-md-4">
-      {{#link-to 'quiz.index' quiz.id}} <h3>{{quiz.title}}</h3>{{/link-to}}
+      <h3>{{quiz.title}}</h3>
       <div class="desc">
         {{quiz.description}}
       </div>
-      <h4>
-        Participants: {{quiz.participants.length}}
-      </h4>
-      <div class="row">
-        <div class="col-xs-5 col-sm-2 col-md-5">
-          {{#link-to 'quiz.index' quiz.id}}
-            <button class="button"> JOIN </button>
-          {{/link-to}}
-        </div>
-      </div>
+      {{colored-player-choice-button text='Start quiz' color=quiz.color onselect=(action 'selectQuiz' quiz.model)}}
     </div>
   {{/each}}
 </div>

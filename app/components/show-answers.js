@@ -12,10 +12,6 @@ export default Ember.Component.extend({
     return this.get('question.answers').map((answer, index) => ({
       text: answer.get('title'),
       color: ['yellow', 'green', 'red', 'blue'][index],
-      userKeys: {
-        'user1': ['ArrowUp', 'ArrowLeft', 'ArrowDown', 'ArrowRight'][index],
-        'user2': ['KeyW', 'KeyA', 'KeyS', 'KeyD'][index]
-      },
       model: answer
     }));
   }),

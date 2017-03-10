@@ -1,25 +1,7 @@
 <div class="row">
   {{#each answers as |answer|}}
     <div class="col-md-12 answer">
-      {{#if results}}
-        show results!!!
-      {{else}}
-        <div class="questionAnswer questionAnswer-color-{{ answer.color }}">
-          {{#if question.submitted}}
-            {{#if answer.selected}}
-              <button class="button selectedButton"> {{answer.text}} </button> <br>
-            {{else}}
-              <button class="button"> {{answer.text}} </button> <br>
-            {{/if}}
-          {{else}}
-            <button class="button"> {{answer.text}} </button> <br>
-          {{/if}}
-        </div>
-
-        {{#each-in answer.userKeys as |user key|}}
-          {{on-keypress key=key handler=(action 'selectAnswer' answer.model user)}}
-        {{/each-in}}
-      {{/if}}
+      {{colored-player-choice-button text=answer.text color=answer.color onselect=(action 'selectAnswer' answer.model)}}
     </div>
   {{/each}}
 </div>
