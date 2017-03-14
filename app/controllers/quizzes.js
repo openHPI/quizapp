@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  playersService: Ember.inject.service('players'),
+
   quizzes: Ember.computed.alias('model'),
+  players: Ember.computed.alias('playersService.players'),
 
   actions: {
     selectQuiz(quiz, player) {
