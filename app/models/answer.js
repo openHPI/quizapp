@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var Answer = DS.Model.extend({
+const Answer = DS.Model.extend({
   title: DS.attr('string'),
   question: DS.belongsTo('question'),
   correct: DS.attr('boolean'),
@@ -12,7 +12,7 @@ var Answer = DS.Model.extend({
     this.set('selection_count', 0);
     this.set('selection_percentage', 0);
     this.set('selected', false);
-  },
+  }
 });
 
 Answer.reopenClass({

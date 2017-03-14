@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var Quiz = DS.Model.extend({
+const Quiz = DS.Model.extend({
   title: DS.attr('string'),
   description: DS.attr('string'),
   questions: DS.hasMany('question', { async: true }),
@@ -13,7 +13,7 @@ var Quiz = DS.Model.extend({
   resultsTimer: DS.attr('integer', {defaultValue: 5}),
 
   getNextQuestion() {
-    if (this.get('current_position') === this.get('questions').get('length')) {
+    if (this.get('current_position') === this.get('questions.length')) {
       return false;
     } else {
       this.set('current_position', this.get('current_position') + 1);
@@ -23,30 +23,24 @@ var Quiz = DS.Model.extend({
   reset() {
     this.set('points', 0);
     this.set('current_position', 0);
-    this.get('questions').then( function(questions) {
-      for (var i = 0; i < questions.get('length'); i++) {
-        questions.objectAt(i).reset();
-      }
+    this.get('questions').then(questions => {
+      questions.forEach(question => question.reset());
     });
   },
   removeAllParticipants() {
-    var participants = this.get('participants'),
-        list = participants.toArray();
-    participants.removeObjects(list);
+    const participants = this.get('participants');
+
+    participants.removeObjects(participants.toArray());
   },
   removeParticipant(participant) {
-    var participants = this.get('participants'),
-        participant_array = participant.toArray();
-    participants.removeObjects(participant_array);
+    this.get('participants').removeObjects(participant.toArray());
   },
   enoughParticipants: function() {
-    if (this.get('participants').get('length') >= 2) {
-      this.set('ready', true);
-    } else {
-      this.set('ready', false);
-    }
-  }.observes('participants'),
-
+    this.set(
+      'ready',
+      this.get('participants').get('length') >= 2
+    );
+  }.observes('participants')
 });
 
 Quiz.reopenClass({

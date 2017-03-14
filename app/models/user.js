@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var User = DS.Model.extend({
+const User = DS.Model.extend({
   name: DS.attr('string'),
   points: DS.attr('number', { defaultValue: 0 }),
   within_quiz: DS.attr('boolean', { defaultValue: false }),
@@ -9,8 +9,7 @@ var User = DS.Model.extend({
 
   updatePoints(p = 1) {
     this.set('points', this.get('points') + p);
-  },
-
+  }
 });
 
 User.reopenClass({
