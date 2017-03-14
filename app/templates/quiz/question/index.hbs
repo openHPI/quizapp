@@ -1,0 +1,8 @@
+<div>
+  <h4> Question {{model.relativeId}} / {{model.quiz.questions.length}} </h4>
+  <div class="questionText">{{model.title}}</div>
+  {{progress-bar time=model.timer whenTimeUp=(action 'timeUp')}}
+  {{#if model.answers.length}}
+    {{show-answers action=(action 'selectAnswer') question=model}}
+  {{/if}}
+</div>
