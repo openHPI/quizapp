@@ -1,27 +1,28 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  userReady: false,
+  game: Ember.inject.service(),
 
-  sortedUserItems() {
-    return this.store.find('user');
+  idlePlayers: Ember.computed.alias('game.idlePlayers'),
+
+  startGame() {
+    this.model.reset();
+
+    // Activate all joined players for the first round!
+    this.get('game.players').forEach(player => player.set('active', true));
+
+    const firstQuestion = this.model.get('questions').objectAt(0);
+    this.transitionToRoute('quiz.question', this.model, firstQuestion);
   },
 
   actions: {
-    ready() {
-      const currentUser = this.get('currentUser');
-      this.send('emit', {new_quiz_participant: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
-      this.set('userReady', true);
-    },
-    quit() {
-      const currentUser = this.get('currentUser');
-      this.send('emit', {quiz_participant_quit: {user_id: currentUser.id, quiz_id: this.model.id}}, true, 'socket1');
-      this.set('userReady', false);
+    joinAndStart(player) {
+      console.log('Player ', player, 'also joined the game!');
+      player.set('joined', true);
+      this.startGame();
     },
     start() {
-      this.model.reset();
-      const firstQuestion = this.model.get('questions').objectAt(0);
-      this.transitionToRoute('quiz.question', this.model, firstQuestion);
+      this.startGame();
     },
     nextQuestion() {
       const nextQuestion = this.model.getNextQuestion();

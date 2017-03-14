@@ -1,15 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  playersService: Ember.inject.service('players'),
+  game: Ember.inject.service(),
 
   quizzes: Ember.computed.alias('model'),
-  players: Ember.computed.alias('playersService.players'),
+  players: Ember.computed.alias('game.players'),
 
   actions: {
     selectQuiz(quiz, player) {
       console.log('player', player.get('name'), 'selected the quiz', quiz.get('title'));
-      player.set('active', true);
+      player.set('joined', true);
+      player.set('active', false);
       this.transitionToRoute('quiz.index', quiz);
     }
   }

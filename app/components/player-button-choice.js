@@ -4,10 +4,10 @@ export default Ember.Component.extend({
   classNames: ['playerChoiceButton'],
   classNameBindings: ['color'],
 
-  playersService: Ember.inject.service('players'),
+  game: Ember.inject.service(),
 
   players: null,
-  activePlayers: Ember.computed.or('players', 'playersService.activePlayers'),
+  activePlayers: Ember.computed.or('players', 'game.activePlayers'),
 
   playerKeys: Ember.computed('activePlayers', function() {
     return this.get('activePlayers').reduce(

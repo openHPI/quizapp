@@ -1,0 +1,21 @@
+<h4> Question {{ question.relativeId }} / {{ question.quiz.questions.length }} </h4>
+<div class="questionText">{{ question.title }}</div>
+
+{{#if question.answers}}
+  <div class="row">
+    {{#each question.answers as |answer index|}}
+      <div class="col-md-12 answer">
+        {{#if selectable}}
+          {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
+            {{ answer.title }}
+          {{/player-button-choice}}
+        {{else}}
+          {{ answer.title }}
+          {{#if answer.correct}}
+            CORRECT
+          {{/if}}
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+{{/if}}

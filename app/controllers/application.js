@@ -1,9 +1,9 @@
 import Ember from "ember";
 
 export default Ember.Controller.extend({
-  players: Ember.inject.service(),
+  game: Ember.inject.service(),
 
-  activePlayers: Ember.computed.alias('players.activePlayers'),
+  joinedPlayers: Ember.computed.alias('game.joinedPlayers'),
 
   setOrCreateUser(self, user, username) {
     if (user === undefined) {

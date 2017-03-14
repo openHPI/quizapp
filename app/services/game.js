@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 const Player = Ember.Object.extend({
+  joined: false,
   active: false,
   name: null
 });
@@ -40,7 +41,7 @@ export default Ember.Service.extend({
     );
   },
 
-  activePlayers: Ember.computed('players.@each.active', function() {
-    return this.get('players').filterBy('active');
-  })
+  joinedPlayers: Ember.computed.filterBy('players', 'joined'),
+  idlePlayers: Ember.computed.filterBy('players', 'joined', false),
+  activePlayers: Ember.computed.filterBy('players', 'active')
 });

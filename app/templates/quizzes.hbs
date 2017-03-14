@@ -5,7 +5,9 @@
       <div class="desc">
         {{quiz.description}}
       </div>
-      {{colored-player-choice-button index=index text='Start quiz' players=players onselect=(action 'selectQuiz' quiz)}}
+      {{#player-button-choice index=index players=players onselect=(action 'selectQuiz' quiz)}}
+        Start quiz
+      {{/player-button-choice}}
     </div>
   {{/each}}
 </div>

@@ -7,6 +7,10 @@
 <p>Player X, press any button to join.</p>
 <p>You have X seconds...</p>
 
+{{#player-button-any players=idlePlayers onselect=(action 'joinAndStart')}}
+  Start the game!
+{{/player-button-any}}
+
 <button {{action 'start'}}>Start!</button>
 
 {{outlet}}
