@@ -1,5 +1,4 @@
-{{quiz-question question=model selectable=waitingForAnswers action=(action 'selectAnswer')}}
-
-{{#if waitingForAnswers}}
-  {{progress-bar time=model.timer whenTimeUp=(action 'timeUp')}}
-{{/if}}
+{{quiz-question
+  question=model
+  done=(action 'goToNextQuestion')
+}}

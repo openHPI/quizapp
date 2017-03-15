@@ -19,3 +19,9 @@
     {{/each}}
   </div>
 {{/if}}
+
+{{#if selectable}}
+  {{progress-bar time=question.timer whenTimeUp=(action 'timeUp')}}
+{{else}}
+  {{progress-bar time=5 whenTimeUp=done}}
+{{/if}}
