@@ -33,15 +33,33 @@ export default Ember.Service.extend({
 
   init() {
     this.get('players').pushObject(
-      ArrowPlayer.create({name: 'player1'})
+      ArrowPlayer.create({name: 'Player 1'})
     );
 
     this.get('players').pushObject(
-      WasdPlayer.create({name: 'player2'})
+      WasdPlayer.create({name: 'Player 2'})
     );
   },
 
   joinedPlayers: Ember.computed.filterBy('players', 'joined'),
   idlePlayers: Ember.computed.filterBy('players', 'joined', false),
-  activePlayers: Ember.computed.filterBy('players', 'active')
+  activePlayers: Ember.computed.filterBy('players', 'active'),
+
+  resetAllPlayers() {
+    this.get('players').forEach(
+      player => player.setProperties({active: false, joined: false})
+    );
+  },
+
+  deactivateAllPlayers() {
+    this.get('players').forEach(
+      player => player.set('active', false)
+    );
+  },
+
+  activateJoinedPlayers() {
+    this.get('joinedPlayers').forEach(
+      player => player.set('active', player.get('joined'))
+    );
+  }
 });

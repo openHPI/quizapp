@@ -8,8 +8,6 @@ export default Ember.Route.extend({
   },
 
   afterModel() {
-    this.get('game.players').forEach(
-      player => player.setProperties({active: false, joined: false})
-    );
+    this.get('game').resetAllPlayers();
   }
 });

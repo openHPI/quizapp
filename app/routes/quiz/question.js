@@ -8,8 +8,6 @@ export default Ember.Route.extend({
   },
 
   afterModel() {
-    this.get('game.joinedPlayers').forEach(
-      player => player.set('active', true)
-    );
+    this.get('game').activateJoinedPlayers();
   }
 });

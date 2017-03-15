@@ -50,9 +50,7 @@ export default Ember.Component.extend({
 
     timeUp() {
       // When time is up, we will stop accepting input from all the quiz participants
-      this.get('game.activePlayers').forEach(
-        player => player.set('active', false)
-      );
+      this.get('game').deactivateAllPlayers();
 
       // ...and finally switch to the results view
       this.set('selectable', false);
