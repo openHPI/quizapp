@@ -10,9 +10,9 @@ const ArrowPlayer = Player.extend({
   getKeyForColor(color) {
     return {
       yellow: 'ArrowUp',
-      green: 'ArrowLeft',
-      blue: 'ArrowDown',
-      red: 'ArrowRight'
+      green: 'ArrowDown',
+      blue: 'ArrowRight',
+      red: 'ArrowLeft'
     }[color];
   }
 });
@@ -21,9 +21,9 @@ const WasdPlayer = Player.extend({
   getKeyForColor(color) {
     return {
       yellow: 'KeyW',
-      green: 'KeyA',
-      blue: 'KeyS',
-      red: 'KeyD'
+      green: 'KeyS',
+      blue: 'KeyD',
+      red: 'KeyA'
     }[color];
   }
 });
@@ -33,11 +33,11 @@ export default Ember.Service.extend({
 
   init() {
     this.get('players').pushObject(
-      WasdPlayer.create({name: 'player1'})
+      ArrowPlayer.create({name: 'player1'})
     );
 
     this.get('players').pushObject(
-      ArrowPlayer.create({name: 'player2'})
+      WasdPlayer.create({name: 'player2'})
     );
   },
 
