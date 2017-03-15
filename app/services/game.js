@@ -9,10 +9,10 @@ const Player = Ember.Object.extend({
 const ArrowPlayer = Player.extend({
   getKeyForColor(color) {
     return {
+      red: 'ArrowLeft',
       yellow: 'ArrowUp',
       green: 'ArrowDown',
-      blue: 'ArrowRight',
-      red: 'ArrowLeft'
+      blue: 'ArrowRight'
     }[color];
   }
 });
@@ -20,10 +20,10 @@ const ArrowPlayer = Player.extend({
 const WasdPlayer = Player.extend({
   getKeyForColor(color) {
     return {
+      red: 'KeyA',
       yellow: 'KeyW',
       green: 'KeyS',
-      blue: 'KeyD',
-      red: 'KeyA'
+      blue: 'KeyD'
     }[color];
   }
 });

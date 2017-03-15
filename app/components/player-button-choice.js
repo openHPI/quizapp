@@ -20,7 +20,7 @@ export default Ember.Component.extend({
   }),
 
   color: Ember.computed('index', function() {
-    return ['yellow', 'green', 'red', 'blue'][this.get('index')];
+    return ['red', 'yellow', 'green', 'blue'][this.get('index')];
   }),
 
   actions: {

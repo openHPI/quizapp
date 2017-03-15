@@ -8,7 +8,7 @@ export default Ember.Component.extend({
   playerKeys: Ember.computed('players', function() {
     return this.get('players').reduce(
       (hash, player) => {
-        ['yellow', 'green', 'red', 'blue'].forEach(
+        ['red', 'yellow', 'green', 'blue'].forEach(
           color => hash[player.getKeyForColor(color)] = player
         );
         return hash;
