@@ -1,8 +1,12 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  game: Ember.inject.service(),
+
   winner_phrase: '...',
   participants: [],
+
+  players: Ember.computed.alias('game.players'),
 
   actions: {
     restart() {

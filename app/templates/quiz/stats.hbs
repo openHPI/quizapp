@@ -4,21 +4,14 @@
   </div>
 </div>
 
-{{#if currentUser.is_tv}}
-  <h3> Do you want to start a new quiz? </h3>
-  <div class="quiz-results">
-    {{progress-bar time=30 action="backToIndex"}}
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h3> Do you want to start a new quiz? </h3>
+    {{#player-button-any players=players onselect=(action 'backToIndex')}}
+      Show all quizzes
+    {{/player-button-any}}
   </div>
-{{else}}
-  <div class="row">
-    <div class="col-md-6">
-      <button {{action 'restart'}} class="button"> Restart </button>
-    </div>
-    <div class="col-md-6">
-      {{#link-to 'quizzes'}} <button class="button"> Show all quizzes </button> {{/link-to}}
-    </div>
-  </div>
-{{/if}}
+</div>
 
 <div class="row">
   <div class="hidden-xs hidden-sm">
