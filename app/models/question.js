@@ -60,6 +60,30 @@ Question.reopenClass({
     { id: 26, relativeId: 6, quiz_id: 3, title: 'Wofür steht Design Thinking?', answers: [151, 152, 153, 154] },
     { id: 27, relativeId: 7, quiz_id: 3, title: 'Wieviele Fachgebiete gibt es aktuell am HPI?', answers: [161, 162, 163, 164] },
     { id: 28, relativeId: 8, quiz_id: 3, title: 'Welche bekannte Firma hat Hasso Plattner 1972 gegründet?', answers: [171, 172, 173, 174] },
+
+    // 2017 - Quiz 1
+    { id: 101, relativeId: 1, quiz_id: 100, title: '﻿In welcher Größenordnung liegt die Zahl der Internetnutzer?', answers: [1011, 1012, 1013, 1014] },
+    { id: 102, relativeId: 2, quiz_id: 100, title: 'Das Internet...', answers: [1021, 1022, 1023, 1024] },
+    { id: 103, relativeId: 3, quiz_id: 100, title: 'Das Internet ist ein', answers: [1031, 1032, 1033, 1034] },
+    { id: 104, relativeId: 4, quiz_id: 100, title: 'Welche Aussage zum grundlegenden Client-Server-Prinzip ist richtig?', answers: [1041, 1042, 1043, 1044] },
+    { id: 105, relativeId: 5, quiz_id: 100, title: 'Was ist notwendig, damit in einem Rechnernetz Nachrichten möglichst fair zwischen den beteiligten Rechnern ausgetauscht werden können?', answers: [1051, 1052, 1053, 1054] },
+    { id: 106, relativeId: 6, quiz_id: 100, title: 'Bei einem Sicherheitsverbund von Rechnernetzen', answers: [1061, 1062, 1063, 1064] },
+    { id: 107, relativeId: 7, quiz_id: 100, title: 'Was wäre ein gutes Passwort?', answers: [1071, 1072, 1073, 1074] },
+    { id: 108, relativeId: 8, quiz_id: 100, title: 'Welches der folgenden Passwörter ist ein Beispiel für ein starkes Passwort?', answers: [1081, 1082, 1083, 1084] },
+    { id: 109, relativeId: 9, quiz_id: 100, title: 'Welche der folgenden Aussagen über Social Media ist korrekt?', answers: [1091, 1092, 1093, 1094] },
+    { id: 110, relativeId: 10, quiz_id: 100, title: 'Welche der folgenden Internetanwendungen ist eine Social Media-Plattform?', answers: [1101, 1102, 1103, 1104] },
+
+    // 2017 - Quiz 2
+    { id: 201, relativeId: 1, quiz_id: 200, title: '﻿Welche Netzwerk-Topologie besitzen WLANs?', answers: [2011, 2012, 2013, 2014] },
+    { id: 202, relativeId: 2, quiz_id: 200, title: 'Welches der folgenden Protokolle ist ein Email-Protokoll?', answers: [2021, 2022, 2023, 2024] },
+    { id: 203, relativeId: 3, quiz_id: 200, title: 'Was ist Bestandteile einer HTTP-Nachricht?', answers: [2031, 2032, 2033, 2034] },
+    { id: 204, relativeId: 4, quiz_id: 200, title: 'Was ist ein Spoofing-Angriff?', answers: [2041, 2042, 2043, 2044] },
+    { id: 205, relativeId: 5, quiz_id: 200, title: 'Wozu werden Cookies verwendet?', answers: [2051, 2052, 2053, 2054] },
+    { id: 206, relativeId: 6, quiz_id: 200, title: 'Eine Webseite kann auf vielfältige Weise angefordert werden. Welche Möglichkeit gibt es?', answers: [2061, 2062, 2063, 2064] },
+    { id: 207, relativeId: 7, quiz_id: 200, title: 'Welche der folgenden Aussagen über Responsive Webdesign stimmt?', answers: [2071, 2072, 2073, 2074] },
+    { id: 208, relativeId: 8, quiz_id: 200, title: 'Was ist ein typischer Anwendungsfall für Wikis neben einer Online-Enzyklopädie (z.B. Wikipedia)?', answers: [2081, 2082, 2083, 2084] },
+    { id: 209, relativeId: 9, quiz_id: 200, title: 'Was bedeutet es, dass eine Webseite dynamisch ist?', answers: [2091, 2092, 2093, 2094] },
+    { id: 210, relativeId: 10, quiz_id: 200, title: 'Welche Aussage zum Phishing ist korrekt?', answers: [2101, 2102, 2103, 2104] },
   ]
 });
 

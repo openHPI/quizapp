@@ -47,7 +47,10 @@ Quiz.reopenClass({
   FIXTURES: [
     { id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best of collection of questions from past openHPI courses.", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
     { id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet.", questions: [11, 12, 13, 14, 15, 16] },
-    { id: 3, title: 'HPI@CeBIT Quiz (DE)', description: "Fragen über das HPI auf der CeBIT 2015", questions: [21, 22, 23, 24, 25, 26, 27, 28] },
+    //{ id: 3, title: 'HPI@CeBIT Quiz (DE)', description: "Fragen über das HPI auf der CeBIT 2015", questions: [21, 22, 23, 24, 25, 26, 27, 28] },
+
+    { id: 100, title: 'Internet und Soziale Medien - Basics', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
+    { id: 200, title: 'Internet und Soziale Medien - Advanced', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
   ]
 });
 
