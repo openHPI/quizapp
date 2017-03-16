@@ -6,7 +6,7 @@ const Player = Ember.Object.extend({
   },
 
   reset() {
-    this.setProperties({active: false, joined: false, points: 0})
+    this.setProperties({active: false, joined: false, points: 0});
   },
 
   receivePoints(amount) {

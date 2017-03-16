@@ -5,6 +5,9 @@ export default Ember.Controller.extend({
 
   joinedPlayers: Ember.computed.alias('game.joinedPlayers'),
 
+  player1: Ember.computed.alias('game.players.0'),
+  player2: Ember.computed.alias('game.players.1'),
+
   setOrCreateUser(self, user, username) {
     if (user === undefined) {
       user = self.store.createRecord('user', {

@@ -8,7 +8,7 @@
 
   <div class="appMain">
     <aside id="player1">
-      player 1
+      {{player-box player=player1}}
     </aside>
 
     <main>
@@ -16,10 +16,7 @@
     </main>
 
     <aside id="player2">
-      <h4>Joined players</h4>
-      {{#each joinedPlayers as |player|}}
-        <h5>{{ player.name }}: {{ player.points }}</h5>
-      {{/each}}
+      {{player-box player=player2}}
     </aside>
   </div>
 </div>
