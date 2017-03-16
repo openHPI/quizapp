@@ -62,13 +62,30 @@ main {
 }
 
 .appMain > aside {
-  width: 200px;
+  width: 250px;
   background-color: lightgoldenrodyellow;
   color: black;
 }
 
+
 /*------------------------------------------------
- * QUIZ QUESTION
+ * QUIZ SELECTOR
+ *------------------------------------------------*/
+
+.quizSelector {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quizSelector-quiz {
+  flex: 1;
+  flex-basis: calc(50% - 70px);
+  margin: 30px;
+}
+
+
+/*------------------------------------------------
+ * QUIZ MODE
  *------------------------------------------------*/
 
 .questionText {

@@ -1,6 +1,6 @@
-<div class="row">
+<div class="quizSelector">
   {{#each quizzes as |quiz index|}}
-    <div class="col-md-4">
+    <div class="quizSelector-quiz">
       <h3>{{quiz.title}}</h3>
       <div class="desc">
         {{quiz.description}}
@@ -11,5 +11,3 @@
     </div>
   {{/each}}
 </div>
-
-{{outlet}}
