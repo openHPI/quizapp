@@ -1,12 +1,3 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-9">
-        {{outlet}}
-      </div>
-      <div class="col-md-3">
-        {{quiz-leaderboard content=model.participants title='Participants'}}
-      </div>
-    </div>
-  </div>
-</div>
+{{outlet}}
+
+{{quiz-leaderboard content=model.participants title='Participants'}}

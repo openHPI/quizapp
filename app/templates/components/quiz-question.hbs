@@ -1,27 +1,23 @@
 <h4> Question {{ question.relativeId }} / {{ question.quiz.questions.length }} </h4>
 <div class="questionText">{{ question.title }}</div>
 
-{{#if question.answers}}
-  <div class="row">
-    {{#each question.answers as |answer index|}}
-      <div class="col-md-12 answer">
-        {{#if selectable}}
-          {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
-            {{ answer.title }}
-          {{/player-button-choice}}
-        {{else}}
-          {{ answer.title }}
-          {{#if answer.correct}}
-            CORRECT
-          {{/if}}
-        {{/if}}
-      </div>
-    {{/each}}
+{{#each question.answers as |answer index|}}
+  <div class="quizAnswer">
+    {{#if selectable}}
+      {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
+        {{ answer.title }}
+      {{/player-button-choice}}
+    {{else}}
+      {{ answer.title }}
+      {{#if answer.correct}}
+        CORRECT
+      {{/if}}
+    {{/if}}
   </div>
-{{/if}}
+{{/each}}
 
 {{#if selectable}}
-  {{progress-bar time=question.timer whenTimeUp=(action 'timeUp')}}
+  {{progress-bar time=300 whenTimeUp=(action 'timeUp')}}
 {{else}}
   {{progress-bar time=5 whenTimeUp=done}}
 {{/if}}

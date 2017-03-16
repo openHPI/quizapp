@@ -1,57 +1,122 @@
-
 html {
-	height: 100%;
+  height: 100%;
 }
+
 body {
-	background-color: #3D3D3D;
-	color: white;
-	font-family: 'Arial';
-	position: relative;
-	height: 100%;
+  background-color: #3D3D3D;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  position: relative;
 }
-.ember-view {
-	height: 100%;
+
+/*------------------------------------------------
+ * LAYOUT
+ *------------------------------------------------*/
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  height: 100vh;
 }
-a {
-	color: white;
-	text-decoration: 'none';
+
+header {
+  flex: 0 1 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+  height: 150px;
+  background: rgba(0,0,0,0.6);
+  box-shadow: 5px 0 5px black;
 }
-a:hover {
-	color: white;
-	text-decoration: 'none';
+
+header > * {
+  flex: 0 1 auto;
 }
+
+.headerLogo img {
+  max-height: 110px;
+}
+
+#title {
+  font-size: xx-large;
+  text-align: center;
+  color: rgb(242, 150, 41);
+}
+
+.appMain {
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main {
+  flex-grow: 3;
+  padding: 40px;
+}
+
+.appMain > aside {
+  width: 200px;
+  background-color: lightgoldenrodyellow;
+  color: black;
+}
+
+/*------------------------------------------------
+ * QUIZ QUESTION
+ *------------------------------------------------*/
+
 .questionText {
-	font-size:1.5em;
-	min-height: 60px;
-	text-align: center;
+  font-size: 2.5em;
+  min-height: 60px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2.5s steps(40, end);
 }
-.readyText {
-	font-size: 1.2em;
-	min-height: 60px;
-	text-align: center;
-	color: gray;
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
+
+.quizQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.quizQuestion > * {
+  flex: 0 1 auto;
+}
+
+.quizAnswer {
+  opacity: 0;
+}
+
+
+
+
 .bar {
-	background-color: white;
-	height: 20px;
-	width: 100%;
-	position: absolute;
-	left:0;
+  background-color: white;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  left:0;
 }
-.question-results .bar {
-	background-color: white;
-	height: 2px;
-}
-.quiz-results .bar {
-	background-color: white;
-	height: 1px;
-}
+
 .progress-bar-wrapper {
 	height: 30px;
 	position: relative;
 	padding: 5px;
 	margin-left: 5px;
 }
+
 .leaderboard {
   position: relative;
 }
@@ -64,35 +129,11 @@ a:hover {
   transition: all 1s ease-in-out;
 }
 
-.user table tr td{
-	padding: 5px;
-	text-align: left;
-	font-size:200%;
-	vertical-align: initial;
-}
-.user table tr td.points{
-	text-align: right;
-	font-size:200%;
-	padding-right:25px;
-}
 .userAnswered {
 	color: rgb(255, 174, 0);
 }
 .userNotAnswered {
 	color: white;
-}
-form.login {
-	color: black;
-}
-form.login input{
-	width:50%;
-	height:60px;
-	font-size:200%;
-	color: white;
-	background-color: transparent;
-	border: none;
-	border-bottom: 3px solid white;
-	text-align: center;
 }
 .button {
 	background-color: transparent;
@@ -150,78 +191,8 @@ form.login input{
     width:0;
   }
 }
-form.login button{
-	height:60px;
-	width: 100px;
-}
-.logoutButton {
-	width: 100px;
-	padding: 5px;
-	margin: 5px;
-	font-size: small;
-	border: 1px solid white;
-}
-.answer {
-	opacity: 0;
-}
-.login-area {
-	text-align: center;
-	display: block;
-  top: 50%;
-  left: 50%;
-  margin-top: 15%;
-}
-#title {
-	font-size: xx-large;
-	text-align: center;
-	padding: 30px;
-	background: rgba(0,0,0,0.6);
-  width: 150%;
-  left: -25%;
-  position: relative;
-  box-shadow: 5px 0px 5px black;
-  color: rgb(242, 150, 41);
-}
 .desc {
 	min-height: 60px;
-}
-.pageContainer {
-	overflow-x: hidden;
-	height: 100%;
-}
-.logo {
-	width: 20%;
-  position: absolute;
-  right: 0;
-  padding-right: 15px;
-}
-.clientLogo {
-  top: 1%;
-}
-.tvLogo {
-  top: 5%;
-}
-.introLogo {
-	width: 25%;
-  top: 0;
-  padding-right: 15px;
-  margin: 20px;
-}
-
-.questionAnswer-color-yellow {
-  background-color: yellow;
-}
-
-.questionAnswer-color-red {
-  background-color: red;
-}
-
-.questionAnswer-color-green {
-  background-color: green;
-}
-
-.questionAnswer-color-blue {
-  background-color: blue;
 }
 
 .playerChoiceButton {
@@ -236,8 +207,8 @@ form.login button{
 }
 
 .playerChoiceButton.yellow {
-  border-color: rgba(255,255,0,1);
-  background-color: rgba(250,250,0,0.5);
+  border-color: rgba(255,222,0,1);
+  background-color: rgba(250,222,0,0.5);
 }
 
 .playerChoiceButton.red {

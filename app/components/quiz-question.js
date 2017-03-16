@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  classNames: ['quizQuestion'],
+
   game: Ember.inject.service(),
 
   init() {
@@ -27,7 +29,7 @@ export default Ember.Component.extend({
     this.clearTimer();
 
     this.timeout = Ember.run.later(
-      () => this.$('.answer').animate({opacity: '1'}, 500, 'linear'),
+      () => this.$('.quizAnswer').animate({opacity: '1'}, 500, 'linear'),
       2000
     );
   },
