@@ -62,7 +62,7 @@ Question.reopenClass({
     { id: 28, relativeId: 8, quiz_id: 3, title: 'Welche bekannte Firma hat Hasso Plattner 1972 gegründet?', answers: [171, 172, 173, 174] },
 
     // 2017 - Quiz 1
-    { id: 101, relativeId: 1, quiz_id: 100, title: '﻿In welcher Größenordnung liegt die Zahl der Internetnutzer?', answers: [1011, 1012, 1013, 1014] },
+    { id: 101, relativeId: 1, quiz_id: 100, title: 'In welcher Größenordnung liegt die Zahl der Internetnutzer?', answers: [1011, 1012, 1013, 1014] },
     { id: 102, relativeId: 2, quiz_id: 100, title: 'Das Internet...', answers: [1021, 1022, 1023, 1024] },
     { id: 103, relativeId: 3, quiz_id: 100, title: 'Das Internet ist ein', answers: [1031, 1032, 1033, 1034] },
     { id: 104, relativeId: 4, quiz_id: 100, title: 'Welche Aussage zum grundlegenden Client-Server-Prinzip ist richtig?', answers: [1041, 1042, 1043, 1044] },
@@ -74,7 +74,7 @@ Question.reopenClass({
     { id: 110, relativeId: 10, quiz_id: 100, title: 'Welche der folgenden Internetanwendungen ist eine Social Media-Plattform?', answers: [1101, 1102, 1103, 1104] },
 
     // 2017 - Quiz 2
-    { id: 201, relativeId: 1, quiz_id: 200, title: '﻿Welche Netzwerk-Topologie besitzen WLANs?', answers: [2011, 2012, 2013, 2014] },
+    { id: 201, relativeId: 1, quiz_id: 200, title: 'Welche Netzwerk-Topologie besitzen WLANs?', answers: [2011, 2012, 2013, 2014] },
     { id: 202, relativeId: 2, quiz_id: 200, title: 'Welches der folgenden Protokolle ist ein Email-Protokoll?', answers: [2021, 2022, 2023, 2024] },
     { id: 203, relativeId: 3, quiz_id: 200, title: 'Was ist Bestandteile einer HTTP-Nachricht?', answers: [2031, 2032, 2033, 2034] },
     { id: 204, relativeId: 4, quiz_id: 200, title: 'Was ist ein Spoofing-Angriff?', answers: [2041, 2042, 2043, 2044] },
