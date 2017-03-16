@@ -1,9 +1,21 @@
 import Ember from 'ember';
 
 const Player = Ember.Object.extend({
-  joined: false,
-  active: false,
-  name: null
+  init() {
+    this.reset();
+  },
+
+  reset() {
+    this.setProperties({active: false, joined: false, points: 0})
+  },
+
+  receivePoints(amount) {
+    this.incrementProperty('points', amount);
+  },
+
+  rememberAnswer(answer) {
+    console.log('remember answer', answer, 'for', this);
+  }
 });
 
 const ArrowPlayer = Player.extend({
@@ -45,9 +57,9 @@ export default Ember.Service.extend({
   idlePlayers: Ember.computed.filterBy('players', 'joined', false),
   activePlayers: Ember.computed.filterBy('players', 'active'),
 
-  resetAllPlayers() {
+  reset() {
     this.get('players').forEach(
-      player => player.setProperties({active: false, joined: false})
+      player => player.reset()
     );
   },
 
@@ -61,5 +73,9 @@ export default Ember.Service.extend({
     this.get('joinedPlayers').forEach(
       player => player.set('active', player.get('joined'))
     );
+  },
+
+  hasThinkingPlayers() {
+    return this.get('activePlayers.length') > 0;
   }
 });

@@ -8,6 +8,6 @@ export default Ember.Route.extend({
   },
 
   afterModel() {
-    this.get('game').resetAllPlayers();
+    this.get('game').reset();
   }
 });
