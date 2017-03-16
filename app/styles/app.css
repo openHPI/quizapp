@@ -225,27 +225,32 @@ form.login button{
 }
 
 .playerChoiceButton {
-  display: inline-block;
-  border: 3px solid currentcolor;
+  margin-top: 20px;
+  display: block;
+  border: 5px solid currentcolor;
   padding: 10px;
   color: white;
   font-size: large;
   font-weight: bold;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .playerChoiceButton.yellow {
-  color: yellow;
+  border-color: rgba(255,255,0,1);
+  background-color: rgba(250,250,0,0.5);
 }
 
 .playerChoiceButton.red {
-  color: red;
+  border-color: rgba(232,55,2,1);
+  background-color: rgba(232,55,2,0.5);
 }
 
 .playerChoiceButton.green {
-  color: green;
+  border-color: rgba(44,171,45,1);
+  background-color: rgba(44,171,45,0.5);
 }
 
 .playerChoiceButton.blue {
-  color: blue;
+  border-color: rgba(16,127,201,1);
+  background-color: rgba(16,127,201,0.5);
 }
