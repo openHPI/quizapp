@@ -1,11 +1,19 @@
 <div class="quizStats">
-  <div class="quizStats-header">Congratulations!</div>
+  <div class="quizStats-winner">
+    {{#if game.hasWinner}}
+      {{ game.winner.name }} wins!
+    {{else}}
+      It's a tie!
+    {{/if}}
+  </div>
 
-  {{#if game.hasWinner}}
-    <div class="quizStats-winner">{{ game.winner.name }} wins!</div>
-  {{else}}
-    <div class="quizStats-winner">Maybe try another quiz to find out who is smarter.</div>
-  {{/if}}
+  <div class="quizStats-motivation">
+    {{#if game.hasWinner}}
+      Do you want to try another quiz?
+    {{else}}
+      Maybe try another quiz to find out who is smarter.
+    {{/if}}
+  </div>
 
   <div class="quizStats-hint">
     Tap any button to select another quiz.

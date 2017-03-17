@@ -340,12 +340,12 @@ main {
   flex: 1 1 auto;
 }
 
-.quizStats-header {
+.quizStats-winner {
   font-size: 3em;
   font-weight: bold;
 }
 
-.quizStats-winner {
+.quizStats-motivation {
   font-size: 2.5em;
 }
 

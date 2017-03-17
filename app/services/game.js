@@ -90,5 +90,24 @@ export default Ember.Service.extend({
 
   hasThinkingPlayers() {
     return this.get('activePlayers.length') > 0;
-  }
+  },
+
+  hasWinner: Ember.computed.bool('winner'),
+
+  winner: Ember.computed('joinedPlayers.*.points', function() {
+    // If there are no players, there is no winner, duh!
+    if (this.get('joinedPlayers.length') === 0) {
+      return;
+    }
+
+    const sortedPlayers = this.get('joinedPlayers').sortBy('points:desc');
+
+    // If there are multiple players with the same number of points, we don't have a winner either
+    if (sortedPlayers.length > 1 && sortedPlayers[0].get('points') === sortedPlayers[1].get('points')) {
+      return;
+    }
+
+    // Otherwise, the player with the most points takes it all!
+    return sortedPlayers[0];
+  })
 });
