@@ -1,10 +1,8 @@
 <div class="quizSelector">
   {{#each quizzes as |quiz index|}}
     <div class="quizSelector-quiz">
-      <h3>{{quiz.title}}</h3>
-      <div class="desc">
-        {{quiz.description}}
-      </div>
+      <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
+      <p class="quizSelector-quiz-desc">{{ quiz.description }}</p>
       <p>{{ quiz.questions.length }} questions</p>
       {{#player-button-choice index=index players=players onselect=(action 'selectQuiz' quiz)}}
         Start quiz

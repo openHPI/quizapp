@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
+let playerIndex = 0;
+
 const Player = Ember.Object.extend({
   init() {
     this.reset();
+    this.number = ++playerIndex;
   },
 
   reset() {

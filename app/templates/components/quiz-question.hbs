@@ -4,23 +4,26 @@
 </div>
 
 <div class="quizQuestion-answers">
-  {{#each question.answers as |answer index|}}
+  {{#each answers as |answer index|}}
     <div class="quizQuestion-answer">
       {{#if selectable}}
-        {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
-          {{ answer.title }}
+        {{#player-button-choice index=index onselect=(action 'selectAnswer' answer.model)}}
+          {{ answer.model.title }}
         {{/player-button-choice}}
       {{else}}
-        <div class="quizQuestion-answer-solution {{if answer.correct 'correct'}}">
-          {{ answer.title }}
+        <div class="quizQuestion-answer-solution {{if answer.model.correct 'correct'}}">
+          {{ answer.model.title }}
         </div>
+        {{#each answer.selectedBy as |player|}}
+          <div class="quizQuestion-answer-marker player{{player}}"></div>
+        {{/each}}
       {{/if}}
     </div>
   {{/each}}
 </div>
 
 {{#if selectable}}
-  {{progress-bar time=100 whenTimeUp=(action 'timeUp')}}
+  {{progress-bar time=question.timer whenTimeUp=(action 'timeUp')}}
 {{else}}
   {{progress-bar time=5 whenTimeUp=done}}
 {{/if}}

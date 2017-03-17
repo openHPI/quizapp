@@ -10,11 +10,13 @@
 
 <p class="playerBox-instruction">
   {{#if player.joined}}
-    {{#if game.hasStarted}}
-      Tap the correct button to select an answer.
-    {{else}}
+    {{#unless game.hasStarted}}
       Please wait for other players to join.
-    {{/if}}
+    {{else if player.isActive}}
+      Wait.
+    {{else}}
+      Tap the correct button to select an answer.
+    {{/unless}}
   {{else}}
     {{#if game.hasStarted}}
       Please wait for the other player to finish this round.

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
 }
@@ -5,9 +10,53 @@ html {
 body {
   background-color: #3D3D3D;
   color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'NeoSansStdRegular', sans-serif;
   position: relative;
   margin: 0;
+}
+
+
+/* FONTS */
+
+@font-face {
+  font-family:"NeoSansStdLight";
+  src:url(/fonts/NeoSansStdLight.eot);
+  src:url(/fonts/NeoSansStdLight.eot?#iefix) format("embedded-opentype"),url(/fonts/NeoSansStdLight.woff) format("woff"),url(/fonts/NeoSansStdLight.ttf) format("truetype"),url(/fonts/NeoSansStdLight.svg#NeoSansStdLight) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-stretch:normal
+}
+@font-face {
+  font-family:"NeoSansStdLightItalic";
+  src:url(/fonts/NeoSansStdLightItalic.eot);
+  src:url(/fonts/NeoSansStdLightItalic.eot?#iefix) format("embedded-opentype"),url(/fonts/NeoSansStdLightItalic.woff) format("woff"),url(/fonts/NeoSansStdLightItalic.ttf) format("truetype"),url(/fonts/NeoSansStdLightItalic.svg#NeoSansStdLightItalic) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-stretch:normal
+}
+@font-face {
+  font-family:"NeoSansStdRegular";
+  src:url(/fonts/NeoSansStdRegular.eot);
+  src:url(/fonts/NeoSansStdRegular.eot?#iefix) format("embedded-opentype"),url(/fonts/NeoSansStdRegular.woff) format("woff"),url(/fonts/NeoSansStdRegular.ttf) format("truetype"),url(/fonts/NeoSansStdRegular.svg#NeoSansStdRegular) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-stretch:normal
+}
+@font-face {
+  font-family:"NeoSansStdRegularItalic";
+  src:url(/fonts/NeoSansStdItalic.eot);
+  src:url(/fonts/NeoSansStdItalic.eot?#iefix) format("embedded-opentype"),url(/fonts/NeoSansStdItalic.woff) format("woff"),url(/fonts/NeoSansStdItalic.ttf) format("truetype"),url(/fonts/NeoSansStdItalic.svg#NeoSansStdRegularItalic) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-stretch:normal
+}
+@font-face {
+  font-family:"NeoSansStdMedium";
+  src:url(/fonts/NeoSansStdMedium.eot);
+  src:url(/fonts/NeoSansStdMedium.eot?#iefix) format("embedded-opentype"),url(/fonts/NeoSansStdMedium.woff) format("woff"),url(/fonts/NeoSansStdMedium.ttf) format("truetype"),url(/fonts/NeoSansStdMedium.svg#NeoSansStdMedium) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-stretch:normal
 }
 
 /*------------------------------------------------
@@ -40,7 +89,7 @@ header > * {
 }
 
 .headerLogo img {
-  max-height: 110px;
+  max-height: 70px;
 }
 
 #title {
@@ -59,13 +108,12 @@ header > * {
 
 main {
   flex-grow: 3;
-  padding: 40px;
+  padding: 60px 40px;
 }
 
 .appMain > aside {
   flex: 0 0 250px;
-  background-color: lightgoldenrodyellow;
-  color: black;
+  color: white;
   padding: 15px;
 }
 
@@ -85,7 +133,6 @@ main {
 
 .playerBox-name {
   font-size: 2rem;
-  text-decoration: underline;
 }
 
 .playerBox-points {
@@ -100,6 +147,11 @@ main {
   background-color: black;
   color: white;
   border-radius: 2.5em;
+  margin: 15px 0;
+}
+
+.playerBox-instruction {
+  font-size: 1.7em;
 }
 
 
@@ -110,12 +162,49 @@ main {
 .quizSelector {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .quizSelector-quiz {
   flex: 1;
-  flex-basis: calc(50% - 70px);
+  flex-basis: calc(50% - 100px);
   margin: 30px;
+
+  background-color: #5D5D5D;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quizSelector-quiz-title {
+  font-size: 2.4em;
+}
+
+.quizSelector-quiz-desc {
+  font-size: 1.6em;
+}
+
+/*------------------------------------------------
+ * QUIZ INTRO SCREEN
+ *------------------------------------------------*/
+
+.quizIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.quizIntro > * {
+  flex: 0 1 auto;
+}
+
+.quizIntro-title {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
 }
 
 
@@ -147,119 +236,57 @@ main {
   margin-top: 30px;
 }
 
+/* ANSWER MARKERS */
+
+
 .quizQuestion-answer {
-  opacity: 0;
-}
-
-
-
-
-.bar {
-  background-color: white;
-  height: 20px;
-  width: 100%;
-  position: absolute;
-  left:0;
-}
-
-.progress-bar-wrapper {
-	height: 30px;
-	position: relative;
-	padding: 5px;
-	margin-left: 5px;
-}
-
-.leaderboard {
   position: relative;
 }
-.leaderboard table {
-	width: 100%;
-	position: absolute;
-	-webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+
+.quizQuestion-answer .quizQuestion-answer-marker {
+  position: absolute;
+  display: block;
+  top: 0;
+  content: '';
+  width: 4em;
+  height: 4em;
+  background-color: white;
 }
 
-.userAnswered {
-	color: rgb(255, 174, 0);
-}
-.userNotAnswered {
-	color: white;
-}
-.button {
-	background-color: transparent;
-	color: white;
-	border: 3px solid white;
-	font-size: large;
-	width: 100%;
-	padding: 10px;
-	margin: 5px;
+.quizQuestion-answer-marker.player1 {
+  left: 0;
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
 }
 
-.wrongButton {
-	color: white;
-	border: 3px solid white;
-	background-color: red;
-	-webkit-animation: background-color  2s ease-in-out;
-	-moz-animation: background-color  2s ease-in-out;
-	animation: background-color  2s ease-in-out;
+.quizQuestion-answer-marker.player2 {
+  right: 0;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
-.correctButton {
-	color: white;
-	border: 3px solid white;
-	background-color: green;
-	-webkit-animation: background-color  2s ease-in-out;
-	-moz-animation: background-color  2s ease-in-out;
-	animation: background-color  2s ease-in-out;
+
+.quizQuestion .quizQuestion-answer-solution, .quizQuestion .playerChoiceButton {
+  margin: 0 40px;
 }
-.selectedButton {
-	color: rgb(255, 174, 0);
-	border: 3px solid rgb(255, 174, 0);
+
+.quizQuestion-answer-solution.correct {
+  color: #3D3D3D;
+  background-color: white;
+  border-color: white;
 }
-.resultButton {
-	padding: 0;
-	z-index: -2;
-	height: 51px;
-	position: relative;
-}
-.resultButtonFilling {
-	z-index: -1;
-	position: absolute;
-  height:10px;
-	bottom:0px;
-	width: inherit;
-	background-color: rgb(255, 174, 0);
-  width:0%; /* End width.. */
-  -webkit-animation: filler 2s ease-in-out;
-  -moz-animation: filler 2s ease-in-out;
-  animation: filler 2s ease-in-out;
-}
-.resultButtonText {
-	position: static;
-}
-@-webkit-keyframes filler {
-  0% {
-    width:0;
-  }
-}
-.desc {
-	min-height: 60px;
-}
+
+/* COLORED BUTTONS */
 
 .quizQuestion-answer-solution, .playerChoiceButton {
   display: block;
-  margin: 0 40px;
-  border: 5px solid currentcolor;
+  border: 4px solid currentcolor;
   padding: 10px;
   color: white;
   font-size: 1.8rem;
   text-align: center;
-}
-
-.quizQuestion-answer-solution.correct {
-  color: black;
-  background-color: white;
+  background-color: #3D3D3D;
+  position: relative;
+  z-index: 3;
 }
 
 .playerChoiceButton {
@@ -287,4 +314,35 @@ main {
 .playerChoiceButton.blue {
   border-color: rgba(16,127,201,1);
   background-color: rgba(16,127,201,0.5);
+}
+
+
+
+
+
+.bar {
+  background-color: white;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  left:0;
+}
+
+.progress-bar-wrapper {
+	height: 30px;
+	position: relative;
+	padding: 5px;
+}
+
+
+.leaderboard {
+  position: relative;
+}
+.leaderboard table {
+	width: 100%;
+	position: absolute;
+	-webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }

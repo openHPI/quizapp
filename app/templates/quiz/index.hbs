@@ -1,9 +1,9 @@
-<h3>Quiz: {{model.title}}</h3>
+<div class="quizIntro">
+  <p class="quizIntro-title">
+    Quiz: {{model.title}}
+  </p>
 
-<h4>Waiting for other participants (at least two) to join...</h4>
+  {{progress-bar time=100 whenTimeUp=(action 'start')}}
 
-{{progress-bar time=100 whenTimeUp=(action 'start')}}
-
-{{#player-button-any players=idlePlayers onselect=(action 'joinAndStart')}}
-  Start the game!
-{{/player-button-any}}
+</div>
+{{player-button-any players=idlePlayers onselect=(action 'joinAndStart')}}

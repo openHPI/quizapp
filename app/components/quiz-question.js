@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     this._super(...arguments);
 
     this._queue = [];
+    this.selectedAnswers = Ember.A();
   },
 
   didReceiveAttrs() {
@@ -29,7 +30,7 @@ export default Ember.Component.extend({
     this.clearTimer();
 
     this.timeout = Ember.run.later(
-      () => this.$('.quizQuestion-answer').animate({opacity: '1'}, 500, 'linear'),
+      () => { /*this.$('.quizQuestion-answer').animate({opacity: '1'}, 500, 'linear')*/ },
       2000
     );
   },
@@ -51,13 +52,25 @@ export default Ember.Component.extend({
 
   // Once the answers are no longer selectable, we run all queued operations, which mostly
   // means that points will be awarded to the players.
-  flushQueue: Ember.observer('selectable', function() {
+  switchMode: Ember.observer('selectable', function() {
     if (this.get('selectable')) {
+      this.set('selectedAnswers', Ember.A());
       return;
     }
 
     this._queue.forEach(callback => callback());
-    this._queue = [];
+    this._queue = Ember.A();
+  }),
+
+  answers: Ember.computed('question.answers', 'selectedAnswers.@each', function() {
+    return this.get('question.answers').map(answer => ({
+      model: answer,
+      selectedBy: this.get('selectedAnswers').filter(
+        row => row.answer === answer
+      ).map(
+        row => row.player
+      )
+    }));
   }),
 
   actions: {
@@ -67,6 +80,11 @@ export default Ember.Component.extend({
 
       // Let's store the player's answer, so that it can be displayed later
       player.rememberAnswer(answer);
+
+      this.get('selectedAnswers').pushObject({
+        player: player.get('number'),
+        answer: answer
+      });
 
       // The player that answers the question correctly first receives 15 points. All other players
       // receive only 10 points for a correct answer.
