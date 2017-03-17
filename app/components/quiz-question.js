@@ -29,7 +29,7 @@ export default Ember.Component.extend({
     this.clearTimer();
 
     this.timeout = Ember.run.later(
-      () => this.$('.quizAnswer').animate({opacity: '1'}, 500, 'linear'),
+      () => this.$('.quizQuestion-answer').animate({opacity: '1'}, 500, 'linear'),
       2000
     );
   },

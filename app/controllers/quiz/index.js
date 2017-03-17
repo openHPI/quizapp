@@ -7,6 +7,7 @@ export default Ember.Controller.extend({
 
   startGame() {
     this.model.reset();
+    this.get('game').start();
 
     const firstQuestion = this.model.get('questions').objectAt(0);
     this.transitionToRoute('quiz.question', this.model, firstQuestion);

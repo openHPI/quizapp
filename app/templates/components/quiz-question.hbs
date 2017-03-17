@@ -1,23 +1,27 @@
-<h4> Question {{ question.relativeId }} / {{ question.quiz.questions.length }} </h4>
-<div class="questionText">{{ question.title }}</div>
+<div class="quizQuestion-header">
+  <h4>Question {{ question.relativeId }} / {{ question.quiz.questions.length }}</h4>
+  <div class="quizQuestion-text">{{ question.title }}</div>
+</div>
 
-{{#each question.answers as |answer index|}}
-  <div class="quizAnswer">
-    {{#if selectable}}
-      {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
+<div class="quizQuestion-answers">
+  {{#each question.answers as |answer index|}}
+    <div class="quizQuestion-answer">
+      {{#if selectable}}
+        {{#player-button-choice index=index onselect=(action 'selectAnswer' answer)}}
+          {{ answer.title }}
+        {{/player-button-choice}}
+      {{else}}
         {{ answer.title }}
-      {{/player-button-choice}}
-    {{else}}
-      {{ answer.title }}
-      {{#if answer.correct}}
-        CORRECT
+        {{#if answer.correct}}
+          CORRECT
+        {{/if}}
       {{/if}}
-    {{/if}}
-  </div>
-{{/each}}
+    </div>
+  {{/each}}
+</div>
 
 {{#if selectable}}
-  {{progress-bar time=300 whenTimeUp=(action 'timeUp')}}
+  {{progress-bar time=100 whenTimeUp=(action 'timeUp')}}
 {{else}}
   {{progress-bar time=5 whenTimeUp=done}}
 {{/if}}

@@ -2,13 +2,8 @@
 
 <h4>Waiting for other participants (at least two) to join...</h4>
 
-{{after-x-seconds seconds=10 action=(action 'start')}}
-
-<p>Player X, press any button to join.</p>
-<p>You have X seconds...</p>
+{{progress-bar time=100 whenTimeUp=(action 'start')}}
 
 {{#player-button-any players=idlePlayers onselect=(action 'joinAndStart')}}
   Start the game!
 {{/player-button-any}}
-
-{{outlet}}

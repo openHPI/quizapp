@@ -7,6 +7,7 @@ body {
   color: white;
   font-family: 'Arial', sans-serif;
   position: relative;
+  margin: 0;
 }
 
 /*------------------------------------------------
@@ -62,9 +63,43 @@ main {
 }
 
 .appMain > aside {
-  width: 250px;
+  flex: 0 0 250px;
   background-color: lightgoldenrodyellow;
   color: black;
+  padding: 15px;
+}
+
+
+/*------------------------------------------------
+ * PLAYER WIDGETS
+ *------------------------------------------------*/
+
+.playerBox {
+  text-align: center;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.playerBox-name {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+.playerBox-points {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.playerBox-points span {
+  display: block;
+  font-size: 5rem;
+  background-color: black;
+  color: white;
+  border-radius: 2.5em;
 }
 
 
@@ -88,22 +123,31 @@ main {
  * QUIZ MODE
  *------------------------------------------------*/
 
-.questionText {
+.quizQuestion-header {
+  text-align: center;
+}
+
+.quizQuestion-text {
   font-size: 2.5em;
   min-height: 60px;
 }
 
 .quizQuestion {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .quizQuestion > * {
   flex: 0 1 auto;
 }
 
-.quizAnswer {
+.quizQuestion-answers > * {
+  margin-top: 30px;
+}
+
+.quizQuestion-answer {
   opacity: 0;
 }
 
@@ -204,13 +248,11 @@ main {
 }
 
 .playerChoiceButton {
-  margin-top: 20px;
   display: block;
   border: 5px solid currentcolor;
   padding: 10px;
   color: white;
-  font-size: large;
-  font-weight: bold;
+  font-size: 1.8rem;
   text-align: center;
 }
 

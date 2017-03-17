@@ -1,1 +1,27 @@
-{{ player.name }} | {{ player.points }}
+<p class="playerBox-name">
+  {{ player.name }}
+</p>
+
+<p class="playerBox-points">
+  {{#if player.joined}}
+    <span>{{ player.points }}</span> points
+  {{/if}}
+</p>
+
+<p class="playerBox-instruction">
+  {{#if player.joined}}
+    {{#if game.hasStarted}}
+      Tap the right button to select an answer.
+    {{else}}
+      Please wait for other players to join.
+    {{/if}}
+  {{else}}
+    {{#if game.hasStarted}}
+      Please wait for the other player to finish this round.
+    {{else if game.hasPlayers}}
+      Tap any button to join the game.
+    {{else}}
+      Select a quiz to start a new game!
+    {{/if}}
+  {{/if}}
+</p>

@@ -51,17 +51,27 @@ export default Ember.Service.extend({
     this.get('players').pushObject(
       WasdPlayer.create({name: 'Player 2'})
     );
+
+    this.set('started', false);
   },
 
   joinedPlayers: Ember.computed.filterBy('players', 'joined'),
   idlePlayers: Ember.computed.filterBy('players', 'joined', false),
   activePlayers: Ember.computed.filterBy('players', 'active'),
 
+  start() {
+    this.set('started', true);
+  },
+
   reset() {
     this.get('players').forEach(
       player => player.reset()
     );
+    this.set('started', false);
   },
+
+  hasPlayers: Ember.computed.bool('joinedPlayers.length'),
+  hasStarted: Ember.computed.and('hasPlayers', 'started'),
 
   deactivateAllPlayers() {
     this.get('players').forEach(
