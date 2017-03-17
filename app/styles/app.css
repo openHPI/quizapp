@@ -360,22 +360,8 @@ main {
   margin: 0 40px;
 }
 
-
 .bar {
   background-color: white;
   height: 20px;
   width: 100%;
-}
-
-
-.leaderboard {
-  position: relative;
-}
-.leaderboard table {
-	width: 100%;
-	position: absolute;
-	-webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
