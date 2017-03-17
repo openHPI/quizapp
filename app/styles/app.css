@@ -114,7 +114,7 @@ main {
 .appMain > aside {
   flex: 0 0 250px;
   color: white;
-  padding: 15px;
+  padding: 60px 15px;
 }
 
 
@@ -316,7 +316,32 @@ main {
   background-color: rgba(16,127,201,0.5);
 }
 
+/* QUIZ STATS */
 
+.quizStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.quizStats > * {
+  flex: 1 1 auto;
+}
+
+.quizStats-header {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.quizStats-winner {
+  font-size: 2.5em;
+}
+
+.quizStats-hint {
+  font-size: 1.8em;
+}
 
 
 

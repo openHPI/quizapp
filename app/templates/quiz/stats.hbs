@@ -1,22 +1,23 @@
-<div class="row">
-  <div>
-    <div class="questionText"> Quiz completed - {{winner_phrase}}. Congratulations! </div>
+<div class="quizStats">
+  <div class="quizStats-header">Congratulations!</div>
+
+  {{#if game.hasWinner}}
+    <div class="quizStats-winner">{{ game.winner.name }} wins!</div>
+  {{else}}
+    <div class="quizStats-winner">Maybe try another quiz to find out who is smarter.</div>
+  {{/if}}
+
+  <div class="quizStats-hint">
+    Tap any button to select another quiz.
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <h3> Do you want to start a new quiz? </h3>
-    {{#player-button-any players=players onselect=(action 'backToIndex')}}
-      Show all quizzes
-    {{/player-button-any}}
-  </div>
-</div>
+{{player-button-any players=players onselect=(action 'backToIndex')}}
+
+{{after-x-seconds seconds=30 action=(action 'backToIndex')}}
 
 <div class="row">
   <div class="hidden-xs hidden-sm">
     {{quiz-leaderboard content=participants title='Leaderboard'}}
   </div>
 </div>
-
-{{outlet}}
