@@ -212,8 +212,18 @@ main {
  * QUIZ MODE
  *------------------------------------------------*/
 
+.quizQuestion {
+  position: relative;
+}
+
 .quizQuestion-header {
   text-align: center;
+}
+
+.quizQuestion-counter {
+  position: absolute;
+  top: -25px;
+  width: 100%;
 }
 
 .quizQuestion-text {
