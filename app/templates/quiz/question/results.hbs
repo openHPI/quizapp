@@ -1,8 +1,0 @@
-<div class="question-results">
-	<h4> Question {{model.relativeId}} / {{model.quiz.questions.length}} </h4>
-  <div class="questionText">{{model.title}}</div>
-	{{progress-bar time=model.quiz.resultsTimer}}
-  {{#if model.answers.length}}
-  	{{show-answers-results question=model}}
-  {{/if}}
-</div>
