@@ -1,6 +1,8 @@
 import Ember from "ember";
 
 export default Ember.Component.extend({
+  classNames: ['countdownTimer'],
+
   didInsertElement() {
     this._super(...arguments);
 
