@@ -354,19 +354,17 @@ main {
 }
 
 
+/* TIMER */
+
+.quizQuestion .countdownTimer {
+  margin: 0 40px;
+}
+
 
 .bar {
   background-color: white;
   height: 20px;
   width: 100%;
-  position: absolute;
-  left:0;
-}
-
-.progress-bar-wrapper {
-	height: 30px;
-	position: relative;
-	padding: 5px;
 }
 
 
