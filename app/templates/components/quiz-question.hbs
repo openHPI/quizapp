@@ -11,10 +11,9 @@
           {{ answer.title }}
         {{/player-button-choice}}
       {{else}}
-        {{ answer.title }}
-        {{#if answer.correct}}
-          CORRECT
-        {{/if}}
+        <div class="quizQuestion-answer-solution {{if answer.correct 'correct'}}">
+          {{ answer.title }}
+        </div>
       {{/if}}
     </div>
   {{/each}}
