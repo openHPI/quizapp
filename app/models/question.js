@@ -56,7 +56,7 @@ Question.reopenClass({
     { id: 22, relativeId: 2, quiz_id: 3, title: 'Was kann man am HPI studieren?', answers: [141, 142, 143, 144] },
     { id: 23, relativeId: 3, quiz_id: 3, title: 'Was bedeutet MOOC?', answers: [101, 102, 103, 104] },
     //{ id: 24, relativeId: 4, quiz_id: 3, title: 'Welche Sportart analysiert das Team am HPI Stand?', answers: [121, 122, 123, 124] },
-    { id: 24, relativeId: 4, quiz_id: 3, title: 'Was ist das Motto des HPI-Cebit-Auftritts?', answers: [121, 122, 123, 124] }
+    { id: 24, relativeId: 4, quiz_id: 3, title: 'Was ist das Motto des HPI-Cebit-Auftritts?', answers: [121, 122, 123, 124] },
     { id: 25, relativeId: 5, quiz_id: 3, title: 'Was findet der Identity Leak Checker?', answers: [131, 132, 133, 134] },
     { id: 26, relativeId: 6, quiz_id: 3, title: 'Wofür steht Design Thinking?', answers: [151, 152, 153, 154] },
     { id: 27, relativeId: 7, quiz_id: 3, title: 'Wieviele Fachgebiete gibt es aktuell am HPI?', answers: [161, 162, 163, 164] },
