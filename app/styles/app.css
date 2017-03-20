@@ -369,7 +369,7 @@ main {
   font-size: 2.5em;
 }
 
-.quizStats-hint {
+.quizStats-statistics, .quizStats-hint {
   font-size: 1.8em;
 }
 

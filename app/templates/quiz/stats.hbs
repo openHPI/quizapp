@@ -15,6 +15,12 @@
     {{/if}}
   </div>
 
+  <div class="quizStats-statistics">
+    {{#each game.joinedPlayers as |player|}}
+      <p>{{ player.name }} answered <strong>{{ player.correctAnswers }}</strong> questions correctly.</p>
+    {{/each}}
+  </div>
+
   <div class="quizStats-hint">
     Tap any button to select another quiz.
   </div>

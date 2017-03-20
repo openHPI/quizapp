@@ -91,6 +91,8 @@ export default Ember.Component.extend({
       // We queue these operations here, so that the points are only awarded once all players have
       // made their choice.
       if (answer.get('correct')) {
+        player.correctAnswer();
+
         if (this.queueIsEmpty()) {
           this.queue(() => player.receivePoints(15));
         } else {

@@ -9,11 +9,15 @@ const Player = Ember.Object.extend({
   },
 
   reset() {
-    this.setProperties({active: false, joined: false, points: 0});
+    this.setProperties({active: false, joined: false, points: 0, correctAnswers: 0});
   },
 
   receivePoints(amount) {
     this.incrementProperty('points', amount);
+  },
+
+  correctAnswer() {
+    this.incrementProperty('correctAnswers');
   },
 
   rememberAnswer(answer) {
