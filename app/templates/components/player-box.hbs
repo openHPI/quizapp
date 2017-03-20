@@ -4,7 +4,7 @@
 
 <p class="playerBox-points">
   {{#if player.joined}}
-    <span>{{ player.points }}</span> points
+    <span class="{{unless player.active 'waiting'}}">{{ player.points }}</span> points
   {{/if}}
 </p>
 
@@ -12,10 +12,10 @@
   {{#if player.joined}}
     {{#unless game.hasStarted}}
       Please wait for other players to join.
-    {{else if player.isActive}}
-      Wait.
-    {{else}}
+    {{else if player.active}}
       Tap the correct button to select an answer.
+    {{else}}
+      Wait.
     {{/unless}}
   {{else}}
     {{#if game.hasStarted}}

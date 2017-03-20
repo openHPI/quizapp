@@ -150,6 +150,11 @@ main {
   margin: 15px 0;
 }
 
+.playerBox-points span.waiting {
+  color: black;
+  background-color: white;
+}
+
 .playerBox-instruction {
   font-size: 1.7em;
 }
