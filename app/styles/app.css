@@ -161,7 +161,16 @@ main {
 }
 
 .playerBox-instruction {
+  height: 6em;
+  position: relative;
+
   font-size: 1.7em;
+}
+
+.playerBox-instruction p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 

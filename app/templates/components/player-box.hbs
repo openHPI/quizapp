@@ -8,22 +8,22 @@
   {{/if}}
 </p>
 
-<p class="playerBox-instruction">
+<div class="playerBox-instruction">
   {{#if player.joined}}
     {{#unless game.hasStarted}}
-      Please wait for other players to join.
+      <p>Please wait for other players to join.</p>
     {{else if player.active}}
-      Tap the correct button to select an answer.
+      <p>Tap the correct button to select an answer.</p>
     {{else}}
-      Wait.
+      <p>Wait.</p>
     {{/unless}}
   {{else}}
     {{#if game.hasStarted}}
-      Please wait for the other player to finish this round.
+      <p>Please wait for the other player to finish this round.</p>
     {{else if game.hasPlayers}}
-      Tap any button to join the game.
+      <p>Tap any button to join the game.</p>
     {{else}}
-      Select a quiz to start a new game!
+      <p>Select a quiz to start a new game!</p>
     {{/if}}
   {{/if}}
-</p>
+</div>
