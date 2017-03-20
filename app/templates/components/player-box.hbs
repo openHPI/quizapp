@@ -4,7 +4,15 @@
 
 <p class="playerBox-points">
   {{#if player.joined}}
-    <span class="{{unless player.active 'waiting'}}">{{ player.points }}</span> points
+    {{#if game.hasStarted}}
+      {{#if player.active}}
+        <span>{{ player.points }}</span> points
+      {{else}}
+        <span class="waiting">{{ player.points }}</span> points
+      {{/if}}
+    {{else}}
+      <span>{{ player.points }}</span> points
+    {{/if}}
   {{/if}}
 </p>
 
