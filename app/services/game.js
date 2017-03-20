@@ -94,13 +94,15 @@ export default Ember.Service.extend({
 
   hasWinner: Ember.computed.bool('winner'),
 
+  sortByPoints: ['points:desc'],
+  sortedPlayers: Ember.computed.sort('joinedPlayers', 'sortByPoints'),
   winner: Ember.computed('joinedPlayers.*.points', function() {
     // If there are no players, there is no winner, duh!
     if (this.get('joinedPlayers.length') === 0) {
       return;
     }
 
-    const sortedPlayers = this.get('joinedPlayers').sortBy('points:desc');
+    const sortedPlayers = this.get('sortedPlayers');
 
     // If there are multiple players with the same number of points, we don't have a winner either
     if (sortedPlayers.length > 1 && sortedPlayers[0].get('points') === sortedPlayers[1].get('points')) {
