@@ -1,28 +1,28 @@
 <div class="quizStats">
   <div class="quizStats-winner">
     {{#if game.hasWinner}}
-      {{ game.winner.name }} wins!
+      {{ game.winner.name }} hat gewonnen!
     {{else}}
-      It's a tie!
+      Unentschieden!
     {{/if}}
   </div>
 
   <div class="quizStats-motivation">
     {{#if game.hasWinner}}
-      Do you want to try another quiz?
+      Möchtet ihr es noch mal probieren?
     {{else}}
-      Maybe try another quiz to find out who is smarter.
+      Probiert es noch mal, um herauszufinden, wer klüger ist.
     {{/if}}
   </div>
 
   <div class="quizStats-statistics">
     {{#each game.joinedPlayers as |player|}}
-      <p>{{ player.name }} answered <strong>{{ player.correctAnswers }}</strong> questions correctly.</p>
+      <p>{{ player.name }} hat <strong>{{ player.correctAnswers }} Fragen</strong> korrekt beantwortet.</p>
     {{/each}}
   </div>
 
   <div class="quizStats-hint">
-    Tap any button to select another quiz.
+    Drückt einen der Buzzer, um ein neues Spiel zu beginnen.
   </div>
 </div>
 
