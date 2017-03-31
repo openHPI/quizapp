@@ -1,0 +1,65 @@
+﻿Was soll die Schul-Cloud leisten?
+  Die digitale Entwicklung an Schulen erleichtern
+x Analoge Lernmaterialien durch digitale ersetzen
+x Digitale Bildungsinhalte auf persönlichen Endgeräten speichern
+x Schulen die Aktualisierung der Software überlassen
+
+Wer entwickelt die Schul-Cloud?
+x Bundesministerium für Wirtschaft und Technologie
+x MINT Zukunft schaffen
+  Hasso-Plattner-Institut
+x Ministerium für Bildung, Jugend und Sport
+
+Nach Welchem Datenschutz-Prinzip soll die Schul-Cloud entwickelt werden?
+x Informierte Einwilligung (informed consent)
+  Privacy by Design
+x Repressives Verbot mit Befreiungsvorbehalt
+x Restriktive Zweckbindung
+
+Welche digitalen Bildungsinhalte können an die Schul-Cloud angebunden werden?
+x Digitale Bildungsinhalte, die ausschließlich lokal ausgeführt werden
+x Digitale Bildungsinhalte, die in verteilten Silos gespeichert sind
+x Nicht-webbasierte digitale Bildungsinhalte
+  Webbasierte Bildungsinhalte
+
+Was baut das HPI in der aktuellen Phase des Schul-Cloud-Projekts?
+x Eine Social Media-Plattform
+  Einen Inhaltedienst
+x Ein Lernmanagementsystem
+x Eine leicht bedienbare Schulverwaltungssoftware
+
+Wür welche Fächer kann die Schul-Cloud einen Mehrwert leisten?
+x Ausschließlich für MINT-Fächer
+x Nur für Fremdsprachen
+x Lediglich für Geschichte
+  Für alle Fächer
+
+Was umfasst der Begriff "Digital Literacy"?
+  Ein Set von Kompetenzen für die umfassende Teilhabe in der Wissensgesellschaft
+x Beschränkt sich auf einen intuitiven Umgang mit digitalen Medien
+x Beschränkt sich auf die tägliche Anwendung digitaler Systeme
+x Beschränkt sich auf Programmierkenntnisse
+
+Was unterscheidet die Schul-Cloud von bereits bestehenden Lösungen?
+x Proprietarität
+x Geschlossenheit
+  Anbieterneutralität
+x Konfrontation
+
+Wer kann die Schul-Cloud in der aktuellen Projektphase testen?
+x Alle Schulen im In- und Ausland
+  Ausgewählte MINT-EC-Pilotschulen
+x Mitgliedsschulen von "Komm, mach MINT"
+x MINT-freundliche Schulen
+
+Welche Technologie wird in der Schul-Cloud verwendet?
+x Es werden proprietäre Browser-Plugins (bspw. Flash-Technologie) eingesetzt
+x Alle Schüler/innen erhalten einen virtuellen Desktop
+  Die Benutzeroberfläche ist als Webanwendung umgesetzt
+x Die Schul-Cloud basiert auf einem monolithischen Kern
+
+Auf welcher Veranstaltung wird die Schul-Cloud vertreten sein?
+x 108. MNU-Bundeskongress
+x ZEIT Konferenz Schule & Bildung
+x Poetry & Parade
+  Re:publica 2017

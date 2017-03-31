@@ -82,3 +82,4 @@ end
 @quiz1 = go 'Internet und Soziale Medien - Basics', 'Internet und Soziale Medien - Basics.txt'
 @quiz2 = go 'Internet und Soziale Medien - Advanced', 'Internet und Soziale Medien - Advanced.txt'
 
+@schul_quiz = go 'Das Schul-Cloud-Quiz', 'Schul-Cloud-Quiz_final.txt'
