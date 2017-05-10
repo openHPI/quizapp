@@ -85,6 +85,31 @@ Question.reopenClass({
     { id: 208, relativeId: 8, quiz_id: 200, title: 'Wozu benutzt man Wikis (neben einer Online-Enzyklopädie)?', answers: [2081, 2082, 2083, 2084] },
     { id: 209, relativeId: 9, quiz_id: 200, title: 'Was bedeutet es, dass eine Webseite dynamisch ist?', answers: [2091, 2092, 2093, 2094] },
     { id: 210, relativeId: 10, quiz_id: 200, title: 'Welche Aussage zu Phishing ist korrekt?', answers: [2101, 2102, 2103, 2104] },
+
+    // 2017 - SAPPHIRE Quiz 1
+    { id: 401, relativeId: 1, quiz_id: 400, title: 'For a column with few distinct values, how can dictionary encoding significantly reduce the required amount of memory without any loss of information?', answers: [4011, 4012, 4013, 4014] },
+    { id: 402, relativeId: 2, quiz_id: 400, title: 'Introducing an index...', answers: [4021, 4022, 4023, 4024] },
+    { id: 403, relativeId: 3, quiz_id: 400, title: 'What is an inverted index?', answers: [4031, 4032, 4033, 4034] },
+    { id: 404, relativeId: 4, quiz_id: 400, title: 'What are aggregate functions?', answers: [4041, 4042, 4043, 4044] },
+    { id: 405, relativeId: 5, quiz_id: 400, title: 'Which of the following is an aggregate function?', answers: [4051, 4052, 4053, 4054] },
+    { id: 406, relativeId: 6, quiz_id: 400, title: 'Which three hardware resources are usually taken into account by the scheduler in a distributed in-memory database setup?', answers: [4061, 4062, 4063, 4064] },
+    { id: 407, relativeId: 7, quiz_id: 400, title: 'Analytical queries typically are...', answers: [4071, 4072, 4073, 4074] },
+    { id: 408, relativeId: 8, quiz_id: 400, title: 'Query response times...', answers: [4081, 4082, 4083, 4084] },
+    { id: 409, relativeId: 9, quiz_id: 400, title: 'What does the aggregate cache store in the aggregate entries?', answers: [4091, 4092, 4093, 4094] },
+    { id: 410, relativeId: 10, quiz_id: 400, title: 'The addition of an attribute in the column store...', answers: [4101, 4102, 4103, 4104] },
+    { id: 411, relativeId: 11, quiz_id: 400, title: 'What does the transition to in-memory database technology mean for enterprise applications?', answers: [4111, 4112, 4113, 4114] },
+
+    // 2017 - SAPPHIRE Quiz 2
+    { id: 501, relativeId: 1, quiz_id: 500, title: 'At the Hasso Plattner Institute (HPI), Potsdam, you can study...', answers: [5011, 5012, 5013, 5014] },
+    { id: 502, relativeId: 2, quiz_id: 500, title: 'The HPI, Potsdam, is known for its School of Design Thinking. Where is the second d.school located?', answers: [5021, 5022, 5023, 5024] },
+    { id: 503, relativeId: 3, quiz_id: 500, title: 'Five years ago, HPI started a educational Internet platform which offers free courses for everyone. How is it called?', answers: [5031, 5032, 5033, 5034] },
+    { id: 504, relativeId: 4, quiz_id: 500, title: 'What was the first Massive Open Online Course offered on openHPI?', answers: [5041, 5042, 5043, 5044] },
+    { id: 505, relativeId: 5, quiz_id: 500, title: 'Which of these courses is NO openHPI course?', answers: [5051, 5052, 5053, 5054] },
+    { id: 506, relativeId: 6, quiz_id: 500, title: 'What is the HPI Future SOC Lab?', answers: [5061, 5062, 5063, 5064] },
+    { id: 507, relativeId: 7, quiz_id: 500, title: 'The German federal government held its first national IT summit at the HPI in...', answers: [5071, 5072, 5073, 5074] },
+    { id: 508, relativeId: 8, quiz_id: 500, title: 'In which of these cities you will NOT find a research school of the HPI?', answers: [5081, 5082, 5083, 5084] },
+    { id: 509, relativeId: 9, quiz_id: 500, title: 'Hasso Plattner is not only the founder of the HPI, but he has also made a personal commitment. Which answer is true?', answers: [5091, 5092, 5093, 5094] },
+    { id: 510, relativeId: 10, quiz_id: 500, title: 'Prof. Meinel heads the chair for Internet Technologies and Systems. Which of these topics is NOT in the focus of the chair\'s research?', answers: [5101, 5102, 5103, 5104] },
   ]
 });
 

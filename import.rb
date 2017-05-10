@@ -82,3 +82,5 @@ end
 @quiz1 = go 'Internet und Soziale Medien - Basics', 'Internet und Soziale Medien - Basics.txt'
 @quiz2 = go 'Internet und Soziale Medien - Advanced', 'Internet und Soziale Medien - Advanced.txt'
 
+@sapphire_quiz1 = go 'SAP quiz', 'sapphire17 - sapquiz.txt'
+@sapphire_quiz2 = go 'HPI quiz', 'sapphire17 - hpiquiz.txt'

@@ -263,6 +263,113 @@ Answer.reopenClass({
     { id: 2102, question_id: 210, title: 'Es gibt kaum Gegenmaßnahmen, da Angriff ohne Mitwirkung des Opfers stattfindet.', correct: false },
     { id: 2103, question_id: 210, title: 'Beim Spear Phishing wird nur noch mit Instant Messenger-Diensten gearbeitet.', correct: false },
     { id: 2104, question_id: 210, title: 'Phishing sehr schwierig, da Email-Absender-Adressen kaum zu fälschen sind.', correct: false },
+
+    // 2017 - SAPPHIRE Quiz 1
+    { id: 4011, question_id: 401, title: 'By saving consecutive occurrences of the same value only once', correct: false },
+    { id: 4012, question_id: 401, title: 'By converting everything into full text values, which allows for better compression techniques', correct: false },
+    { id: 4013, question_id: 401, title: 'By mapping values to integers using as few bits as possible to represent all possible values', correct: true },
+    { id: 4014, question_id: 401, title: 'By saving only every second value', correct: false },
+
+    { id: 4021, question_id: 402, title: 'increases memory consumption.', correct: true },
+    { id: 4022, question_id: 402, title: 'slows down look-ups.', correct: false },
+    { id: 4023, question_id: 402, title: 'decreases memory consumption.', correct: false },
+    { id: 4024, question_id: 402, title: 'speeds up inserts.', correct: false },
+
+    { id: 4031, question_id: 403, title: 'A structure that contains the distinct values of the dictionary in reverse order', correct: false },
+    { id: 4032, question_id: 403, title: 'A list of text entries that have to be decrypted, which is used for enhanced security', correct: false },
+    { id: 4033, question_id: 403, title: 'A structure that contains the delta of each entry in comparison to the largest value', correct: false },
+    { id: 4034, question_id: 403, title: 'A structure mapping each value to a list of positions of that value within the column', correct: true },
+
+    { id: 4041, question_id: 404, title: 'A specific set of functions that summarize multiple rows from an input data set', correct: true },
+    { id: 4042, question_id: 404, title: 'A set of functions that transform data types from one to another data type', correct: false },
+    { id: 4043, question_id: 404, title: 'A set of tuples that are grouped together according to specific requirements', correct: false },
+    { id: 4044, question_id: 404, title: 'A set of indexes that speed up processing a specific report', correct: false },
+
+    { id: 4051, question_id: 405, title: 'GROUP BY', correct: false },
+    { id: 4052, question_id: 405, title: 'MINIMUM', correct: true },
+    { id: 4053, question_id: 405, title: 'HAVING', correct: false },
+    { id: 4054, question_id: 405, title: 'SORT', correct: false },
+
+    { id: 4061, question_id: 406, title: 'Main memory, disk and tape drive sizes', correct: false },
+    { id: 4062, question_id: 406, title: 'CPU processing power, main memory size, network bandwidth', correct: true },
+    { id: 4063, question_id: 406, title: 'CPU processing power, graphics card performance, monitor resolution', correct: false },
+    { id: 4064, question_id: 406, title: 'Network bandwidth, power supply unit, main memory', correct: false },
+
+    { id: 4071, question_id: 407, title: 'short running with strict time constraints.', correct: false },
+    { id: 4072, question_id: 407, title: 'long running with soft time constraints.', correct: true },
+    { id: 4073, question_id: 407, title: 'short running with soft time constraints.', correct: false },
+    { id: 4074, question_id: 407, title: 'long running with strict time constraints.', correct: false },
+
+    { id: 4081, question_id: 408, title: 'should never be decreased as users are unfamiliar with such behavior, thus becoming frustrated.', correct: false },
+    { id: 4082, question_id: 408, title: 'have no impact on a user\'s work behavior.', correct: false },
+    { id: 4083, question_id: 408, title: 'can be increased so users can do many things in parallel. (Context switches are cheap.)', correct: false },
+    { id: 4084, question_id: 408, title: 'have to be as short as possible, so the user stays focused at the task at hand.', correct: true },
+
+    { id: 4091, question_id: 409, title: 'Aggregate query results computed on the main storage', correct: true },
+    { id: 4092, question_id: 409, title: 'Aggregate query results computed on the differential buffer', correct: false },
+    { id: 4093, question_id: 409, title: 'Any type of query result', correct: false },
+    { id: 4094, question_id: 409, title: 'Aggregate query results computed on the main storage and the differential buffer', correct: false },
+
+    { id: 4101, question_id: 410, title: 'has no impact on queries that request all possible attributes from the table.', correct: false },
+    { id: 4102, question_id: 410, title: 'speeds up the response time of queries that request all attributes from the database.', correct: false },
+    { id: 4103, question_id: 410, title: 'slows down the response time of queries that only request needed attributes from the database.', correct: false },
+    { id: 4104, question_id: 410, title: 'has no impact on existing queries if they only request needed attributes from the database.', correct: true },
+
+    { id: 4111, question_id: 411, title: 'There will be no impact on enterprise applications.', correct: false },
+    { id: 4112, question_id: 411, title: 'The data organization will not change, but the source code of the applications has to be adapted.', correct: false },
+    { id: 4113, question_id: 411, title: 'Data organization and processing will change radically, enterprise applications need to adapt.', correct: true },
+    { id: 4114, question_id: 411, title: 'All enterprise applications are significantly sped up without incurring any adaptions.', correct: false },
+
+    // 2017 - SAPPHIRE Quiz 2
+    { id: 5011, question_id: 501, title: 'Electrical Engineering', correct: false },
+    { id: 5012, question_id: 501, title: 'IT Systems Engineering', correct: true },
+    { id: 5013, question_id: 501, title: 'Applied Geosciences', correct: false },
+    { id: 5014, question_id: 501, title: 'Rocket Technology', correct: false },
+
+    { id: 5021, question_id: 502, title: 'Yale University', correct: false },
+    { id: 5022, question_id: 502, title: 'Cambridge, UK', correct: false },
+    { id: 5023, question_id: 502, title: 'Stanford', correct: true },
+    { id: 5024, question_id: 502, title: 'Harvard', correct: false },
+
+    { id: 5031, question_id: 503, title: 'onlineHPI', correct: false },
+    { id: 5032, question_id: 503, title: 'HPI.open', correct: false },
+    { id: 5033, question_id: 503, title: 'FreeCourseWare', correct: false },
+    { id: 5034, question_id: 503, title: 'openHPI', correct: true },
+
+    { id: 5041, question_id: 504, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },
+    { id: 5042, question_id: 504, title: 'Parallel Programming Concepts (Prof. Naumann)', correct: false },
+    { id: 5043, question_id: 504, title: 'Web Technologies (Prof. Meinel)', correct: false },
+    { id: 5044, question_id: 504, title: 'Knowledge Engineering with Semantic Web Technologies (Prof. Sack)', correct: false },
+
+    { id: 5051, question_id: 505, title: 'Big Data Analytics', correct: false },
+    { id: 5052, question_id: 505, title: 'Fundamentals of Project Planning', correct: true },
+    { id: 5053, question_id: 505, title: 'Business Process Modelling and Analysis', correct: false },
+    { id: 5054, question_id: 505, title: 'Social Media - What noone has told you about privacy', correct: false },
+
+    { id: 5061, question_id: 506, title: 'A branch of HPI in Munich', correct: false },
+    { id: 5062, question_id: 506, title: 'A place for makers where they can test their prototypes', correct: false },
+    { id: 5063, question_id: 506, title: 'A creative corner for brainstorming on future developments', correct: false },
+    { id: 5064, question_id: 506, title: 'A cooperation of HPI and several partners enabling exchange between research and industry', correct: true },
+
+    { id: 5071, question_id: 507, title: '2004', correct: false },
+    { id: 5072, question_id: 507, title: '2016', correct: false },
+    { id: 5073, question_id: 507, title: '1998', correct: false },
+    { id: 5074, question_id: 507, title: '2006', correct: true },
+
+    { id: 5081, question_id: 508, title: 'Seoul', correct: true },
+    { id: 5082, question_id: 508, title: 'Haifa', correct: false },
+    { id: 5083, question_id: 508, title: 'Nanjing', correct: false },
+    { id: 5084, question_id: 508, title: 'Cape Town', correct: false },
+
+    { id: 5091, question_id: 509, title: 'He is the scientific director of HPI.', correct: false },
+    { id: 5092, question_id: 509, title: 'Once a year, he organizes a festive ball in the Berlin concert hall.', correct: false },
+    { id: 5093, question_id: 509, title: 'He is head of the chair for "Enterprise Platform and Integration Concepts".', correct: true },
+    { id: 5094, question_id: 509, title: 'He attends every graduation ceremony and presents the masters certificate to the students.', correct: false },
+
+    { id: 5101, question_id: 510, title: 'Security and Trust Engineering', correct: false },
+    { id: 5102, question_id: 510, title: 'Learning and Knowledge Engineering', correct: false },
+    { id: 5103, question_id: 510, title: 'Innovation and Design Thinking Research', correct: false },
+    { id: 5104, question_id: 510, title: '3D printing', correct: true },
   ]
 });
 

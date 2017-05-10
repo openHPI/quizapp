@@ -45,12 +45,15 @@ const Quiz = DS.Model.extend({
 
 Quiz.reopenClass({
   FIXTURES: [
-    { id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best-of collection of questions from past openHPI courses", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
-    { id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet", questions: [11, 12, 13, 14, 15, 16] },
+    //{ id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best-of collection of questions from past openHPI courses", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
+    //{ id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet", questions: [11, 12, 13, 14, 15, 16] },
     //{ id: 3, title: 'HPI@CeBIT Quiz (DE)', description: "Fragen über das HPI auf der CeBIT 2015", questions: [21, 22, 23, 24, 25, 26, 27, 28] },
 
-    { id: 100, title: 'Internet und Soziale Medien - Basics (DE)', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
-    { id: 200, title: 'Internet und Soziale Medien - Advanced (DE)', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
+    //{ id: 100, title: 'Internet und Soziale Medien - Basics (DE)', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
+    //{ id: 200, title: 'Internet und Soziale Medien - Advanced (DE)', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
+
+    { id: 400, title: 'In-Memory Technology', description: 'Do you know your way around in-memory databases? Beware: Lots of technical jargon ahead.', questions: [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411] },
+    { id: 500, title: 'The HPI Quiz', description: 'Test your knowledge about the Hasso Plattner Institute', questions: [501, 502, 503, 504, 505, 506, 507, 508, 509, 510] },
   ]
 });
 
