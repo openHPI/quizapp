@@ -312,7 +312,7 @@ Answer.reopenClass({
 
     { id: 4101, question_id: 410, title: 'has no impact on queries that request all possible attributes from the table.', correct: false },
     { id: 4102, question_id: 410, title: 'speeds up the response time of queries that request all attributes from the database.', correct: false },
-    { id: 4103, question_id: 410, title: 'slows down the response time of queries that only request needed attributes from the database.', correct: false },
+    { id: 4103, question_id: 410, title: 'slows down the response time of queries that only request needed attributes from the DB.', correct: false },
     { id: 4104, question_id: 410, title: 'has no impact on existing queries if they only request needed attributes from the database.', correct: true },
 
     { id: 4111, question_id: 411, title: 'There will be no impact on enterprise applications.', correct: false },
@@ -344,7 +344,7 @@ Answer.reopenClass({
     { id: 5051, question_id: 505, title: 'Big Data Analytics', correct: false },
     { id: 5052, question_id: 505, title: 'Fundamentals of Project Planning', correct: true },
     { id: 5053, question_id: 505, title: 'Business Process Modelling and Analysis', correct: false },
-    { id: 5054, question_id: 505, title: 'Social Media - What noone has told you about privacy', correct: false },
+    { id: 5054, question_id: 505, title: 'Social Media - What no one has told you about privacy', correct: false },
 
     { id: 5061, question_id: 506, title: 'A branch of HPI in Munich', correct: false },
     { id: 5062, question_id: 506, title: 'A place for makers where they can test their prototypes', correct: false },
