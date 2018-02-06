@@ -19,19 +19,19 @@
 <div class="playerBox-instruction">
   {{#if player.joined}}
     {{#unless game.hasStarted}}
-      <p>Please wait for other players to join.</p>
+      <p>Bitte warte auf andere Mitspieler.</p>
     {{else if player.active}}
-      <p>Tap the correct button to select an answer.</p>
+      <p>Drücke den passenden Buzzer zur richtigen Antwort.</p>
     {{else}}
-      <p>Wait.</p>
+      <p>Bitte warten.</p>
     {{/unless}}
   {{else}}
     {{#if game.hasStarted}}
-      <p>Please wait for the other player to finish this round.</p>
+      <p>Bitte warte auf deinen Mitspieler.</p>
     {{else if game.hasPlayers}}
-      <p>Tap any button to join the game.</p>
+      <p>Drücke einen der Buzzer, um mitzuspielen.</p>
     {{else}}
-      <p>Select a quiz to start a new game!</p>
+      <p>Drücke einen der Buzzer, um ein neues Spiel zu beginnen!</p>
     {{/if}}
   {{/if}}
 </div>

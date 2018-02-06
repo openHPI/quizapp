@@ -52,11 +52,11 @@ export default Ember.Service.extend({
 
   init() {
     this.get('players').pushObject(
-      ArrowPlayer.create({name: 'Player 1'})
+      ArrowPlayer.create({name: 'Spieler 1'})
     );
 
     this.get('players').pushObject(
-      WasdPlayer.create({name: 'Player 2'})
+      WasdPlayer.create({name: 'Spieler 2'})
     );
 
     this.set('started', false);

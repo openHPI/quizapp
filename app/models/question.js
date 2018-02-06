@@ -86,6 +86,19 @@ Question.reopenClass({
     { id: 209, relativeId: 9, quiz_id: 200, title: 'Was bedeutet es, dass eine Webseite dynamisch ist?', answers: [2091, 2092, 2093, 2094] },
     { id: 210, relativeId: 10, quiz_id: 200, title: 'Welche Aussage zu Phishing ist korrekt?', answers: [2101, 2102, 2103, 2104] },
 
+    // Schul-Cloud-Quiz
+    { id: 301, relativeId: 1, quiz_id: 300, title: 'Was soll die Schul-Cloud leisten?', answers: [3011, 3012, 3013, 3014] },
+    { id: 302, relativeId: 2, quiz_id: 300, title: 'Wer entwickelt die Schul-Cloud?', answers: [3021, 3022, 3023, 3024] },
+    { id: 303, relativeId: 3, quiz_id: 300, title: 'Nach welchem Datenschutz-Prinzip soll die Schul-Cloud entwickelt werden?', answers: [3031, 3032, 3033, 3034] },
+    { id: 304, relativeId: 4, quiz_id: 300, title: 'Welche digitalen Bildungsinhalte können an die Schul-Cloud angebunden werden?', answers: [3041, 3042, 3043, 3044] },
+    { id: 305, relativeId: 5, quiz_id: 300, title: 'Was baut das HPI in der aktuellen Phase des Schul-Cloud-Projekts?', answers: [3051, 3052, 3053, 3054] },
+    { id: 306, relativeId: 6, quiz_id: 300, title: 'Für welche Fächer kann die Schul-Cloud einen Mehrwert leisten?', answers: [3061, 3062, 3063, 3064] },
+    { id: 307, relativeId: 7, quiz_id: 300, title: 'Was umfasst der Begriff "Digital Literacy"?', answers: [3071, 3072, 3073, 3074] },
+    { id: 308, relativeId: 8, quiz_id: 300, title: 'Was unterscheidet die Schul-Cloud von bereits bestehenden Lösungen?', answers: [3081, 3082, 3083, 3084] },
+    { id: 309, relativeId: 9, quiz_id: 300, title: 'Wer kann die Schul-Cloud in der aktuellen Projektphase testen?', answers: [3091, 3092, 3093, 3094] },
+    { id: 310, relativeId: 10, quiz_id: 300, title: 'Welche Technologie wird in der Schul-Cloud verwendet?', answers: [3101, 3102, 3103, 3104] },
+    { id: 311, relativeId: 11, quiz_id: 300, title: 'Auf welcher Veranstaltung wird die Schul-Cloud vertreten sein?', answers: [3111, 3112, 3113, 3114] },
+
     // 2017 - SAPPHIRE Quiz 1
     { id: 401, relativeId: 1, quiz_id: 400, timer: 40, title: 'For a column with few distinct values, how can dictionary encoding significantly reduce the required amount of memory without any loss of information?', answers: [4011, 4012, 4013, 4014] },
     { id: 402, relativeId: 2, quiz_id: 400, title: 'Introducing an index...', answers: [4021, 4022, 4023, 4024] },

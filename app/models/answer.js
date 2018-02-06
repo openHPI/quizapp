@@ -264,6 +264,62 @@ Answer.reopenClass({
     { id: 2103, question_id: 210, title: 'Beim Spear Phishing wird nur noch mit Instant Messenger-Diensten gearbeitet.', correct: false },
     { id: 2104, question_id: 210, title: 'Phishing sehr schwierig, da Email-Absender-Adressen kaum zu fälschen sind.', correct: false },
 
+    // Schul-Cloud-Quiz
+    { id: 3011, question_id: 301, title: 'Digitale Bildungsinhalte auf persönlichen Endgeräten speichern', correct: false },
+    { id: 3012, question_id: 301, title: 'Analoge Lernmaterialien durch digitale ersetzen', correct: false },
+    { id: 3013, question_id: 301, title: 'Die digitale Entwicklung an Schulen erleichtern', correct: true },
+    { id: 3014, question_id: 301, title: 'Schulen die Aktualisierung der Software überlassen', correct: false },
+
+    { id: 3021, question_id: 302, title: 'Bundesministerium für Wirtschaft und Technologie', correct: false },
+    { id: 3022, question_id: 302, title: 'MINT Zukunft schaffen', correct: false },
+    { id: 3023, question_id: 302, title: 'Ministerium für Bildung, Jugend und Sport', correct: false },
+    { id: 3024, question_id: 302, title: 'Hasso-Plattner-Institut', correct: true },
+
+    { id: 3031, question_id: 303, title: 'Privacy by Design', correct: true },
+    { id: 3032, question_id: 303, title: 'Informierte Einwilligung (informed consent)', correct: false },
+    { id: 3033, question_id: 303, title: 'Restriktive Zweckbindung', correct: false },
+    { id: 3034, question_id: 303, title: 'Repressives Verbot mit Befreiungsvorbehalt', correct: false },
+
+    { id: 3041, question_id: 304, title: 'Digitale Bildungsinhalte, die ausschließlich lokal ausgeführt werden', correct: false },
+    { id: 3042, question_id: 304, title: 'Digitale Bildungsinhalte, die in verteilten Silos gespeichert sind', correct: false },
+    { id: 3043, question_id: 304, title: 'Webbasierte Bildungsinhalte', correct: true },
+    { id: 3044, question_id: 304, title: 'Nicht-webbasierte digitale Bildungsinhalte', correct: false },
+
+    { id: 3051, question_id: 305, title: 'Eine leicht bedienbare Schulverwaltungssoftware', correct: false },
+    { id: 3052, question_id: 305, title: 'Eine Social Media-Plattform', correct: false },
+    { id: 3053, question_id: 305, title: 'Einen Inhaltedienst', correct: true },
+    { id: 3054, question_id: 305, title: 'Ein Lernmanagementsystem', correct: false },
+
+    { id: 3061, question_id: 306, title: 'Ausschließlich für MINT-Fächer', correct: false },
+    { id: 3062, question_id: 306, title: 'Für alle Fächer', correct: true },
+    { id: 3063, question_id: 306, title: 'Lediglich für Geschichte', correct: false },
+    { id: 3064, question_id: 306, title: 'Nur für Fremdsprachen', correct: false },
+
+    { id: 3071, question_id: 307, title: 'Beschränkt sich auf einen intuitiven Umgang mit digitalen Medien', correct: false },
+    { id: 3072, question_id: 307, title: 'Ein Set von Kompetenzen für die umfassende Teilhabe in der Wissensgesellschaft', correct: true },
+    { id: 3073, question_id: 307, title: 'Beschränkt sich auf Programmierkenntnisse', correct: false },
+    { id: 3074, question_id: 307, title: 'Beschränkt sich auf die tägliche Anwendung digitaler Systeme', correct: false },
+
+    { id: 3081, question_id: 308, title: 'Konfrontation', correct: false },
+    { id: 3082, question_id: 308, title: 'Anbieterneutralität', correct: true },
+    { id: 3083, question_id: 308, title: 'Geschlossenheit', correct: false },
+    { id: 3084, question_id: 308, title: 'Proprietarität', correct: false },
+
+    { id: 3091, question_id: 309, title: 'Ausgewählte MINT-EC-Pilotschulen', correct: true },
+    { id: 3092, question_id: 309, title: 'MINT-freundliche Schulen', correct: false },
+    { id: 3093, question_id: 309, title: 'Mitgliedsschulen von "Komm, mach MINT"', correct: false },
+    { id: 3094, question_id: 309, title: 'Alle Schulen im In- und Ausland', correct: false },
+
+    { id: 3101, question_id: 310, title: 'Die Benutzeroberfläche ist als Webanwendung umgesetzt', correct: true },
+    { id: 3102, question_id: 310, title: 'Die Schul-Cloud basiert auf einem monolithischen Kern', correct: false },
+    { id: 3103, question_id: 310, title: 'Es werden proprietäre Browser-Plugins (bspw. Flash-Technologie) eingesetzt', correct: false },
+    { id: 3104, question_id: 310, title: 'Alle Schüler/innen erhalten einen virtuellen Desktop', correct: false },
+
+    { id: 3111, question_id: 311, title: 'Poetry & Parade', correct: false },
+    { id: 3112, question_id: 311, title: 'ZEIT Konferenz Schule & Bildung', correct: false },
+    { id: 3113, question_id: 311, title: 'Re:publica 2017', correct: true },
+    { id: 3114, question_id: 311, title: '108. MNU-Bundeskongress', correct: false },
+
     // 2017 - SAPPHIRE Quiz 1
     { id: 4011, question_id: 401, title: 'By saving consecutive occurrences of the same value only once', correct: false },
     { id: 4012, question_id: 401, title: 'By converting everything into full text values, which allows for better compression techniques', correct: false },

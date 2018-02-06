@@ -52,7 +52,7 @@ Quiz.reopenClass({
     //{ id: 100, title: 'Internet und Soziale Medien - Basics (DE)', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
     //{ id: 200, title: 'Internet und Soziale Medien - Advanced (DE)', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
 
-    { id: 400, title: 'In-Memory Technology', description: 'Do you know your way around in-memory databases? Beware: Lots of technical jargon ahead.', questions: [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411] },
+    { id: 300, title: 'Das Schul-Cloud-Quiz', description: 'Wie gut kennt ihr die Schul-Cloud?', questions: [301, 302, 303, 304, 305, 306, 307, 308, 309, 310] },
     { id: 500, title: 'The HPI Quiz', description: 'Test your knowledge about the Hasso Plattner Institute', questions: [501, 502, 503, 504, 505, 506, 507, 508, 509, 510] },
   ]
 });
