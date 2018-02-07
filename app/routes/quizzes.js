@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   game: Ember.inject.service(),
 
   model() {
-    return this.store.find('quiz', 300);
+    return this.store.findAll('quiz');
   },
 
   afterModel() {

@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
   game: Ember.inject.service(),
 
-  quiz: Ember.computed.alias('model'),
+  quizzes: Ember.computed.alias('model'),
   players: Ember.computed.alias('game.players'),
 
   actions: {

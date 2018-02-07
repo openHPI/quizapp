@@ -1,8 +1,12 @@
 <div class="quizSelector">
-  <div class="quizSelector-quiz">
-    <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
-    <p class="quizSelector-quiz-desc">{{ quiz.description }}</p>
-    <p>{{ quiz.questions.length }} Fragen</p>
-    {{player-button-any players=players onselect=(action 'selectQuiz' quiz)}}
-  </div>
+  {{#each quizzes as |quiz index|}}
+    <div class="quizSelector-quiz">
+      <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
+      <p class="quizSelector-quiz-desc">{{ quiz.description }}</p>
+      <p>{{ quiz.questions.length }} Fragen</p>
+      {{#player-button-choice index=index players=players onselect=(action 'selectQuiz' quiz)}}
+        Starte Quiz
+      {{/player-button-choice}}
+    </div>
+  {{/each}}
 </div>
