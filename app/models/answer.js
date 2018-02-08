@@ -113,8 +113,8 @@ Answer.reopenClass({
     { id: 63, question_id: 16, title: 'Universe Restful Location', correct: false },
     { id: 64, question_id: 16, title: 'University Related Langauge ', correct: false },
 
-    { id: 111, question_id: 21, title: 'HTML Programmier Internat', correct: false },
-    { id: 112, question_id: 21, title: 'Hasso Plattner Institut', correct: true },
+    { id: 111, question_id: 21, title: 'HTML-Programmier-Internat', correct: false },
+    { id: 112, question_id: 21, title: 'Hasso-Plattner-Institut', correct: true },
     { id: 113, question_id: 21, title: 'Hans Peters Imkerschule', correct: false },
     { id: 114, question_id: 21, title: 'Hasso Plattner International', correct: false },
 
@@ -125,19 +125,14 @@ Answer.reopenClass({
     { id: 144, question_id: 22, title: 'IT Systems Engineering', correct: true },
 
     { id: 101, question_id: 23, title: 'Modular Online Organization Cloud', correct: false },
-    { id: 102, question_id: 23, title: 'Massive Open Online Courses', correct: true },
+    { id: 102, question_id: 23, title: 'Massive Open Online Course', correct: true },
     { id: 103, question_id: 23, title: 'Multi Organic Oyster Club', correct: false },
     { id: 104, question_id: 23, title: 'My Own Operating Class', correct: false },
 
-    //{ id: 121, question_id: 24, title: 'Billard', correct: false },
-    //{ id: 122, question_id: 24, title: 'Pogo Stab Hüpfen', correct: false },
-    //{ id: 123, question_id: 24, title: 'Dart', correct: false },
-    //{ id: 124, question_id: 24, title: 'Fussball', correct: true },
-
-    { id: 121, question_id: 24, title: 'Big Data, big people.', correct: false },
-    { id: 122, question_id: 24, title: 'Smart something!', correct: false },
-    { id: 123, question_id: 24, title: 'Design IT, create knowledge.', correct: false },
-    { id: 124, question_id: 24, title: 'Gemeinsam wachsen.', correct: true },
+    { id: 121, question_id: 24, title: 'Knowledge Engineering with Semantic Web Technologies (Prof. Sack)', correct: false },
+    { id: 122, question_id: 24, title: 'Web Technologies (Prof. Meinel)', correct: false },
+    { id: 123, question_id: 24, title: 'Parallel Programming Concepts (Prof. Naumann)', correct: false },
+    { id: 124, question_id: 24, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },
 
     { id: 131, question_id: 25, title: 'Tropfende Wasserhähne', correct: false },
     { id: 132, question_id: 25, title: 'Im Netz kursierende Identitätsdaten', correct: true },
@@ -150,9 +145,9 @@ Answer.reopenClass({
     { id: 153, question_id: 26, title: 'Eine Methode für systematische Innovation', correct: true },
     { id: 154, question_id: 26, title: 'Ein neues Forschungsgebiet über Designer, die zu viel denken', correct: false },
 
-    { id: 161, question_id: 27, title: '8', correct: false },
+    { id: 161, question_id: 27, title: '10', correct: false },
     { id: 162, question_id: 27, title: '9', correct: false },
-    { id: 163, question_id: 27, title: '10', correct: true },
+    { id: 163, question_id: 27, title: '12', correct: true },
     { id: 164, question_id: 27, title: '11', correct: false },
 
     { id: 171, question_id: 28, title: 'IBM', correct: false },
@@ -246,7 +241,7 @@ Answer.reopenClass({
 
     { id: 2071, question_id: 207, title: 'Responsive Website reagiert auf Anforderungen verschiedener Endgeräte', correct: true },
     { id: 2072, question_id: 207, title: 'Responsive Webdesign setzt JavaScript voraus.', correct: false },
-    { id: 2073, question_id: 207, title: 'Auf kleine Screens werden Informationen weggelassen, um wichtige Teile besser darstellen zu können.', correct: false },
+    { id: 2073, question_id: 207, title: 'Auf kleinen Screens wird der Inhalt gleichmäßig verkleinert.', correct: false },
     { id: 2074, question_id: 207, title: 'Es gibt immer ein Antwort-Feld für Nutzer-Feedback auf der Startseite.', correct: false },
 
     { id: 2081, question_id: 208, title: 'Strukturierung von Big Data', correct: false },

@@ -15,14 +15,19 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* change into quizapp/frontend
-* run `ember install`
+* change into quizapp
+* run `npm install`
 
 ## Running / Development
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 * Make sure the backend server is running as well
+
+## Deployment
+
+* Run `ember build`
+* Find the application in dist-folder and publish it with a webserver of your choice
 
 ## The Game
 
