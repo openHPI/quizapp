@@ -170,7 +170,7 @@ Answer.reopenClass({
 
     { id: 1031, question_id: 103, title: 'geschlossenes Netz', correct: false },
     { id: 1032, question_id: 103, title: 'homogenes Netz', correct: false },
-    { id: 1033, question_id: 103, title: 'von Google gegründete Netzverbund', correct: false },
+    { id: 1033, question_id: 103, title: 'von Google gegründeter Netzverbund', correct: false },
     { id: 1034, question_id: 103, title: 'offenes Netz', correct: true },
 
     { id: 1041, question_id: 104, title: 'Der Server ist die aktive Komponente.', correct: false },
@@ -247,7 +247,7 @@ Answer.reopenClass({
     { id: 2081, question_id: 208, title: 'Strukturierung von Big Data', correct: false },
     { id: 2082, question_id: 208, title: 'Basis für Webservice-Infrastrukturen', correct: false },
     { id: 2083, question_id: 208, title: 'Bildergalerie für Urlaubsfotos', correct: false },
-    { id: 2084, question_id: 208, title: 'Kollaborationsplatform', correct: true },
+    { id: 2084, question_id: 208, title: 'Kollaborationsplattform', correct: true },
 
     { id: 2091, question_id: 209, title: 'HTML kommt bei dynamischen Webseiten nicht mehr zum Einsatz', correct: false },
     { id: 2092, question_id: 209, title: 'Webseite wird erst auf Anfrage des Nutzers hin generiert', correct: true },
