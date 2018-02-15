@@ -94,9 +94,9 @@ Question.reopenClass({
     { id: 306, relativeId: 6, quiz_id: 300, title: 'Für welche Fächer kann die Schul-Cloud einen Mehrwert leisten?', answers: [3061, 3062, 3063, 3064] },
     { id: 307, relativeId: 7, quiz_id: 300, title: 'Was umfasst der Begriff "Digital Literacy"?', answers: [3071, 3072, 3073, 3074] },
     { id: 308, relativeId: 8, quiz_id: 300, title: 'Was unterscheidet die Schul-Cloud von bereits bestehenden Lösungen?', answers: [3081, 3082, 3083, 3084] },
-    { id: 309, relativeId: 9, quiz_id: 300, title: 'Wer kann die Schul-Cloud in der aktuellen Projektphase testen?', answers: [3091, 3092, 3093, 3094] },
+    { id: 309, relativeId: 9, quiz_id: 300, title: 'Wer kann die Schul-Cloud im Rahmen der Pilotphase testen?', answers: [3091, 3092, 3093, 3094] },
     { id: 310, relativeId: 10, quiz_id: 300, title: 'Welche Technologie wird in der Schul-Cloud verwendet?', answers: [3101, 3102, 3103, 3104] },
-    { id: 311, relativeId: 11, quiz_id: 300, title: 'Auf welcher Veranstaltung wird die Schul-Cloud vertreten sein?', answers: [3111, 3112, 3113, 3114] },
+    { id: 311, relativeId: 11, quiz_id: 300, title: 'Aus welchem Bundesland stammt die Landesinitiative, mit der die Schul-Cloud aktuell eine Kooperation schließt?', answers: [3111, 3112, 3113, 3114] },
 
     // 2017 - SAPPHIRE Quiz 1
     { id: 401, relativeId: 1, quiz_id: 400, timer: 40, title: 'For a column with few distinct values, how can dictionary encoding significantly reduce the required amount of memory without any loss of information?', answers: [4011, 4012, 4013, 4014] },

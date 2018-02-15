@@ -271,7 +271,7 @@ Answer.reopenClass({
     { id: 3024, question_id: 302, title: 'Hasso-Plattner-Institut', correct: true },
 
     { id: 3031, question_id: 303, title: 'Privacy by Design', correct: true },
-    { id: 3032, question_id: 303, title: 'Informierte Einwilligung (informed consent)', correct: false },
+    { id: 3032, question_id: 303, title: 'Mündliche Vertrauensbekundung (informed consent)', correct: false },
     { id: 3033, question_id: 303, title: 'Restriktive Zweckbindung', correct: false },
     { id: 3034, question_id: 303, title: 'Repressives Verbot mit Befreiungsvorbehalt', correct: false },
 
@@ -281,9 +281,9 @@ Answer.reopenClass({
     { id: 3044, question_id: 304, title: 'Nicht-webbasierte digitale Bildungsinhalte', correct: false },
 
     { id: 3051, question_id: 305, title: 'Eine leicht bedienbare Schulverwaltungssoftware', correct: false },
-    { id: 3052, question_id: 305, title: 'Eine Social Media-Plattform', correct: false },
-    { id: 3053, question_id: 305, title: 'Einen Inhaltedienst', correct: true },
-    { id: 3054, question_id: 305, title: 'Ein Lernmanagementsystem', correct: false },
+    { id: 3052, question_id: 305, title: 'Eine Social-Media-Plattform', correct: false },
+    { id: 3053, question_id: 305, title: 'Ein Unterrichtsorganisationssystem inkl. Inhaltedienst', correct: true },
+    { id: 3054, question_id: 305, title: 'Ein Messengerdienst', correct: false },
 
     { id: 3061, question_id: 306, title: 'Ausschließlich für MINT-Fächer', correct: false },
     { id: 3062, question_id: 306, title: 'Für alle Fächer', correct: true },
@@ -300,7 +300,7 @@ Answer.reopenClass({
     { id: 3083, question_id: 308, title: 'Geschlossenheit', correct: false },
     { id: 3084, question_id: 308, title: 'Proprietarität', correct: false },
 
-    { id: 3091, question_id: 309, title: 'Ausgewählte MINT-EC-Pilotschulen', correct: true },
+    { id: 3091, question_id: 309, title: 'MINT-EC-Schulen', correct: true },
     { id: 3092, question_id: 309, title: 'MINT-freundliche Schulen', correct: false },
     { id: 3093, question_id: 309, title: 'Mitgliedsschulen von "Komm, mach MINT"', correct: false },
     { id: 3094, question_id: 309, title: 'Alle Schulen im In- und Ausland', correct: false },
@@ -310,10 +310,10 @@ Answer.reopenClass({
     { id: 3103, question_id: 310, title: 'Es werden proprietäre Browser-Plugins (bspw. Flash-Technologie) eingesetzt', correct: false },
     { id: 3104, question_id: 310, title: 'Alle Schüler/innen erhalten einen virtuellen Desktop', correct: false },
 
-    { id: 3111, question_id: 311, title: 'Poetry & Parade', correct: false },
-    { id: 3112, question_id: 311, title: 'ZEIT Konferenz Schule & Bildung', correct: false },
-    { id: 3113, question_id: 311, title: 'Re:publica 2017', correct: true },
-    { id: 3114, question_id: 311, title: '108. MNU-Bundeskongress', correct: false },
+    { id: 3111, question_id: 311, title: 'Bayern', correct: false },
+    { id: 3112, question_id: 311, title: 'Hamburg', correct: false },
+    { id: 3113, question_id: 311, title: 'Niedersachsen', correct: true },
+    { id: 3114, question_id: 311, title: 'Saarland', correct: false },
 
     // 2017 - SAPPHIRE Quiz 1
     { id: 4011, question_id: 401, title: 'By saving consecutive occurrences of the same value only once', correct: false },
