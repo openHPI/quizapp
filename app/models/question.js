@@ -122,6 +122,28 @@ Question.reopenClass({
     { id: 508, relativeId: 8, quiz_id: 500, title: 'In which of these cities you will NOT find a research school of the HPI?', answers: [5081, 5082, 5083, 5084] },
     { id: 509, relativeId: 9, quiz_id: 500, timer: 30, title: 'Hasso Plattner is not only the founder of the HPI, but he has also made a personal commitment. Which answer is true?', answers: [5091, 5092, 5093, 5094] },
     { id: 510, relativeId: 10, quiz_id: 500, timer: 30, title: 'Prof. Meinel heads the chair for Internet Technologies and Systems. Which of these topics is NOT in the focus of the chair\'s research?', answers: [5101, 5102, 5103, 5104] },
+
+    // 2019 - Didacta
+    { id: 19101, relativeId: 1, quiz_id: 201901, title: 'At the Hasso Plattner Institute (HPI), Potsdam, you can study...', answers: [5011, 5012, 5013, 5014] },
+    { id: 19102, relativeId: 2, quiz_id: 201901, title: 'The HPI, Potsdam, is known for its School of Design Thinking. Where is the second d.school located?', answers: [5021, 5022, 5023, 5024] },
+    { id: 19103, relativeId: 3, quiz_id: 201901, title: 'Five years ago, HPI started a educational Internet platform which offers free courses for everyone. How is it called?', answers: [5031, 5032, 5033, 5034] },
+    { id: 19104, relativeId: 4, quiz_id: 201901, title: 'What was the first Massive Open Online Course offered on openHPI?', answers: [5041, 5042, 5043, 5044] },
+    { id: 19105, relativeId: 5, quiz_id: 201901, title: 'Which of these courses is NO openHPI course?', answers: [5051, 5052, 5053, 5054] },
+    { id: 19106, relativeId: 6, quiz_id: 201901, title: 'What is the HPI Future SOC Lab?', answers: [5061, 5062, 5063, 5064] },
+    { id: 19107, relativeId: 7, quiz_id: 201901, title: 'The German federal government held its first national IT summit at the HPI in...', answers: [5071, 5072, 5073, 5074] },
+    { id: 19108, relativeId: 8, quiz_id: 201901, title: 'In which of these cities you will NOT find a research school of the HPI?', answers: [5081, 5082, 5083, 5084] },
+    { id: 19109, relativeId: 9, quiz_id: 201901, timer: 30, title: 'Hasso Plattner is not only the founder of the HPI, but he has also made a personal commitment. Which answer is true?', answers: [5091, 5092, 5093, 5094] },
+    { id: 19110, relativeId: 10, quiz_id: 201901, timer: 30, title: 'Prof. Meinel heads the chair for Internet Technologies and Systems. Which of these topics is NOT in the focus of the chair\'s research?', answers: [5101, 5102, 5103, 5104] },
+
+    { id: 19201, relativeId: 1, quiz_id: 201902, title: 'Aus welchen zwei Teilen besteht ein Arduino-Programm immer?', answers: [192011, 192012, 192013, 192014] },
+    { id: 19202, relativeId: 2, quiz_id: 201902, title: 'Woran erkennt man den Plus-Pol einer LED?', answers: [192021, 192022, 192023, 192024] },
+    { id: 19203, relativeId: 3, quiz_id: 201902, title: 'Über welche Funktionalität verfügt der esp32-Mikrocontroller nicht?', answers: [192031, 192032, 192033, 192034] },
+    { id: 19204, relativeId: 4, quiz_id: 201902, title: 'Womit werden Analogpins vom Microcontrollern meist gekennzeichnet?', answers: [192041, 192042, 192043, 192044] },
+    { id: 19205, relativeId: 5, quiz_id: 201902, title: 'Mit welchem Buchstaben wird der Widerstand gekennzeichnet?', answers: [192051, 192052, 192053, 192054] },
+    { id: 19206, relativeId: 6, quiz_id: 201902, title: 'Was bewirkt die Codezeile \"magic >> 1;\"?', answers: [192061, 192062, 192063, 192064] },
+    { id: 19207, relativeId: 7, quiz_id: 201902, title: 'Wofür steht PWM?', answers: [192071, 192072, 192073, 192074] },
+
+
   ]
 });
 

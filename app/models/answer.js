@@ -421,6 +421,44 @@ Answer.reopenClass({
     { id: 5102, question_id: 510, title: 'Learning and Knowledge Engineering', correct: false },
     { id: 5103, question_id: 510, title: 'Innovation and Design Thinking Research', correct: false },
     { id: 5104, question_id: 510, title: '3D printing', correct: true },
+
+    // Didacta 2019 - Mikrocontroller
+    { id: 192011, question_id: 19201, title: 'setup() und loop()', correct: true },
+    { id: 192012, question_id: 19201, title: 'init() und main()', correct: false },
+    { id: 192013, question_id: 19201, title: 'setup() und main()', correct: false },
+    { id: 192014, question_id: 19201, title: 'init() und loop()', correct: false },
+
+    { id: 192021, question_id: 19202, title: 'an der Farbe', correct: false },
+    { id: 192022, question_id: 19202, title: 'an der rauen Seite', correct: false },
+    { id: 192023, question_id: 19202, title: 'am längeren Beinchen', correct: true },
+    { id: 192024, question_id: 19202, title: 'an den Kerben', correct: false },
+
+    { id: 192031, question_id: 19203, title: 'Bluetooth', correct: false },
+    { id: 192032, question_id: 19203, title: 'SD-Kartenleser', correct: true },
+    { id: 192033, question_id: 19203, title: 'Touchsensor', correct: false },
+    { id: 192034, question_id: 19203, title: 'WLAN-Modul', correct: false },
+
+    { id: 192041, question_id: 19204, title: 'A', correct: true },
+    { id: 192042, question_id: 19204, title: 'E', correct: false },
+    { id: 192043, question_id: 19204, title: 'I', correct: false },
+    { id: 192044, question_id: 19204, title: 'O', correct: false },
+
+    { id: 192051, question_id: 19205, title: 'Pi', correct: false },
+    { id: 192052, question_id: 19205, title: 'Epsilon', correct: false },
+    { id: 192053, question_id: 19205, title: 'Omega', correct: true },
+    { id: 192054, question_id: 19205, title: 'W', correct: false },
+
+    { id: 192061, question_id: 19206, title: 'Die Variable magic soll den Wert 1 annehmen', correct: false },
+    { id: 192062, question_id: 19206, title: 'Die Variable magic ist größer als 1', correct: false },
+    { id: 192063, question_id: 19206, title: 'Die 1 wird hinten an die Variable magic angehangen', correct: false },
+    { id: 192064, question_id: 19206, title: 'Die Bits werden um 1 nach rechts geschoben', correct: true },
+
+    { id: 192071, question_id: 19207, title: 'Plus wenn Minus', correct: false },
+    { id: 192072, question_id: 19207, title: 'Pulsweitenmodulation', correct: true },
+    { id: 192073, question_id: 19207, title: 'Pinweitenmaß', correct: false },
+    { id: 192074, question_id: 19207, title: 'Preiswerter Mikrocontroller', correct: false },
+
+
   ]
 });
 
