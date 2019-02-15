@@ -1,12 +1,28 @@
-<div class="quizSelector">
-  {{#each quizzes as |quiz index|}}
-    <div class="quizSelector-quiz">
-      <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
-      <p class="quizSelector-quiz-desc">{{ quiz.description }}</p>
-      <p>{{ quiz.questions.length }} Fragen</p>
-      {{#player-button-choice index=index players=players onselect=(action 'selectQuiz' quiz)}}
-        Starte Quiz
-      {{/player-button-choice}}
-    </div>
-  {{/each}}
+<div class="quizSel">
+
+  <div class="quizSelector">
+  {{#swiper-container currentSlide=currentSlide pagination=true loop=true autoplay=true delay=5000 preloadImages=true updateOnImagesReady=true parallax=false}}
+  {{!log 'Quizzes:' index}}
+
+    {{#each quizzes as |quiz index|}}
+      {{#swiper-slide}}
+
+        <div class="quizSelector-quiz" style="background-image:url({{fullPath}})">
+          <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
+          <p class="quizSelector-quiz-desc">{{ quiz.description }}</p>
+          <p>{{ quiz.questions.length }} Fragen</p>
+
+        </div>
+      {{/swiper-slide}}
+    {{/each}}
+
+  {{/swiper-container}}
+  </div>
+
+  <div class="quizButton">
+  {{#player-button-choice index=1 players=players onselect=(action 'selectCurrentQuiz')}}
+    Starte Quiz
+  {{/player-button-choice}}
+  </div>
+
 </div>

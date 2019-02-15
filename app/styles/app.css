@@ -178,6 +178,18 @@ main {
  * QUIZ SELECTOR
  *------------------------------------------------*/
 
+.quizSel {
+  margin: 10px 0 0 10px;
+  width:100%;
+  float: left;
+}
+
+.quizButton {
+  margin-left: auto; margin-right: auto; text-align: center;
+  min-width: 500px;
+  width: 60%;
+}
+
 .quizSelector {
   display: flex;
   flex-wrap: wrap;
@@ -191,7 +203,8 @@ main {
   margin: 30px;
 
   max-width: 500px;
-  max-height: 300px;
+  min-height: 300px;
+  max-height: 600px;
 
   background-color: #5D5D5D;
   padding: 20px;
@@ -207,6 +220,11 @@ main {
 
 .quizSelector-quiz-desc {
   font-size: 1.6em;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 400px;
 }
 
 /*------------------------------------------------
