@@ -48,10 +48,8 @@ Quiz.reopenClass({
     //{ id: 1, title: 'openHPI Advanced Quiz (EN)', description: "A best-of collection of questions from past openHPI courses", questions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] },
     //{ id: 2, title: 'openHPI Beginners Quiz (EN)', description: "Good questions to prove your basic knowledge about the internet", questions: [11, 12, 13, 14, 15, 16] },
     //{ id: 300, title: 'Das Schul-Cloud-Quiz (DE)', description: 'Wie gut kennt ihr die Schul-Cloud?', questions: [301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311] },
-    { id: 201901, title: 'Digitale Identitäten', description: 'Wer bin ich im Netz?', questions: [19101, 19102, 19103, 19104,
-        19105, 19106, 19107, 19108, 19109, 19110] },
-    { id: 201902, title: 'Mikrocontroller', description: 'Wie programmiere ich meinen ersten Mini-Computer?', questions: [19201,
-        19202, 19203, 19204, 19205, 19206, 19207] },
+    { id: 201901, title: 'Digitale Identitäten', description: 'Wer bin ich im Netz?', questions: [19101, 19102, 19103, 19104, 19105, 19106, 19107] },
+    { id: 201902, title: 'Mikrocontroller', description: 'Wie programmiere ich meinen ersten Mini-Computer?', questions: [19201, 19202, 19203, 19204, 19205, 19206, 19207] },
     { id: 201903, title: 'Blockchain', description: 'Sicherheit auch ohne Trust Center', questions: [11, 12, 13, 14, 15, 16] },
     { id: 201904, title: 'openHPI', description: "", questions: [1] },
 

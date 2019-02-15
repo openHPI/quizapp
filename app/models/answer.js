@@ -422,6 +422,43 @@ Answer.reopenClass({
     { id: 5103, question_id: 510, title: 'Innovation and Design Thinking Research', correct: false },
     { id: 5104, question_id: 510, title: '3D printing', correct: true },
 
+    // Didacta 2019 - Digitale Identitäten
+    { id: 191011, question_id: 19101, title: '... wiederverwendet wird', correct: false },
+    { id: 191012, question_id: 19101, title: '... Buchstaben, Zahlen und Sonderzeichen enthält', correct: true },
+    { id: 191013, question_id: 19101, title: '... maximal 8 Zeichen lang ist', correct: false },
+    { id: 191014, question_id: 19101, title: '... im Wörterbuch zu finden ist', correct: false },
+
+    { id: 191021, question_id: 19102, title: 'Computer Provider', correct: false },
+    { id: 191022, question_id: 19102, title: 'Service Provider', correct: false },
+    { id: 191023, question_id: 19102, title: 'ID-Provider', correct: true },
+    { id: 191024, question_id: 19102, title: 'Client', correct: false },
+
+    { id: 191031, question_id: 19103, title: 'Anschreiben der Support-Stelle aller verwendeten Dienste mit der Nachfrage, ob die eigenen Daten von Kriminellen erbeutet wurden', correct: false },
+    { id: 191032, question_id: 19103, title: 'Befragen eines Dienstes, der das Internet nach solchen Identitätsdaten durchforstet, wie z.B. der HPI Identity Leak Checker', correct: true },
+    { id: 191033, question_id: 19103, title: 'Googlen des eigenen Passworts und Evaluierung der Ergebnisse', correct: false },
+    { id: 191034, question_id: 19103, title: 'Schreiben einer E-Mail an NIASC@nsa.gov mit der Frage, ob ihnen diesbezüglich etwas bekannt ist', correct: false },
+
+    { id: 191041, question_id: 19104, title: 'Analyse und Beeinflussung der Gesellschaft mittels Methoden aus den Ingenieurswissenschaften', correct: true },
+    { id: 191042, question_id: 19104, title: 'Gezielte Manipulation von Personen zum Erreichen eines bestimmten Ziels', correct: true },
+    { id: 191043, question_id: 19104, title: 'Initiative für mehr Menschlichkeit in Ingenieursberufen', correct: false },
+    { id: 191044, question_id: 19104, title: 'Manipulation der Bevölkerungs-, Sozial- und Altersstruktur einer Gesellschaft', correct: true },
+
+    { id: 191051, question_id: 19105, title: '... eine digitale Identität an eine andere digitale Identität', correct: false },
+    { id: 191052, question_id: 19105, title: '... eine physische Identität an eine andere physische Identität', correct: false },
+    { id: 191053, question_id: 19105, title: '... eine physische Identität an mehrere digitale Identitäten', correct: false },
+    { id: 191054, question_id: 19105, title: '... eine digitale Identität an eine physische Identität', correct: true },
+
+    { id: 191061, question_id: 19106, title: 'Public Key Infrastruktur ', correct: true },
+    { id: 191062, question_id: 19106, title: 'Videoidentitfikation', correct: false },
+    { id: 191063, question_id: 19106, title: 'Kerberos', correct: false },
+    { id: 191064, question_id: 19106, title: 'OpenID Connect', correct: false },
+
+    { id: 191071, question_id: 19107, title: 'Keine spezielle Hardware notwendig', correct: false },
+    { id: 191072, question_id: 19107, title: 'Weit verbreitet', correct: false },
+    { id: 191073, question_id: 19107, title: 'Leicht änderbar', correct: false },
+    { id: 191074, question_id: 19107, title: 'Schwer merkbar ', correct: true },
+
+
     // Didacta 2019 - Mikrocontroller
     { id: 192011, question_id: 19201, title: 'setup() und loop()', correct: true },
     { id: 192012, question_id: 19201, title: 'init() und main()', correct: false },
