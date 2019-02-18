@@ -179,13 +179,13 @@ Question.reopenClass({
     // openHPI Onboarding
     { id: 19401, relativeId: 1, quiz_id: 201904, title: 'Was bedeutet \"MOOC\"?', answers: [194011, 194012, 194013, 194014] },
     { id: 19402, relativeId: 2, quiz_id: 201904, title: 'Wer kann sich bei openHPI anmelden?', answers: [194021, 194022, 194023, 194024] },
-    { id: 19403, relativeId: 3, quiz_id: 201904, title: 'Welche technischen Voraussetzungen benötige ich für die Nutzung von openHPI?', answers: [194031, 194032, 194033, 194034] },
+    { id: 19403, relativeId: 3, quiz_id: 201904, title: 'Welche (technischen) Voraussetzungen müssen für die Nutzung von openHPI erfüllt sein?', answers: [194031, 194032, 194033, 194034] },
     { id: 19404, relativeId: 4, quiz_id: 201904, title: 'Kann ich bei openHPI ein Zeugnis erwerben?', answers: [194041, 194042, 194043, 194044] },
-    { id: 19405, relativeId: 5, quiz_id: 201904, title: 'Wo finde ich die Kursmaterialien?', answers: [194051, 194052, 194053, 194054] },
-    { id: 19406, relativeId: 6, quiz_id: 201904, title: 'Welche Lernmaterialien gibt es?', answers: [194061, 194062, 194063, 194064] },
-    { id: 19407, relativeId: 7, quiz_id: 201904, title: 'Wie nutze ich das Diskussionsforum?', answers: [194071, 194072, 194073, 194074] },
-    { id: 19408, relativeId: 8, quiz_id: 201904, title: 'Was sind Selbsttests und Hausaufgaben und worin unterscheiden sich diese?', answers: [194081, 194082, 194083, 194084] },
-    { id: 19409, relativeId: 9, quiz_id: 201904, title: 'Was ist und wie funktioniert ein Peer-Assessment?', answers: [194091, 194092, 194093, 194094] },
+    { id: 19405, relativeId: 5, quiz_id: 201904, title: 'Wo finde ich die Lernmaterialien?', answers: [194051, 194052, 194053, 194054] },
+    { id: 19406, relativeId: 6, quiz_id: 201904, title: 'Welchen Typ Lernmaterial gibt es nicht auf openHPI?', answers: [194061, 194062, 194063, 194064] },
+    { id: 19407, relativeId: 7, quiz_id: 201904, title: 'Welche Aussage zum Diskussionsforum ist falsch?', answers: [194071, 194072, 194073, 194074] },
+    { id: 19408, relativeId: 8, quiz_id: 201904, title: 'Welche Aussage zu Selbsttests und Hausaufgaben ist falsch?', answers: [194081, 194082, 194083, 194084] },
+    { id: 19409, relativeId: 9, quiz_id: 201904, title: 'Welche Aussage zum Peer-Assessment ist falsch?', answers: [194091, 194092, 194093, 194094] },
     { id: 19410, relativeId: 10, quiz_id: 201904, title: 'Welcher war der erste MOOC, der auf openHPI angeboten wurde?', answers: [194101, 194102, 194103, 194104] },
 
 

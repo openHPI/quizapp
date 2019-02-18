@@ -641,16 +641,16 @@ Answer.reopenClass({
     { id: 194014, question_id: 19401, title: 'Massive Open Online Course', correct: true },
 
     { id: 194021, question_id: 19402, title: 'Nur Studierende des Hasso-Plattner-Instituts', correct: false },
-    { id: 194022, question_id: 19402, title: 'Unternehmensmitarbeiter, die einen persönlichern Einladungslink erhalten haben', correct: false },
-    { id: 194023, question_id: 19402, title: 'Jeder, unabhängig von Kriterien wie Bildungsabschluss, Alter oder Unternehmenszugehörigkeit', correct: true },
-    { id: 194024, question_id: 19402, title: 'Jeder, der mindestens einen Bachelor hat', correct: false },
+    { id: 194022, question_id: 19402, title: 'Unternehmensmitarbeiter/innen, die einen persönlichern Einladungslink erhalten haben', correct: false },
+    { id: 194023, question_id: 19402, title: 'Alle, unabhängig von Kriterien wie Bildungsabschluss, Alter oder Unternehmenszugehörigkeit', correct: true },
+    { id: 194024, question_id: 19402, title: 'Alle, die mindestens einen Bachelorabschluss haben', correct: false },
 
     { id: 194031, question_id: 19403, title: 'Lediglich ein Gerät mit aktuellem Internet-Browser und eine Internetverbindung sind nötig', correct: true },
     { id: 194032, question_id: 19403, title: 'Zeit für die Teilnahme vor Ort am HPI', correct: false },
     { id: 194033, question_id: 19403, title: 'Herunterladen der Lern-Software', correct: false },
     { id: 194034, question_id: 19403, title: 'Mindestens Informatik als Schulfach belegt', correct: false },
 
-    { id: 194041, question_id: 19404, title: 'Nein, da der Kurs kostenlos ist', correct: false },
+    { id: 194041, question_id: 19404, title: 'Nein, da die Kurse kostenlos sind', correct: false },
     { id: 194042, question_id: 19404, title: 'Ja. Eine Teilnahmebescheinigung erhalte ich, wenn ich mindestens 50% der Kursmaterialien angeschaut habe', correct: true },
     { id: 194043, question_id: 19404, title: 'Ja. Ein Zeugnis erhalte ich, wenn ich mindestens 50% der möglichen Punkte erreicht habe', correct: true },
     { id: 194044, question_id: 19404, title: 'Ja. Ich kann ein qualifiziertes Zertifikat buchen, mit dem ich ECTS erhalten kann', correct: true },
@@ -666,7 +666,7 @@ Answer.reopenClass({
     { id: 194064, question_id: 19406, title: 'Käuflich zu erwerbendes Buch', correct: true },
 
     { id: 194071, question_id: 19407, title: 'Wenn mir eine Antwort geholfen hat, kann ich diese als \"korrekt\" markieren', correct: false },
-    { id: 194072, question_id: 19407, title: 'Der aktive Austausch mit anderen Kursteilnehmern hilft mir beim Reflektieren und Verstehen', correct: false },
+    { id: 194072, question_id: 19407, title: 'Der aktive Austausch mit anderen Kursteilnehmer/innen hilft mir beim Reflektieren und Verstehen', correct: false },
     { id: 194073, question_id: 19407, title: 'Ich darf meine inhaltlichen Fragen nicht diskutieren, da dies als Schummeln gewertet wird', correct: true },
     { id: 194074, question_id: 19407, title: 'Das Kursteam beantwortet Fragen und freut sich über Feedback', correct: false },
 
@@ -675,9 +675,9 @@ Answer.reopenClass({
     { id: 194083, question_id: 19408, title: 'Selbsttests können beliebig oft wiederholt werden', correct: false },
     { id: 194084, question_id: 19408, title: 'Hausaufgaben müssen bis zu einer meist wöchentlichen Abgabefrist bearbeitet werden', correct: false },
 
-    { id: 194091, question_id: 19409, title: 'Beim Peer-Assessment bewerten sich Teilnehmer gegenseitig', correct: false },
+    { id: 194091, question_id: 19409, title: 'Beim Peer-Assessment bewerten sich Teilnehmer/innen gegenseitig', correct: false },
     { id: 194092, question_id: 19409, title: 'Peer-Assessment kommt zum Einsatz, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
-    { id: 194093, question_id: 19409, title: 'Beim Peer-Assessment kann ich beliebig viele Beiträge anderer Teilnehmer bewerten', correct: true },
+    { id: 194093, question_id: 19409, title: 'Beim Peer-Assessment kann ich beliebig viele Beiträge anderer Teilnehmer/innen bewerten', correct: true },
     { id: 194094, question_id: 19409, title: 'Für gutes Feedback im Peer-Assessment können Bonuspunkte für das Zertifikat gesammelt werden', correct: false },
 
     { id: 194101, question_id: 19410, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },

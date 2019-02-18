@@ -51,7 +51,7 @@ Quiz.reopenClass({
     { id: 201901, title: 'Digitale Identitäten', description: 'Wer bin ich im Netz?', questions: [19101, 19102, 19103, 19104, 19105, 19106, 19107] },
     { id: 201902, title: 'Mikrocontroller', description: 'Wie programmiere ich meinen ersten Mini-Computer?', questions: [19201, 19202, 19203, 19204, 19205, 19206, 19207] },
     { id: 201903, title: 'Blockchain', description: 'Sicherheit auch ohne Trust Center', questions: [19301, 19302, 19303, 19304, 19305, 19306, 19307, 19308, 19309] },
-    { id: 201904, title: 'openHPI', description: "Lerne unsere MOOC-Plattform kennen", questions: [19701, 19702, 19703, 19704, 19705, 19706, 19707, 19708, 19709, 19710] },
+    { id: 201904, title: 'openHPI', description: "Lerne unsere MOOC-Plattform kennen", questions: [19401, 19402, 19403, 19404, 19405, 19406, 19407, 19408, 19409, 19410] },
 
     //{ id: 100, title: 'Internet und Soziale Medien - Basics (DE)', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
     //{ id: 200, title: 'Internet und Soziale Medien - Advanced (DE)', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
