@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
   players: Ember.computed.alias('game.players'),
 
   fullPath: Ember.computed('currentSlide', function() {
-    return '/images/course' + this.get('currentSlide') + '.jpeg';
+    return '/images/course' + this.get('currentSlide') + '.png';
   }),
 
   actions: {

@@ -1,4 +1,5 @@
 <div class="quizStats">
+  {{!log 'Gameresult:' game}}
   <div class="quizStats-winner">
     {{#if game.hasWinner}}
       {{ game.winner.name }} hat gewonnen!
@@ -8,11 +9,11 @@
   </div>
 
   <div class="quizStats-motivation">
-    {{#if game.hasWinner}}
-      Möchtet ihr es noch mal probieren?
-    {{else}}
-      Probiert es noch mal, um herauszufinden, wer klüger ist.
-    {{/if}}
+    <div>Wollt ihr mehr zu dem Thema erfahren?
+      <br>Hier gibt es mehr Informationen:</div>
+    <img class="QRCode" src={{QRPath}}>
+
+
   </div>
 
   <div class="quizStats-statistics">

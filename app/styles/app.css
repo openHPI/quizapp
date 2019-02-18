@@ -243,18 +243,16 @@ main {
 }
 
 .quizSelector-quizNr3 {
-  background-color: #5D5D5D;
-  /*background-image: url("/images/quiz3.png");*/
+  /*background-color: #5D5D5D;*/
+  background-image: url("/images/quiz3.png");
 }
 
 .quizSelector-quizNr4 {
-  /*background-image: url("/images/quiz4.png");*/
-  background-color: #5D5D5D;
+  background-image: url("/images/quiz4.png");
 }
 
 .quizSelector-quizNr5 {
-  /*background-image: url("/images/quiz5.png");*/
-  background-color: #5D5D5D;
+  background-image: url("/images/quiz5.png");
 }
 
 .quizSelector-quizNr6 {
@@ -423,6 +421,7 @@ main {
 }
 
 .quizStats-motivation {
+  text-align: center;
   font-size: 2.5em;
 }
 

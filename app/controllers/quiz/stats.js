@@ -8,6 +8,10 @@ export default Ember.Controller.extend({
 
   players: Ember.computed.alias('game.players'),
 
+  QRPath: Ember.computed('model', function() {
+    return '/images/' + this.get('model.id') + '.png';
+  }),
+
   actions: {
     restart() {
       this.transitionToRoute('quiz', this.model);
