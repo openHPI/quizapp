@@ -495,6 +495,195 @@ Answer.reopenClass({
     { id: 192073, question_id: 19207, title: 'Pinweitenmaß', correct: false },
     { id: 192074, question_id: 19207, title: 'Preiswerter Mikrocontroller', correct: false },
 
+    // Didacta 2019 - Blockchain
+    { id: 193011, question_id: 19301, title: 'Konsistenz', correct: false },
+    { id: 193012, question_id: 19301, title: 'Ausfallsicherheit', correct: true },
+    { id: 193013, question_id: 19301, title: 'Skalierbarkeit', correct: true },
+    { id: 193014, question_id: 19301, title: 'Vertrauen', correct: false },
+
+    { id: 193021, question_id: 19302, title: 'Vertikal', correct: false },
+    { id: 193022, question_id: 19302, title: 'Diagonal', correct: false },
+    { id: 193023, question_id: 19302, title: 'Horizontal', correct: true },
+    { id: 193024, question_id: 19302, title: 'Senkrecht', correct: false },
+
+    { id: 193031, question_id: 19303, title: 'Eventuell lange Antwortzeiten', correct: true },
+    { id: 193032, question_id: 19303, title: 'Eventuell alte Daten als Antwort', correct: false },
+    { id: 193033, question_id: 19303, title: 'Streng schnelle Antwortzeitvorgaben', correct: false },
+    { id: 193034, question_id: 19303, title: 'Koordinationsaufwand', correct: true },
+
+    { id: 193041, question_id: 19304, title: 'Strong Consistency', correct: false },
+    { id: 193042, question_id: 19304, title: 'Eventual Consistency', correct: true },
+    { id: 193043, question_id: 19304, title: 'Keine Consistency', correct: false },
+    { id: 193044, question_id: 19304, title: 'Super Strong Consistency', correct: false },
+
+    { id: 193051, question_id: 19305, title: 'Crash Fehler', correct: false },
+    { id: 193052, question_id: 19305, title: 'Byzantinischer Fehler', correct: true },
+    { id: 193053, question_id: 19305, title: 'Griechischer Fehler', correct: false },
+    { id: 193054, question_id: 19305, title: 'Türkischer Fehler', correct: false },
+
+    { id: 193061, question_id: 19306, title: 'Identitätsmanagement', correct: true },
+    { id: 193062, question_id: 19306, title: 'Netzwerkkommunikation', correct: false },
+    { id: 193063, question_id: 19306, title: 'Verschlüsselungstechnik', correct: false },
+    { id: 193064, question_id: 19306, title: 'Energieversorgung', correct: false },
+
+    { id: 193071, question_id: 19307, title: 'Eine digitale auf Kryptographie basierte Währung anbietet', correct: true },
+    { id: 193072, question_id: 19307, title: 'Kryptographische Beweise statt Vertrauen', correct: true },
+    { id: 193073, question_id: 19307, title: 'Die Blockchain-Technologie für die digitale Zahlungsabwicklung nutzt', correct: true },
+    { id: 193074, question_id: 19307, title: 'Strom sparen', correct: false },
+
+    { id: 193081, question_id: 19308, title: 'Die Daten werden an jeden Teilnehmer verbreitet', correct: true },
+    { id: 193082, question_id: 19308, title: 'Der BTC Absender berechnet die kürzeste Route zum BTC Empfänger', correct: false },
+    { id: 193083, question_id: 19308, title: 'Der BTC Absender sendet die Daten an zufällige Nachbarn', correct: false },
+    { id: 193084, question_id: 19308, title: 'Per Flaschenpost', correct: false },
+
+    { id: 193091, question_id: 19309, title: 'Private', correct: false },
+    { id: 193092, question_id: 19309, title: 'Permissioned', correct: false },
+    { id: 193093, question_id: 19309, title: 'Konsortium', correct: false },
+    { id: 193094, question_id: 19309, title: 'Public', correct: true },
+
+    // Didacta 2019 - Schul-Cloud Allgemeines zum Projekt
+    { id: 195011, question_id: 19501, title: 'Digitale Bildungsinhalte auf persönlichen Endgeräten speichern', correct: false },
+    { id: 195012, question_id: 19501, title: 'Analoge Lernmaterialien durch digitale ersetzen', correct: false },
+    { id: 195013, question_id: 19501, title: 'Die digitale Entwicklung an Schulen erleichtern', correct: true },
+    { id: 195014, question_id: 19501, title: 'Schulen die Aktualisierung der Software überlassen', correct: false },
+
+    { id: 195021, question_id: 19502, title: 'Bundesministerium für Wirtschaft und Technologie', correct: false },
+    { id: 195022, question_id: 19502, title: 'MINT Zukunft schaffen', correct: false },
+    { id: 195023, question_id: 19502, title: 'Ministerium für Bildung, Jugend und Sport', correct: false },
+    { id: 195024, question_id: 19502, title: 'Hasso-Plattner-Institut', correct: true },
+
+    { id: 195031, question_id: 19503, title: 'Privacy by Design', correct: true },
+    { id: 195032, question_id: 19503, title: 'Mündliche Vertrauensbekundung (informed consent)', correct: false },
+    { id: 195033, question_id: 19503, title: 'Restriktive Zweckbindung', correct: false },
+    { id: 195034, question_id: 19503, title: 'Repressives Verbot mit Befreiungsvorbehalt', correct: false },
+
+    { id: 195041, question_id: 19504, title: 'Digitale Bildungsinhalte, die ausschließlich lokal ausgeführt werden', correct: false },
+    { id: 195042, question_id: 19504, title: 'Digitale Bildungsinhalte, die in verteilten Silos gespeichert sind', correct: false },
+    { id: 195043, question_id: 19504, title: 'Webbasierte Bildungsinhalte', correct: true },
+    { id: 195044, question_id: 19504, title: 'Nicht-webbasierte digitale Bildungsinhalte', correct: false },
+
+    { id: 195051, question_id: 19505, title: 'Ausschließlich für MINT-Fächer', correct: false },
+    { id: 195052, question_id: 19505, title: 'Für alle Fächer', correct: true },
+    { id: 195053, question_id: 19505, title: 'Lediglich für Geschichte', correct: false },
+    { id: 195054, question_id: 19505, title: 'Nur für Fremdsprachen', correct: false },
+
+    { id: 195061, question_id: 19506, title: 'Beschränkt sich auf einen intuitiven Umgang mit digitalen Medien', correct: false },
+    { id: 195062, question_id: 19506, title: 'Ein Set von Kompetenzen für die umfassende Teilhabe in der Wissensgesellschaft', correct: true },
+    { id: 195063, question_id: 19506, title: 'Beschränkt sich auf Programmierkenntnisse', correct: false },
+    { id: 195064, question_id: 19506, title: 'Beschränkt sich auf die tägliche Anwendung digitaler Systeme', correct: false },
+
+    { id: 195071, question_id: 19507, title: 'Konfrontation', correct: false },
+    { id: 195072, question_id: 19507, title: 'Anbieterneutralität', correct: true },
+    { id: 195073, question_id: 19507, title: 'Geschlossenheit', correct: false },
+    { id: 195074, question_id: 19507, title: 'Proprietarität', correct: false },
+
+    { id: 195081, question_id: 19508, title: 'MINT-EC-Schulen', correct: true },
+    { id: 195082, question_id: 19508, title: 'MINT-freundliche Schulen', correct: false },
+    { id: 195083, question_id: 19508, title: 'Mitgliedsschulen von "Komm, mach MINT"', correct: false },
+    { id: 195084, question_id: 19508, title: 'Alle Schulen im In- und Ausland', correct: false },
+
+    { id: 195091, question_id: 19509, title: 'Die Benutzeroberfläche ist als Webanwendung umgesetzt', correct: true },
+    { id: 195092, question_id: 19509, title: 'Die HPI Schul-Cloud basiert auf einem monolithischen Kern', correct: false },
+    { id: 195093, question_id: 19509, title: 'Es werden proprietäre Browser-Plugins (bspw. Flash-Technologie) eingesetzt', correct: false },
+    { id: 195094, question_id: 19509, title: 'Alle Schüler/innen erhalten einen virtuellen Desktop', correct: false },
+
+    { id: 195101, question_id: 19510, title: 'Bayern', correct: false },
+    { id: 195102, question_id: 19510, title: 'Hamburg', correct: false },
+    { id: 195103, question_id: 19510, title: 'Niedersachsen', correct: true },
+    { id: 195104, question_id: 19510, title: 'Saarland', correct: false },
+
+    { id: 195111, question_id: 19511, title: '25', correct: false },
+    { id: 195112, question_id: 19511, title: '50', correct: false },
+    { id: 195113, question_id: 19511, title: '75', correct: false },
+    { id: 195114, question_id: 19511, title: '100', correct: true },
+
+    { id: 195121, question_id: 19512, title: 'Dreihunderttausend', correct: false },
+    { id: 195122, question_id: 19512, title: 'Achttausend', correct: false },
+    { id: 195123, question_id: 19512, title: 'eine Million ', correct: true },
+    { id: 195124, question_id: 19512, title: 'Fünfhundert', correct: false },
+
+    // Schul-Cloud Praxis
+    { id: 196011, question_id: 19601, title: 'Kollaboratives Arbeiten', correct: true },
+    { id: 196012, question_id: 19601, title: 'Auswertung von Messwerten', correct: false },
+    { id: 196013, question_id: 19601, title: 'Dokumentation von Audioaufnahmen', correct: false },
+    { id: 196014, question_id: 19601, title: 'Vokabeltraining', correct: false },
+
+    { id: 196021, question_id: 19602, title: 'Per AirDrop', correct: false },
+    { id: 196022, question_id: 19602, title: 'Per QR-Code', correct: true },
+    { id: 196023, question_id: 19602, title: 'Wunsch-Link generieren', correct: false },
+    { id: 196024, question_id: 19602, title: 'Link diktieren', correct: false },
+
+    { id: 196031, question_id: 19603, title: 'Alle Schüler/innen erstellen sich selbst einen Account', correct: false },
+    { id: 196032, question_id: 19603, title: 'Lehrkraft registriert alle Schüler/innen', correct: false },
+    { id: 196033, question_id: 19603, title: 'Registrierung wird ausschließlich von den Eltern vorgenommen', correct: false },
+    { id: 196034, question_id: 19603, title: 'Digitale Einverständniserklärung der Schüler/innen und Eltern', correct: true },
+
+    { id: 196041, question_id: 19604, title: 'Nein, das ist nicht möglich.', correct: false },
+    { id: 196042, question_id: 19604, title: 'Ja, dies wird in einer Übersicht der Aufgabe angezeigt', correct: true },
+    { id: 196043, question_id: 19604, title: 'Ja, dies wird im Profil des Schülers angezeigt', correct: false },
+    { id: 196044, question_id: 19604, title: 'Ja, aber dazu muss ich erst zu einem speziellen Programm wechseln', correct: false },
+
+    { id: 196051, question_id: 19605, title: 'Nein, das Entwickler-Team kann nicht kontaktiert werden  ', correct: false },
+    { id: 196052, question_id: 19605, title: 'Ja, nachdem ich mich durch unterschiedliche Fragen geklickt habe', correct: false },
+    { id: 196053, question_id: 19605, title: 'Ja, Probleme und Wünsche können direkt in der Plattform an die Entwickler gemeldet werden', correct: true },
+    { id: 196054, question_id: 19605, title: 'Ja, allerdings nur über eine Telefon-Hotline', correct: false },
+
+    { id: 196061, question_id: 19606, title: 'Bei Verwendung muss ich immer den Urheber angeben', correct: false },
+    { id: 196062, question_id: 19606, title: 'Ich muss sicherstellen, dass ich das Recht habe, die Materialien zu nutzen', correct: false },
+    { id: 196063, question_id: 19606, title: 'Eigentlich nichts, da die Materialien bereits geprüft wurden', correct: false },
+    { id: 196064, question_id: 19606, title: 'Ich muss meinen Schuladministrator fragen, ob ich den Lernstore verwenden darf', correct: false },
+
+
+    // openHPI Onboarding
+    { id: 194011, question_id: 19401, title: 'Modular Online Organization Cloud', correct: false },
+    { id: 194012, question_id: 19401, title: 'Mastering Organization Online Certificate', correct: false },
+    { id: 194013, question_id: 19401, title: 'Minimal Objects Operation Chip', correct: false },
+    { id: 194014, question_id: 19401, title: 'Massive Open Online Course', correct: true },
+
+    { id: 194021, question_id: 19402, title: 'Nur Studierende des Hasso-Plattner-Instituts', correct: false },
+    { id: 194022, question_id: 19402, title: 'Unternehmensmitarbeiter, die einen persönlichern Einladungslink erhalten haben', correct: false },
+    { id: 194023, question_id: 19402, title: 'Jeder, unabhängig von Kriterien wie Bildungsabschluss, Alter oder Unternehmenszugehörigkeit', correct: true },
+    { id: 194024, question_id: 19402, title: 'Jeder, der mindestens einen Bachelor hat', correct: false },
+
+    { id: 194031, question_id: 19403, title: 'Lediglich ein Gerät mit aktuellem Internet-Browser und eine Internetverbindung sind nötig', correct: true },
+    { id: 194032, question_id: 19403, title: 'Zeit für die Teilnahme vor Ort am HPI', correct: false },
+    { id: 194033, question_id: 19403, title: 'Herunterladen der Lern-Software', correct: false },
+    { id: 194034, question_id: 19403, title: 'Mindestens Informatik als Schulfach belegt', correct: false },
+
+    { id: 194041, question_id: 19404, title: 'Nein, da der Kurs kostenlos ist', correct: false },
+    { id: 194042, question_id: 19404, title: 'Ja. Eine Teilnahmebescheinigung erhalte ich, wenn ich mindestens 50% der Kursmaterialien angeschaut habe', correct: true },
+    { id: 194043, question_id: 19404, title: 'Ja. Ein Zeugnis erhalte ich, wenn ich mindestens 50% der möglichen Punkte erreicht habe', correct: true },
+    { id: 194044, question_id: 19404, title: 'Ja. Ich kann ein qualifiziertes Zertifikat buchen, mit dem ich ECTS erhalten kann', correct: true },
+
+    { id: 194051, question_id: 19405, title: 'Alle Lernmaterialien werden mir per Mail zugeschickt', correct: false },
+    { id: 194052, question_id: 19405, title: 'Online auf der Kursseite unter dem Reiter \"Lernmaterial\"', correct: true },
+    { id: 194053, question_id: 19405, title: 'Online auf Facebook und Twitter', correct: false },
+    { id: 194054, question_id: 19405, title: 'Lernmaterialien werden mit postalisch zugesandt', correct: false },
+
+    { id: 194061, question_id: 19406, title: '(Kurze) Videos', correct: false },
+    { id: 194062, question_id: 19406, title: 'Selbsttests', correct: false },
+    { id: 194063, question_id: 19406, title: 'Online-Lesematerial', correct: false },
+    { id: 194064, question_id: 19406, title: 'Käuflich zu erwerbendes Buch', correct: true },
+
+    { id: 194071, question_id: 19407, title: 'Wenn mir eine Antwort geholfen hat, kann ich diese als \"korrekt\" markieren', correct: false },
+    { id: 194072, question_id: 19407, title: 'Der aktive Austausch mit anderen Kursteilnehmern hilft mir beim Reflektieren und Verstehen', correct: false },
+    { id: 194073, question_id: 19407, title: 'Ich darf meine inhaltlichen Fragen nicht diskutieren, da dies als Schummeln gewertet wird', correct: true },
+    { id: 194074, question_id: 19407, title: 'Das Kursteam beantwortet Fragen und freut sich über Feedback', correct: false },
+
+    { id: 194081, question_id: 19408, title: 'Hausaufgaben können einmalig wiederholt werden, um mehr Punkte zu erreichen', correct: true },
+    { id: 194082, question_id: 19408, title: 'Selbsttests zählen nicht zu den für das Zertifikat erreichbaren Punkten', correct: false },
+    { id: 194083, question_id: 19408, title: 'Selbsttests können beliebig oft wiederholt werden', correct: false },
+    { id: 194084, question_id: 19408, title: 'Hausaufgaben müssen bis zu einer meist wöchentlichen Abgabefrist bearbeitet werden', correct: false },
+
+    { id: 194091, question_id: 19409, title: 'Beim Peer-Assessment bewerten sich Teilnehmer gegenseitig', correct: false },
+    { id: 194092, question_id: 19409, title: 'Peer-Assessment kommt zum Einsatz, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
+    { id: 194093, question_id: 19409, title: 'Beim Peer-Assessment kann ich beliebig viele Beiträge anderer Teilnehmer bewerten', correct: true },
+    { id: 194094, question_id: 19409, title: 'Für gutes Feedback im Peer-Assessment können Bonuspunkte für das Zertifikat gesammelt werden', correct: false },
+
+    { id: 194101, question_id: 19410, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },
+    { id: 194102, question_id: 19410, title: 'Parallel Programming Concepts (Prof. Naumann)', correct: false },
+    { id: 194103, question_id: 19410, title: 'Web Technologies (Prof. Meinel)', correct: false },
+    { id: 194104, question_id: 19410, title: 'Knowledge Engineering with Semantic Web Technologies (Prof. Sack)', correct: false },
 
   ]
 });

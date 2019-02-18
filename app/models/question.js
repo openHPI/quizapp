@@ -143,6 +143,55 @@ Question.reopenClass({
     { id: 19206, relativeId: 6, quiz_id: 201902, title: 'Was bewirkt die Codezeile \"magic >> 1;\"?', answers: [192061, 192062, 192063, 192064] },
     { id: 19207, relativeId: 7, quiz_id: 201902, title: 'Wofür steht PWM?', answers: [192071, 192072, 192073, 192074] },
 
+    // Blockchain
+    { id: 19301, relativeId: 1, quiz_id: 201903, title: 'Welche dieser Charakteristiken können Probleme zentralisierter Anwendungen sein?', answers: [193011, 193012, 193013, 193014] },
+    { id: 19302, relativeId: 1, quiz_id: 201903, title: 'Welche Art von Skalierung wird durch verteilte Systeme ermöglicht?', answers: [193021, 193022, 193023, 193024] },
+    { id: 19303, relativeId: 1, quiz_id: 201903, title: 'Welche dieser Eigenschaften sind Nachteile von strenger Konsistenz?', answers: [193031, 193032, 193033, 193034] },
+    { id: 19304, relativeId: 1, quiz_id: 201903, title: 'Ein verteiltes Backupsystem zur Sicherung ihrer Handy-Fotos wird designed, welches Konsistenz Modell sollte verwendet werden?', answers: [193041, 193042, 193043, 193044] },
+    { id: 19305, relativeId: 1, quiz_id: 201903, title: 'Welche Art von Fehler ist am schwersten zu tolerieren?', answers: [193051, 193052, 193053, 193054] },
+    { id: 19306, relativeId: 1, quiz_id: 201903, title: 'Bei einem Sybil Angriff wird eine Schwachstelle in welchem Teil des Systems ausgenutzt?', answers: [193061, 193062, 193063, 193064] },
+    { id: 19307, relativeId: 1, quiz_id: 201903, title: 'Was sind Kernideen des Bitcoin-Systems?', answers: [193071, 193072, 193073, 193074] },
+    { id: 19308, relativeId: 1, quiz_id: 201903, title: 'Wie werden Daten im Bitcoin-System verbreitet?', answers: [193081, 193082, 193083, 193084] },
+    { id: 19309, relativeId: 1, quiz_id: 201903, title: 'Welcher Blockchain-Typ liegt vor, wenn jeder Nutzer eine Blockchain fortschreiben kann?', answers: [193091, 193092, 193093, 193094] },
+
+    // Schul-Cloud Allgemeines zum Projekt
+    { id: 19501, relativeId: 1, quiz_id: 201905, title: 'Was soll die HPI Schul-Cloud leisten?', answers: [195011, 195012, 195013, 195014] },
+    { id: 19502, relativeId: 2, quiz_id: 201905, title: 'Wer entwickelt die HPI Schul-Cloud?', answers: [195021, 195022, 195023, 195024] },
+    { id: 19503, relativeId: 3, quiz_id: 201905, title: 'Nach welchem Datenschutz-Prinzip soll die HPI Schul-Cloud entwickelt werden?', answers: [195031, 195032, 195033, 195034] },
+    { id: 19504, relativeId: 4, quiz_id: 201905, title: 'Welche digitalen Bildungsinhalte können an die HPI Schul-Cloud angebunden werden?', answers: [195041, 195042, 195043, 195044] },
+    { id: 19505, relativeId: 5, quiz_id: 201905, title: 'Für welche Fächer kann die HPI Schul-Cloud einen Mehrwert leisten?', answers: [195051, 195052, 195053, 195054] },
+    { id: 19506, relativeId: 6, quiz_id: 201905, title: 'Was umfasst der Begriff "Digital Literacy"?', answers: [195061, 195062, 195063, 195064] },
+    { id: 19507, relativeId: 7, quiz_id: 201905, title: 'Was unterscheidet die HPI Schul-Cloud von bereits bestehenden Lösungen?', answers: [195071, 195072, 195073, 195074] },
+    { id: 19508, relativeId: 8, quiz_id: 201905, title: 'Wer kann die HPI Schul-Cloud im Rahmen des BMBF geförderten Pilotprojekts testen?', answers: [195081, 195082, 195083, 195084] },
+    { id: 19509, relativeId: 9, quiz_id: 201905, title: 'Welche Technologie wird in der HPI Schul-Cloud verwendet?', answers: [195091, 195092, 195093, 195094] },
+    { id: 19510, relativeId: 10, quiz_id: 201905, title: 'Aus welchem Bundesland stammt die Landesinitiative, mit der die HPI Schul-Cloud aktuell eine kooperiert?', answers: [195101, 195102, 195103, 195104] },
+    { id: 19511, relativeId: 11, quiz_id: 201905, title: 'Wie viele MINT-EC-Schulen nutzen aktuell die HPI Schul-Cloud?', answers: [195111, 195112, 195113, 195114] },
+    { id: 19512, relativeId: 12, quiz_id: 201905, title: 'Wie viele Bildungsinhalte sind im Lernstore der HPI Schul-Cloud zu finden?', answers: [195121, 195122, 195123, 195124] },
+
+    // Schul-Cloud Praxiseinsatz
+    { id: 19601, relativeId: 1, quiz_id: 201906, title: 'Was ermöglichen die Tools neXboard und Etherpad in der HPI Schul-Cloud?', answers: [196011, 196012, 196013, 196014] },
+    { id: 19602, relativeId: 2, quiz_id: 201906, title: 'Wie kann ich als Lehrkraft einfach gewährleisten, dass alle Schüler/innen auf die korrekte Seite in der HPI Schul-Cloud gelangen?', answers: [196021, 196022, 196023, 196024] },
+    { id: 19603, relativeId: 3, quiz_id: 201906, title: 'Wie funktioniert die datenschutzkonforme Registrierung nach EU-DSGVO in der HPI Schul-Cloud?', answers: [196031, 196032, 196033, 196034] },
+    { id: 19604, relativeId: 4, quiz_id: 201906, title: 'Kann ich als Lehrkraft einsehen, welche Schüler bereits eine Hausaufgabe digital abgegeben haben?', answers: [196041, 196042, 196043, 196044] },
+    { id: 19605, relativeId: 5, quiz_id: 201906, title: 'Ist es möglich direkten Kontakt zu den Entwicklern des HPI aufzunehmen?', answers: [196051, 196052, 196053, 196054] },
+    { id: 19606, relativeId: 6, quiz_id: 201906, title: 'Was muss ich beim Verwenden von Inhalten aus dem Lernstore der HPI Schul-Cloud beachten?', answers: [196061, 196062, 196063, 196064] },
+
+    // openHPI Onboarding
+    { id: 19401, relativeId: 1, quiz_id: 201904, title: 'Was bedeutet \"MOOC\"?', answers: [194011, 194012, 194013, 194014] },
+    { id: 19402, relativeId: 2, quiz_id: 201904, title: 'Wer kann sich bei openHPI anmelden?', answers: [194021, 194022, 194023, 194024] },
+    { id: 19403, relativeId: 3, quiz_id: 201904, title: 'Welche technischen Voraussetzungen benötige ich für die Nutzung von openHPI?', answers: [194031, 194032, 194033, 194034] },
+    { id: 19404, relativeId: 4, quiz_id: 201904, title: 'Kann ich bei openHPI ein Zeugnis erwerben?', answers: [194041, 194042, 194043, 194044] },
+    { id: 19405, relativeId: 5, quiz_id: 201904, title: 'Wo finde ich die Kursmaterialien?', answers: [194051, 194052, 194053, 194054] },
+    { id: 19406, relativeId: 6, quiz_id: 201904, title: 'Welche Lernmaterialien gibt es?', answers: [194061, 194062, 194063, 194064] },
+    { id: 19407, relativeId: 7, quiz_id: 201904, title: 'Wie nutze ich das Diskussionsforum?', answers: [194071, 194072, 194073, 194074] },
+    { id: 19408, relativeId: 8, quiz_id: 201904, title: 'Was sind Selbsttests und Hausaufgaben und worin unterscheiden sich diese?', answers: [194081, 194082, 194083, 194084] },
+    { id: 19409, relativeId: 9, quiz_id: 201904, title: 'Was ist und wie funktioniert ein Peer-Assessment?', answers: [194091, 194092, 194093, 194094] },
+    { id: 19410, relativeId: 10, quiz_id: 201904, title: 'Welcher war der erste MOOC, der auf openHPI angeboten wurde?', answers: [194101, 194102, 194103, 194104] },
+
+
+
+
+
 
   ]
 });
