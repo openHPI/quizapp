@@ -56,7 +56,7 @@ Quiz.reopenClass({
     //{ id: 100, title: 'Internet und Soziale Medien - Basics (DE)', description: "Einfache Fragen zum Thema Internet", questions: [101, 102, 103, 104, 105, 106, 107, 108, 109, 110] },
     //{ id: 200, title: 'Internet und Soziale Medien - Advanced (DE)', description: "Schwierigere Fragen zum Thema Internet", questions: [201, 202, 203, 204, 205, 206, 207, 208, 209, 210] },
     { id: 201905, title: 'HPI Schul-Cloud', description: "Allgemeines zum Projekt", questions: [19501, 19502, 19503, 19504, 19505, 19506, 19507, 19508, 19509, 19510, 19511, 19512] },
-    { id: 201906, title: 'HPI Schuld-Cloud', description: "Einsatz in der Praxis", questions: [19601, 19602, 19603, 19604, 19605, 19606] },
+    { id: 201906, title: 'HPI Schul-Cloud', description: "Einsatz in der Praxis", questions: [19601, 19602, 19603, 19604, 19605, 19606] },
     //{ id: 201907, title: 'Hasso-Plattner-Institut', description: "Studieren am HPI", questions: [21, 22, 23, 24, 25, 26, 27, 28] },
     //{ id: 201908, title: 'Test', description: "Fragen über Fragen ...", questions: [1] },
     //{ id: 500, title: 'The HPI Quiz', description: 'Test your knowledge about the Hasso Plattner Institute', questions: [501, 502, 503, 504, 505, 506, 507, 508, 509, 510] },

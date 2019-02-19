@@ -132,7 +132,7 @@ Question.reopenClass({
     { id: 19104, relativeId: 4, quiz_id: 201901, title: 'Worum geht es beim "Social Engineering"?', answers: [191041, 191042, 191043, 191044] },
     { id: 19105, relativeId: 5, quiz_id: 201901, title: 'Die Authentifizierung mittels Passwort bindet ...', answers: [191051, 191052, 191053, 191054] },
     { id: 19106, relativeId: 6, quiz_id: 201901, title: 'Worauf basiert die Online-Ausweisfunktion des neuen Personalausweises?', answers: [191061, 191062, 191063, 191064] },
-    { id: 19107, relativeId: 7, quiz_id: 201901, title: 'Was ist der Nachteil von Authentisierung durch Wissen?', answers: [191071, 191072, 191073, 191074] },
+    { id: 19107, relativeId: 7, quiz_id: 201901, title: 'Was ist der Nachteil von Authentifizierung durch Wissen?', answers: [191071, 191072, 191073, 191074] },
 
     // Mikrocontroller
     { id: 19201, relativeId: 1, quiz_id: 201902, title: 'Aus welchen zwei Teilen besteht ein Arduino-Programm immer?', answers: [192011, 192012, 192013, 192014] },

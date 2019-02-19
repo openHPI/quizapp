@@ -182,7 +182,7 @@ main {
   margin: 10px 0 0 10px;
   width:100%;
   float: left;
-  
+
 }
 
 .quizButton {
@@ -229,6 +229,10 @@ main {
 .swiper-container {
   width: 550px;
   height: 400px;
+}
+
+.QRCode {
+  padding-top: 40px;
 }
 
 .quizSelector-quizNr0 {

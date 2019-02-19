@@ -433,10 +433,10 @@ Answer.reopenClass({
     { id: 191023, question_id: 19102, title: 'ID-Provider', correct: true },
     { id: 191024, question_id: 19102, title: 'Client', correct: false },
 
-    { id: 191031, question_id: 19103, title: 'Anschreiben der Support-Stelle aller verwendeten Dienste mit der Nachfrage, ob die eigenen Daten von Kriminellen erbeutet wurden', correct: false },
-    { id: 191032, question_id: 19103, title: 'Befragen eines Dienstes, der das Internet nach solchen Identitätsdaten durchforstet, wie z.B. der HPI Identity Leak Checker', correct: true },
+    { id: 191031, question_id: 19103, title: 'Anschreiben des Supports aller verwendeten Dienste, ob Daten von Kriminellen erbeutet wurden', correct: false },
+    { id: 191032, question_id: 19103, title: 'Nutzen eines Dienstes, der Identitätsdaten im Internet sucht, wie HPI Identity Leak Checker', correct: true },
     { id: 191033, question_id: 19103, title: 'Googlen des eigenen Passworts und Evaluierung der Ergebnisse', correct: false },
-    { id: 191034, question_id: 19103, title: 'Schreiben einer E-Mail an NIASC@nsa.gov mit der Frage, ob ihnen diesbezüglich etwas bekannt ist', correct: false },
+    { id: 191034, question_id: 19103, title: 'Schreiben einer E-Mail an NIASC@nsa.gov, ob diesbezüglich etwas bekannt ist', correct: false },
 
     { id: 191041, question_id: 19104, title: 'Analyse und Beeinflussung der Gesellschaft mittels Methoden aus den Ingenieurswissenschaften', correct: true },
     { id: 191042, question_id: 19104, title: 'Gezielte Manipulation von Personen zum Erreichen eines bestimmten Ziels', correct: true },
@@ -651,8 +651,8 @@ Answer.reopenClass({
     { id: 194034, question_id: 19403, title: 'Mindestens Informatik als Schulfach belegt', correct: false },
 
     { id: 194041, question_id: 19404, title: 'Nein, da die Kurse kostenlos sind', correct: false },
-    { id: 194042, question_id: 19404, title: 'Ja. Eine Teilnahmebescheinigung erhalte ich, wenn ich mindestens 50% der Kursmaterialien angeschaut habe', correct: true },
-    { id: 194043, question_id: 19404, title: 'Ja. Ein Zeugnis erhalte ich, wenn ich mindestens 50% der möglichen Punkte erreicht habe', correct: true },
+    { id: 194042, question_id: 19404, title: 'Ja, eine Teilnahmebescheinigung; wenn ich min. 50% der Kursmaterialien angeschaut habe', correct: true },
+    { id: 194043, question_id: 19404, title: 'Ja, ein Zeugnis; wenn ich mindestens 50% der möglichen Punkte erreicht habe', correct: true },
     { id: 194044, question_id: 19404, title: 'Ja. Ich kann ein qualifiziertes Zertifikat buchen, mit dem ich ECTS erhalten kann', correct: true },
 
     { id: 194051, question_id: 19405, title: 'Alle Lernmaterialien werden mir per Mail zugeschickt', correct: false },
@@ -663,11 +663,11 @@ Answer.reopenClass({
     { id: 194061, question_id: 19406, title: '(Kurze) Videos', correct: false },
     { id: 194062, question_id: 19406, title: 'Selbsttests', correct: false },
     { id: 194063, question_id: 19406, title: 'Online-Lesematerial', correct: false },
-    { id: 194064, question_id: 19406, title: 'Käuflich zu erwerbendes Buch', correct: true },
+    { id: 194064, question_id: 19406, title: 'Käuflich zu erwerbendes obligatorisches Buch', correct: true },
 
     { id: 194071, question_id: 19407, title: 'Wenn mir eine Antwort geholfen hat, kann ich diese als \"korrekt\" markieren', correct: false },
-    { id: 194072, question_id: 19407, title: 'Der aktive Austausch mit anderen Kursteilnehmer/innen hilft mir beim Reflektieren und Verstehen', correct: false },
-    { id: 194073, question_id: 19407, title: 'Ich darf meine inhaltlichen Fragen nicht diskutieren, da dies als Schummeln gewertet wird', correct: true },
+    { id: 194072, question_id: 19407, title: 'Aktiver Austausch mit anderen Teilnehmer/innen hilft beim Reflektieren und Verstehen', correct: false },
+    { id: 194073, question_id: 19407, title: 'Ich darf inhaltlichen Fragen nicht diskutieren, da dies als Schummeln gewertet wird', correct: true },
     { id: 194074, question_id: 19407, title: 'Das Kursteam beantwortet Fragen und freut sich über Feedback', correct: false },
 
     { id: 194081, question_id: 19408, title: 'Hausaufgaben können einmalig wiederholt werden, um mehr Punkte zu erreichen', correct: true },
@@ -676,9 +676,9 @@ Answer.reopenClass({
     { id: 194084, question_id: 19408, title: 'Hausaufgaben müssen bis zu einer meist wöchentlichen Abgabefrist bearbeitet werden', correct: false },
 
     { id: 194091, question_id: 19409, title: 'Beim Peer-Assessment bewerten sich Teilnehmer/innen gegenseitig', correct: false },
-    { id: 194092, question_id: 19409, title: 'Peer-Assessment kommt zum Einsatz, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
+    { id: 194092, question_id: 19409, title: 'Peer-Assessment wird genutzt, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
     { id: 194093, question_id: 19409, title: 'Beim Peer-Assessment kann ich beliebig viele Beiträge anderer Teilnehmer/innen bewerten', correct: true },
-    { id: 194094, question_id: 19409, title: 'Für gutes Feedback im Peer-Assessment können Bonuspunkte für das Zertifikat gesammelt werden', correct: false },
+    { id: 194094, question_id: 19409, title: 'Für gutes Peer-Assessment-Feedback können Zertifikat-Bonuspunkte gesammelt werden', correct: false },
 
     { id: 194101, question_id: 19410, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },
     { id: 194102, question_id: 19410, title: 'Parallel Programming Concepts (Prof. Naumann)', correct: false },
