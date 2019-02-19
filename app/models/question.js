@@ -145,14 +145,14 @@ Question.reopenClass({
 
     // Blockchain
     { id: 19301, relativeId: 1, quiz_id: 201903, title: 'Welche dieser Charakteristiken können Probleme zentralisierter Anwendungen sein?', answers: [193011, 193012, 193013, 193014] },
-    { id: 19302, relativeId: 1, quiz_id: 201903, title: 'Welche Art von Skalierung wird durch verteilte Systeme ermöglicht?', answers: [193021, 193022, 193023, 193024] },
-    { id: 19303, relativeId: 1, quiz_id: 201903, title: 'Welche dieser Eigenschaften sind Nachteile von strenger Konsistenz?', answers: [193031, 193032, 193033, 193034] },
-    { id: 19304, relativeId: 1, quiz_id: 201903, title: 'Ein verteiltes Backupsystem zur Sicherung ihrer Handy-Fotos wird designed, welches Konsistenz Modell sollte verwendet werden?', answers: [193041, 193042, 193043, 193044] },
-    { id: 19305, relativeId: 1, quiz_id: 201903, title: 'Welche Art von Fehler ist am schwersten zu tolerieren?', answers: [193051, 193052, 193053, 193054] },
-    { id: 19306, relativeId: 1, quiz_id: 201903, title: 'Bei einem Sybil Angriff wird eine Schwachstelle in welchem Teil des Systems ausgenutzt?', answers: [193061, 193062, 193063, 193064] },
-    { id: 19307, relativeId: 1, quiz_id: 201903, title: 'Was sind Kernideen des Bitcoin-Systems?', answers: [193071, 193072, 193073, 193074] },
-    { id: 19308, relativeId: 1, quiz_id: 201903, title: 'Wie werden Daten im Bitcoin-System verbreitet?', answers: [193081, 193082, 193083, 193084] },
-    { id: 19309, relativeId: 1, quiz_id: 201903, title: 'Welcher Blockchain-Typ liegt vor, wenn jeder Nutzer eine Blockchain fortschreiben kann?', answers: [193091, 193092, 193093, 193094] },
+    { id: 19302, relativeId: 2, quiz_id: 201903, title: 'Welche Art von Skalierung wird durch verteilte Systeme ermöglicht?', answers: [193021, 193022, 193023, 193024] },
+    { id: 19303, relativeId: 3, quiz_id: 201903, title: 'Welche dieser Eigenschaften sind Nachteile von strenger Konsistenz?', answers: [193031, 193032, 193033, 193034] },
+    { id: 19304, relativeId: 4, quiz_id: 201903, title: 'Ein verteiltes Backupsystem zur Sicherung ihrer Handy-Fotos wird designed, welches Konsistenz Modell sollte verwendet werden?', answers: [193041, 193042, 193043, 193044] },
+    { id: 19305, relativeId: 5, quiz_id: 201903, title: 'Welche Art von Fehler ist am schwersten zu tolerieren?', answers: [193051, 193052, 193053, 193054] },
+    { id: 19306, relativeId: 6, quiz_id: 201903, title: 'Bei einem Sybil Angriff wird eine Schwachstelle in welchem Teil des Systems ausgenutzt?', answers: [193061, 193062, 193063, 193064] },
+    { id: 19307, relativeId: 7, quiz_id: 201903, title: 'Was sind Kernideen des Bitcoin-Systems?', answers: [193071, 193072, 193073, 193074] },
+    { id: 19308, relativeId: 8, quiz_id: 201903, title: 'Wie werden Daten im Bitcoin-System verbreitet?', answers: [193081, 193082, 193083, 193084] },
+    { id: 19309, relativeId: 9, quiz_id: 201903, title: 'Welcher Blockchain-Typ liegt vor, wenn jeder Nutzer eine Blockchain fortschreiben kann?', answers: [193091, 193092, 193093, 193094] },
 
     // Schul-Cloud Allgemeines zum Projekt
     { id: 19501, relativeId: 1, quiz_id: 201905, title: 'Was soll die HPI Schul-Cloud leisten?', answers: [195011, 195012, 195013, 195014] },
@@ -185,7 +185,7 @@ Question.reopenClass({
     { id: 19406, relativeId: 6, quiz_id: 201904, title: 'Welchen Typ Lernmaterial gibt es nicht auf openHPI?', answers: [194061, 194062, 194063, 194064] },
     { id: 19407, relativeId: 7, quiz_id: 201904, title: 'Welche Aussage zum Diskussionsforum ist falsch?', answers: [194071, 194072, 194073, 194074] },
     { id: 19408, relativeId: 8, quiz_id: 201904, title: 'Welche Aussage zu Selbsttests und Hausaufgaben ist falsch?', answers: [194081, 194082, 194083, 194084] },
-    { id: 19409, relativeId: 9, quiz_id: 201904, title: 'Welche Aussage zum Peer-Assessment ist falsch?', answers: [194091, 194092, 194093, 194094] },
+    { id: 19409, relativeId: 9, quiz_id: 201904, title: 'Welche Aussage zum Peer-Assessment (PA) ist falsch?', answers: [194091, 194092, 194093, 194094] },
     { id: 19410, relativeId: 10, quiz_id: 201904, title: 'Welcher war der erste MOOC, der auf openHPI angeboten wurde?', answers: [194101, 194102, 194103, 194104] },
 
 

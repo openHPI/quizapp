@@ -433,12 +433,12 @@ Answer.reopenClass({
     { id: 191023, question_id: 19102, title: 'ID-Provider', correct: true },
     { id: 191024, question_id: 19102, title: 'Client', correct: false },
 
-    { id: 191031, question_id: 19103, title: 'Anschreiben des Supports aller verwendeten Dienste, ob Daten von Kriminellen erbeutet wurden', correct: false },
-    { id: 191032, question_id: 19103, title: 'Nutzen eines Dienstes, der Identitätsdaten im Internet sucht, wie HPI Identity Leak Checker', correct: true },
+    { id: 191031, question_id: 19103, title: 'Anschreiben des Supports genutzter Dienste, ob Daten von Kriminellen erbeutet wurden', correct: false },
+    { id: 191032, question_id: 19103, title: 'Nutzung von Dienst, der Identitätsdaten im Internet sucht, wie HPI Identity Leak Checker', correct: true },
     { id: 191033, question_id: 19103, title: 'Googlen des eigenen Passworts und Evaluierung der Ergebnisse', correct: false },
     { id: 191034, question_id: 19103, title: 'Schreiben einer E-Mail an NIASC@nsa.gov, ob diesbezüglich etwas bekannt ist', correct: false },
 
-    { id: 191041, question_id: 19104, title: 'Analyse und Beeinflussung der Gesellschaft mittels Methoden aus den Ingenieurswissenschaften', correct: true },
+    { id: 191041, question_id: 19104, title: 'Analyse & Beeinflussen der Gesellschaft mittels Ingenieurswissenschafts-Methoden', correct: true },
     { id: 191042, question_id: 19104, title: 'Gezielte Manipulation von Personen zum Erreichen eines bestimmten Ziels', correct: true },
     { id: 191043, question_id: 19104, title: 'Initiative für mehr Menschlichkeit in Ingenieursberufen', correct: false },
     { id: 191044, question_id: 19104, title: 'Manipulation der Bevölkerungs-, Sozial- und Altersstruktur einer Gesellschaft', correct: true },
@@ -625,7 +625,7 @@ Answer.reopenClass({
 
     { id: 196051, question_id: 19605, title: 'Nein, das Entwickler-Team kann nicht kontaktiert werden  ', correct: false },
     { id: 196052, question_id: 19605, title: 'Ja, nachdem ich mich durch unterschiedliche Fragen geklickt habe', correct: false },
-    { id: 196053, question_id: 19605, title: 'Ja, Probleme und Wünsche können direkt in der Plattform an die Entwickler gemeldet werden', correct: true },
+    { id: 196053, question_id: 19605, title: 'Ja, Probleme & Wünsche können in der Plattform an die Entwickler gemeldet werden', correct: true },
     { id: 196054, question_id: 19605, title: 'Ja, allerdings nur über eine Telefon-Hotline', correct: false },
 
     { id: 196061, question_id: 19606, title: 'Bei Verwendung muss ich immer den Urheber angeben', correct: false },
@@ -642,16 +642,16 @@ Answer.reopenClass({
 
     { id: 194021, question_id: 19402, title: 'Nur Studierende des Hasso-Plattner-Instituts', correct: false },
     { id: 194022, question_id: 19402, title: 'Unternehmensmitarbeiter/innen, die einen persönlichern Einladungslink erhalten haben', correct: false },
-    { id: 194023, question_id: 19402, title: 'Alle, unabhängig von Kriterien wie Bildungsabschluss, Alter oder Unternehmenszugehörigkeit', correct: true },
+    { id: 194023, question_id: 19402, title: 'Alle, unabhängig von Bildungsabschluss, Alter, Unternehmenszugehörigkeit etc.', correct: true },
     { id: 194024, question_id: 19402, title: 'Alle, die mindestens einen Bachelorabschluss haben', correct: false },
 
-    { id: 194031, question_id: 19403, title: 'Lediglich ein Gerät mit aktuellem Internet-Browser und eine Internetverbindung sind nötig', correct: true },
+    { id: 194031, question_id: 19403, title: 'Lediglich Internetverbindung und ein Gerät mit aktuellem Internet-Browser sind nötig', correct: true },
     { id: 194032, question_id: 19403, title: 'Zeit für die Teilnahme vor Ort am HPI', correct: false },
     { id: 194033, question_id: 19403, title: 'Herunterladen der Lern-Software', correct: false },
     { id: 194034, question_id: 19403, title: 'Mindestens Informatik als Schulfach belegt', correct: false },
 
     { id: 194041, question_id: 19404, title: 'Nein, da die Kurse kostenlos sind', correct: false },
-    { id: 194042, question_id: 19404, title: 'Ja, eine Teilnahmebescheinigung; wenn ich min. 50% der Kursmaterialien angeschaut habe', correct: true },
+    { id: 194042, question_id: 19404, title: 'Ja, eine Teilnahmebescheinigung; wenn min. 50% der Kursmaterialien angeschaut wurden', correct: true },
     { id: 194043, question_id: 19404, title: 'Ja, ein Zeugnis; wenn ich mindestens 50% der möglichen Punkte erreicht habe', correct: true },
     { id: 194044, question_id: 19404, title: 'Ja. Ich kann ein qualifiziertes Zertifikat buchen, mit dem ich ECTS erhalten kann', correct: true },
 
@@ -675,10 +675,10 @@ Answer.reopenClass({
     { id: 194083, question_id: 19408, title: 'Selbsttests können beliebig oft wiederholt werden', correct: false },
     { id: 194084, question_id: 19408, title: 'Hausaufgaben müssen bis zu einer meist wöchentlichen Abgabefrist bearbeitet werden', correct: false },
 
-    { id: 194091, question_id: 19409, title: 'Beim Peer-Assessment bewerten sich Teilnehmer/innen gegenseitig', correct: false },
-    { id: 194092, question_id: 19409, title: 'Peer-Assessment wird genutzt, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
-    { id: 194093, question_id: 19409, title: 'Beim Peer-Assessment kann ich beliebig viele Beiträge anderer Teilnehmer/innen bewerten', correct: true },
-    { id: 194094, question_id: 19409, title: 'Für gutes Peer-Assessment-Feedback können Zertifikat-Bonuspunkte gesammelt werden', correct: false },
+    { id: 194091, question_id: 19409, title: 'Beim PA bewerten sich Teilnehmer/innen gegenseitig', correct: false },
+    { id: 194092, question_id: 19409, title: 'PA wird genutzt, wenn eine automatische Auswertung didaktisch nicht sinnvoll ist', correct: false },
+    { id: 194093, question_id: 19409, title: 'Beim PA kann ich beliebig viele Beiträge anderer Teilnehmer/innen bewerten', correct: true },
+    { id: 194094, question_id: 19409, title: 'Für gutes PA-Feedback können Zertifikat-Bonuspunkte gesammelt werden', correct: false },
 
     { id: 194101, question_id: 19410, title: 'In-Memory Data Management (Prof. Plattner)', correct: true },
     { id: 194102, question_id: 19410, title: 'Parallel Programming Concepts (Prof. Naumann)', correct: false },
