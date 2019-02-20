@@ -544,13 +544,13 @@ Answer.reopenClass({
     // Didacta 2019 - Schul-Cloud Allgemeines zum Projekt
     { id: 195011, question_id: 19501, title: 'Digitale Bildungsinhalte auf persönlichen Endgeräten speichern', correct: false },
     { id: 195012, question_id: 19501, title: 'Analoge Lernmaterialien durch digitale ersetzen', correct: false },
-    { id: 195013, question_id: 19501, title: 'Die digitale Entwicklung an Schulen erleichtern', correct: true },
+    { id: 195013, question_id: 19501, title: 'Nutzung digitaler Lernhinhalte im Unterricht ermöglichen', correct: true },
     { id: 195014, question_id: 19501, title: 'Schulen die Aktualisierung der Software überlassen', correct: false },
 
     { id: 195021, question_id: 19502, title: 'Bundesministerium für Wirtschaft und Technologie', correct: false },
     { id: 195022, question_id: 19502, title: 'MINT Zukunft schaffen', correct: false },
     { id: 195023, question_id: 19502, title: 'Ministerium für Bildung, Jugend und Sport', correct: false },
-    { id: 195024, question_id: 19502, title: 'Hasso-Plattner-Institut', correct: true },
+    { id: 195024, question_id: 19502, title: 'Hasso-Plattner-Institut und MINT EC', correct: true },
 
     { id: 195031, question_id: 19503, title: 'Privacy by Design', correct: true },
     { id: 195032, question_id: 19503, title: 'Mündliche Vertrauensbekundung (informed consent)', correct: false },
@@ -559,7 +559,7 @@ Answer.reopenClass({
 
     { id: 195041, question_id: 19504, title: 'Digitale Bildungsinhalte, die ausschließlich lokal ausgeführt werden', correct: false },
     { id: 195042, question_id: 19504, title: 'Digitale Bildungsinhalte, die in verteilten Silos gespeichert sind', correct: false },
-    { id: 195043, question_id: 19504, title: 'Webbasierte Bildungsinhalte', correct: true },
+    { id: 195043, question_id: 19504, title: 'Webbasierte Bildungsinhalte mit Web-Schnittstelle', correct: true },
     { id: 195044, question_id: 19504, title: 'Nicht-webbasierte digitale Bildungsinhalte', correct: false },
 
     { id: 195051, question_id: 19505, title: 'Ausschließlich für MINT-Fächer', correct: false },

@@ -158,7 +158,7 @@ Question.reopenClass({
     { id: 19501, relativeId: 1, quiz_id: 201905, title: 'Was soll die HPI Schul-Cloud leisten?', answers: [195011, 195012, 195013, 195014] },
     { id: 19502, relativeId: 2, quiz_id: 201905, title: 'Wer entwickelt die HPI Schul-Cloud?', answers: [195021, 195022, 195023, 195024] },
     { id: 19503, relativeId: 3, quiz_id: 201905, title: 'Nach welchem Datenschutz-Prinzip soll die HPI Schul-Cloud entwickelt werden?', answers: [195031, 195032, 195033, 195034] },
-    { id: 19504, relativeId: 4, quiz_id: 201905, title: 'Welche digitalen Bildungsinhalte können an die HPI Schul-Cloud angebunden werden?', answers: [195041, 195042, 195043, 195044] },
+    { id: 19504, relativeId: 4, quiz_id: 201905, title: 'Welche digitalen Bildungsinhalte können in der HPI Schul-Cloud benutzt werden?', answers: [195041, 195042, 195043, 195044] },
     { id: 19505, relativeId: 5, quiz_id: 201905, title: 'Für welche Fächer kann die HPI Schul-Cloud einen Mehrwert leisten?', answers: [195051, 195052, 195053, 195054] },
     { id: 19506, relativeId: 6, quiz_id: 201905, title: 'Was umfasst der Begriff "Digital Literacy"?', answers: [195061, 195062, 195063, 195064] },
     { id: 19507, relativeId: 7, quiz_id: 201905, title: 'Was unterscheidet die HPI Schul-Cloud von bereits bestehenden Lösungen?', answers: [195071, 195072, 195073, 195074] },
