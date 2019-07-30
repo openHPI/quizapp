@@ -5,7 +5,7 @@ export default Route.extend({
   game: inject(),
 
   model(params) {
-    return this.store.find('question', params.question_id);
+    return this.store.peekRecord('question', params.question_id);
   },
 
   afterModel() {

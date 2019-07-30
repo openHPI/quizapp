@@ -12,12 +12,4 @@ const User = DS.Model.extend({
   }
 });
 
-User.reopenClass({
-  FIXTURES: [
-    { id: 1, name: 'Joe', points: 3 },
-    { id: 2, name: 'Jane', points: 2 },
-    { id: 3, name: 'Verena', points: 4 },
-  ]
-});
-
 export default User;
