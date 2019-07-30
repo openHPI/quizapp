@@ -9,9 +9,11 @@
   </div>
 
   <div class="quizStats-motivation">
-    <div>Wollt ihr mehr zu dem Thema erfahren?
-      <br>Hier gibt es mehr Informationen:</div>
-    <img class="QRCode" src={{QRPath}}>
+    <div>
+      Wollt ihr mehr zu dem Thema erfahren?
+      <br>Hier gibt es mehr Informationen:
+    </div>
+    <img alt="QR-Code" class="QRCode" src={{QRPath}}>
 
 
   </div>
@@ -27,6 +29,6 @@
   </div>
 </div>
 
-{{player-button-any players=players onselect=(action 'backToIndex')}}
+{{player-button-any players=players onselect=(action "backToIndex")}}
 
-{{after-x-seconds seconds=30 oncompletion=(action 'backToIndex')}}
+{{after-x-seconds seconds=30 oncompletion=(action "backToIndex")}}

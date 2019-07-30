@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-import { observer } from '@ember/object';
 
 const Quiz = DS.Model.extend({
   title: DS.attr('string'),
@@ -35,13 +34,7 @@ const Quiz = DS.Model.extend({
   },
   removeParticipant(participant) {
     this.get('participants').removeObjects(participant.toArray());
-  },
-  enoughParticipants: observer('participants', function() {
-    this.set(
-      'ready',
-      this.get('participants').get('length') >= 2
-    );
-  })
+  }
 });
 
 export default Quiz;

@@ -1,7 +1,7 @@
 <div class="row">
   {{#each answers as |answer index|}}
     <div class="col-md-12 answer">
-      {{colored-player-choice-button index=index text=answer.title onselect=(action 'selectAnswer' answer)}}
+      {{colored-player-choice-button index=index text=answer.title onselect=(action "selectAnswer" answer)}}
     </div>
   {{/each}}
 </div>

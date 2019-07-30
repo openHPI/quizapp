@@ -7,11 +7,11 @@
   {{#each answers as |answer index|}}
     <div class="quizQuestion-answer">
       {{#if selectable}}
-        {{#player-button-choice index=index onselect=(action 'selectAnswer' answer.model)}}
+        {{#player-button-choice index=index onselect=(action "selectAnswer" answer.model)}}
           {{ answer.model.title }}
         {{/player-button-choice}}
       {{else}}
-        <div class="quizQuestion-answer-solution {{if answer.model.correct 'correct'}}">
+        <div class="quizQuestion-answer-solution {{if answer.model.correct "correct"}}">
           {{ answer.model.title }}
         </div>
         {{#each answer.selectedBy as |player|}}
@@ -23,7 +23,7 @@
 </div>
 
 {{#if selectable}}
-  {{countdown-timer time=question.timer whenTimeUp=(action 'timeUp')}}
+  {{countdown-timer time=question.timer whenTimeUp=(action "timeUp")}}
 {{else}}
   {{countdown-timer time=5 whenTimeUp=done}}
 {{/if}}

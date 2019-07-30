@@ -17,21 +17,5 @@
 </p>
 
 <div class="playerBox-instruction">
-  {{#if player.joined}}
-    {{#unless game.hasStarted}}
-      <p>Bitte warte auf andere Mitspieler.</p>
-    {{else if player.active}}
-      <p>Drücke den passenden Buzzer zur richtigen Antwort.</p>
-    {{else}}
-      <p>Bitte warten.</p>
-    {{/unless}}
-  {{else}}
-    {{#if game.hasStarted}}
-      <p>Bitte warte auf deinen Mitspieler.</p>
-    {{else if game.hasPlayers}}
-      <p>Drücke den gelben Buzzer, um mitzuspielen.</p>
-    {{else}}
-      <p>Drücke den gelben Buzzer, um ein neues Spiel zu beginnen!</p>
-    {{/if}}
-  {{/if}}
+  <p>{{ instructionText }}</p>
 </div>

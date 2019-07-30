@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import { inject } from '@ember/service';
 import { A } from '@ember/array';
 import { cancel, later } from '@ember/runloop';
-import { computed, observer } from '@ember/object';
+import { computed } from '@ember/object';
 
 export default Component.extend({
   classNames: ['quizQuestion'],
@@ -21,6 +21,7 @@ export default Component.extend({
 
     // When we receive new parameters, we will reset our internal state (display mode and timer)
     this.set('selectable', true);
+    this.set('selectedAnswers', A());
     this.resetTimer();
   },
 
@@ -54,17 +55,10 @@ export default Component.extend({
     return this._queue.length === 0;
   },
 
-  // Once the answers are no longer selectable, we run all queued operations, which mostly
-  // means that points will be awarded to the players.
-  switchMode: observer('selectable', function() {
-    if (this.get('selectable')) {
-      this.set('selectedAnswers', A());
-      return;
-    }
-
+  flushQueue() {
     this._queue.forEach(callback => callback());
     this._queue = A();
-  }),
+  },
 
   answers: computed('question.answers', 'selectedAnswers.@each', function() {
     return this.get('question.answers').map(answer => ({
@@ -102,12 +96,17 @@ export default Component.extend({
         }
       }
 
-      // If we still have players left that did not select an answer yet, we will keep waiting for their input.
-      // Otherwise, we will switch to the results mode.
-      this.set(
-        'selectable',
-        this.get('game').hasThinkingPlayers()
-      );
+      // If all players have selected an answer, we switch to the results mode. If we still have
+      // players left that did not select an answer yet, we will keep waiting for their input, or
+      // for the time to run out.
+      if (! this.get('game').hasThinkingPlayers()) {
+        this.send('showResults');
+      }
+    },
+
+    showResults() {
+      this.set('selectable', false);
+      this.flushQueue();
     },
 
     timeUp() {
@@ -115,7 +114,7 @@ export default Component.extend({
       this.get('game').deactivateAllPlayers();
 
       // ...and finally switch to the results view
-      this.set('selectable', false);
+      this.send('showResults');
     }
   }
 });

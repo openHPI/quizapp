@@ -1,14 +1,12 @@
 <div class="quizSel">
 
+  <div class="quizSelector">
+    {{#swiper-container currentSlide=currentSlide pagination=true  loop=true
+                        autoplay=true delay=6000 preloadImages=true keyboard=true}}
 
-    <div class="quizSelector">
-      {{#swiper-container currentSlide=currentSlide pagination=true  loop=true
-                          autoplay=true delay=6000 preloadImages=true keyboard=true}}
-      {{!log 'Quizzes:' index}}
-
-        {{#each quizzes as |quiz index|}}
-          {{#swiper-slide}}
-            <div class="quizSelector-quizNr{{index}}">
+      {{#each quizzes as |quiz index|}}
+        {{#swiper-slide}}
+          <div class="quizSelector-quizNr{{index}}">
             <div class="quizSelector-quiz">
 
               <p class="quizSelector-quiz-title">{{ quiz.title }}</p>
@@ -16,17 +14,17 @@
               <p>{{ quiz.questions.length }} Fragen</p>
 
             </div>
-            </div>
-          {{/swiper-slide}}
-        {{/each}}
+          </div>
+        {{/swiper-slide}}
+      {{/each}}
 
-      {{/swiper-container}}
-    </div>
+    {{/swiper-container}}
+  </div>
 
-    <div class="quizButton">
-    {{#player-button-choice index=1 players=players onselect=(action 'selectCurrentQuiz')}}
+  <div class="quizButton">
+    {{#player-button-choice index=1 players=players onselect=(action "selectCurrentQuiz")}}
       Starte Quiz
     {{/player-button-choice}}
-    </div>
+  </div>
 
 </div>

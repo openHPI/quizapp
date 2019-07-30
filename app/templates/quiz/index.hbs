@@ -3,7 +3,7 @@
     Quiz: {{model.title}}
   </p>
 
-  {{countdown-timer time=100 whenTimeUp=(action 'start')}}
+  {{countdown-timer time=100 whenTimeUp=(action "start")}}
 
 </div>
-{{player-button-any players=idlePlayers onselect=(action 'joinAndStart')}}
+{{player-button-any players=idlePlayers onselect=(action "joinAndStart")}}

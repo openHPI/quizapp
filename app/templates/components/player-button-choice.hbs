@@ -1,5 +1,5 @@
 {{ yield }}
 
 {{#each-in playerKeys as |key player|}}
-  {{on-keypress key=key handler=(action 'selectedByPlayer' player)}}
+  {{on-keypress key=key handler=(action "selectedByPlayer" player)}}
 {{/each-in}}
