@@ -24,6 +24,11 @@ You will need the following things properly installed on your computer.
 * Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
 * Make sure the backend server is running as well
 
+### Linting
+
+* `npm run lint:js`
+* `npm run lint:js -- --fix`
+
 ## Deployment
 
 * Run `ember build`
