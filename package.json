@@ -30,7 +30,6 @@
     "ember-cli-swiper": "1.0.3",
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~2.18.0",
-    "ember-data-fixture-adapter": "emberjs/ember-data-fixture-adapter",
     "ember-export-application-global": "^2.0.0",
     "ember-keyboard": "^4.0.0",
     "ember-load-initializers": "^1.0.0",
