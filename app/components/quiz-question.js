@@ -83,8 +83,6 @@ export default Component.extend({
       player.set('active', false);
 
       // Let's store the player's answer, so that it can be displayed later
-      player.rememberAnswer(answer);
-
       this.get('selectedAnswers').pushObject({
         player: player.get('number'),
         answer: answer

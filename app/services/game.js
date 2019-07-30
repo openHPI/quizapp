@@ -23,10 +23,6 @@ const Player = EmberObject.extend({
 
   correctAnswer() {
     this.incrementProperty('correctAnswers');
-  },
-
-  rememberAnswer(answer) {
-    console.log('remember answer', answer, 'for', this);
   }
 });
 

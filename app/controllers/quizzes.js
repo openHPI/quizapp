@@ -17,7 +17,6 @@ export default Controller.extend({
   actions: {
     selectCurrentQuiz(player) {
       let quiz = this.get('quizzes').objectAt(this.get('currentSlide'));
-      console.log('player', player.get('name'), 'selected the quiz', quiz.get('title'));
       player.set('joined', true);
       player.set('active', false);
       this.transitionToRoute('quiz.index', quiz);
