@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   timeout: null,
 
   didInsertElement() {
@@ -19,6 +19,6 @@ export default Ember.Component.extend({
   },
 
   executeHandler() {
-    this.sendAction();
+    this.get('oncompletion')();
   }
 });

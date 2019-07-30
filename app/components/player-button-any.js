@@ -1,11 +1,16 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['playerAnyButton'],
 
-  players: [],
+  init() {
+    this._super(...arguments);
 
-  playerKeys: Ember.computed('players', function() {
+    this.players = this.players || [];
+  },
+
+  playerKeys: computed('players', function() {
     return this.get('players').reduce(
       (hash, player) => {
         ['red', 'yellow', 'green', 'blue'].forEach(
@@ -19,7 +24,7 @@ export default Ember.Component.extend({
 
   actions: {
     selectedByPlayer(player) {
-      this.sendAction('onselect', player);
+      this.get('onselect')(player);
     }
   }
 });

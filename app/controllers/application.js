@@ -1,12 +1,14 @@
-import Ember from "ember";
+import Controller from '@ember/controller';
+import { inject } from '@ember/service';
+import { alias } from '@ember/object/computed';
 
-export default Ember.Controller.extend({
-  game: Ember.inject.service(),
+export default Controller.extend({
+  game: inject(),
 
-  joinedPlayers: Ember.computed.alias('game.joinedPlayers'),
+  joinedPlayers: alias('game.joinedPlayers'),
 
-  player1: Ember.computed.alias('game.players.0'),
-  player2: Ember.computed.alias('game.players.1'),
+  player1: alias('game.players.0'),
+  player2: alias('game.players.1'),
 
   setOrCreateUser(self, user, username) {
     if (user === undefined) {

@@ -1,19 +1,22 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { inject } from '@ember/service';
+import { computed } from '@ember/object';
+import { alias } from '@ember/object/computed';
 
-export default Ember.Controller.extend({
-  game: Ember.inject.service(),
+export default Controller.extend({
+  game: inject(),
 
   currentSlide: 0,
-  quizzes: Ember.computed.alias('model'),
-  players: Ember.computed.alias('game.players'),
+  quizzes: alias('model'),
+  players: alias('game.players'),
 
-  fullPath: Ember.computed('currentSlide', function() {
+  fullPath: computed('currentSlide', function() {
     return '/images/course' + this.get('currentSlide') + '.png';
   }),
 
   actions: {
     selectCurrentQuiz(player) {
-      let quiz=this.get('quizzes').objectAt(this.get('currentSlide'));
+      let quiz = this.get('quizzes').objectAt(this.get('currentSlide'));
       console.log('player', player.get('name'), 'selected the quiz', quiz.get('title'));
       player.set('joined', true);
       player.set('active', false);

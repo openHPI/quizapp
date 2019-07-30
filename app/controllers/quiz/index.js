@@ -1,9 +1,11 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { inject } from '@ember/service';
+import { alias } from '@ember/object/computed';
 
-export default Ember.Controller.extend({
-  game: Ember.inject.service(),
+export default Controller.extend({
+  game: inject(),
 
-  idlePlayers: Ember.computed.alias('game.idlePlayers'),
+  idlePlayers: alias('game.idlePlayers'),
 
   startGame() {
     this.model.reset();

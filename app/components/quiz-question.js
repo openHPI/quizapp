@@ -1,15 +1,19 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { inject } from '@ember/service';
+import { A } from '@ember/array';
+import { cancel, later } from '@ember/runloop';
+import { computed, observer } from '@ember/object';
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['quizQuestion'],
 
-  game: Ember.inject.service(),
+  game: inject(),
 
   init() {
     this._super(...arguments);
 
     this._queue = [];
-    this.selectedAnswers = Ember.A();
+    this.selectedAnswers = A();
   },
 
   didReceiveAttrs() {
@@ -29,7 +33,7 @@ export default Ember.Component.extend({
   resetTimer() {
     this.clearTimer();
 
-    this.timeout = Ember.run.later(
+    this.timeout = later(
       () => { /*this.$('.quizQuestion-answer').animate({opacity: '1'}, 500, 'linear')*/ },
       2000
     );
@@ -37,7 +41,7 @@ export default Ember.Component.extend({
 
   clearTimer() {
     if (this.timeout) {
-      Ember.run.cancel(this.timeout);
+      cancel(this.timeout);
       this.timeout = null;
     }
   },
@@ -52,17 +56,17 @@ export default Ember.Component.extend({
 
   // Once the answers are no longer selectable, we run all queued operations, which mostly
   // means that points will be awarded to the players.
-  switchMode: Ember.observer('selectable', function() {
+  switchMode: observer('selectable', function() {
     if (this.get('selectable')) {
-      this.set('selectedAnswers', Ember.A());
+      this.set('selectedAnswers', A());
       return;
     }
 
     this._queue.forEach(callback => callback());
-    this._queue = Ember.A();
+    this._queue = A();
   }),
 
-  answers: Ember.computed('question.answers', 'selectedAnswers.@each', function() {
+  answers: computed('question.answers', 'selectedAnswers.@each', function() {
     return this.get('question.answers').map(answer => ({
       model: answer,
       selectedBy: this.get('selectedAnswers').filter(

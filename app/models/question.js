@@ -140,7 +140,7 @@ Question.reopenClass({
     { id: 19203, relativeId: 3, quiz_id: 201902, title: 'Über welche Funktionalität verfügt der esp32-Mikrocontroller nicht?', answers: [192031, 192032, 192033, 192034] },
     { id: 19204, relativeId: 4, quiz_id: 201902, title: 'Womit werden Analogpins vom Microcontrollern meist gekennzeichnet?', answers: [192041, 192042, 192043, 192044] },
     { id: 19205, relativeId: 5, quiz_id: 201902, title: 'Mit welchem Buchstaben wird der Widerstand gekennzeichnet?', answers: [192051, 192052, 192053, 192054] },
-    { id: 19206, relativeId: 6, quiz_id: 201902, title: 'Was bewirkt die Codezeile \"magic >> 1;\"?', answers: [192061, 192062, 192063, 192064] },
+    { id: 19206, relativeId: 6, quiz_id: 201902, title: 'Was bewirkt die Codezeile "magic >> 1;"?', answers: [192061, 192062, 192063, 192064] },
     { id: 19207, relativeId: 7, quiz_id: 201902, title: 'Wofür steht PWM?', answers: [192071, 192072, 192073, 192074] },
 
     // Blockchain
@@ -177,7 +177,7 @@ Question.reopenClass({
     { id: 19606, relativeId: 6, quiz_id: 201906, title: 'Was muss ich beim Verwenden von Inhalten aus dem Lernstore der HPI Schul-Cloud beachten?', answers: [196061, 196062, 196063, 196064] },
 
     // openHPI Onboarding
-    { id: 19401, relativeId: 1, quiz_id: 201904, title: 'Was bedeutet \"MOOC\"?', answers: [194011, 194012, 194013, 194014] },
+    { id: 19401, relativeId: 1, quiz_id: 201904, title: 'Was bedeutet "MOOC"?', answers: [194011, 194012, 194013, 194014] },
     { id: 19402, relativeId: 2, quiz_id: 201904, title: 'Wer kann sich bei openHPI anmelden?', answers: [194021, 194022, 194023, 194024] },
     { id: 19403, relativeId: 3, quiz_id: 201904, title: 'Welche (technischen) Voraussetzungen müssen für die Nutzung von openHPI erfüllt sein?', answers: [194031, 194032, 194033, 194034] },
     { id: 19404, relativeId: 4, quiz_id: 201904, title: 'Kann ich bei openHPI ein Zeugnis erwerben?', answers: [194041, 194042, 194043, 194044] },

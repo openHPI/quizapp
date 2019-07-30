@@ -656,7 +656,7 @@ Answer.reopenClass({
     { id: 194044, question_id: 19404, title: 'Ja. Ich kann ein qualifiziertes Zertifikat buchen, mit dem ich ECTS erhalten kann', correct: true },
 
     { id: 194051, question_id: 19405, title: 'Alle Lernmaterialien werden mir per Mail zugeschickt', correct: false },
-    { id: 194052, question_id: 19405, title: 'Online auf der Kursseite unter dem Reiter \"Lernmaterial\"', correct: true },
+    { id: 194052, question_id: 19405, title: 'Online auf der Kursseite unter dem Reiter "Lernmaterial"', correct: true },
     { id: 194053, question_id: 19405, title: 'Online auf Facebook und Twitter', correct: false },
     { id: 194054, question_id: 19405, title: 'Lernmaterialien werden mit postalisch zugesandt', correct: false },
 
@@ -665,7 +665,7 @@ Answer.reopenClass({
     { id: 194063, question_id: 19406, title: 'Online-Lesematerial', correct: false },
     { id: 194064, question_id: 19406, title: 'Käuflich zu erwerbendes obligatorisches Buch', correct: true },
 
-    { id: 194071, question_id: 19407, title: 'Wenn mir eine Antwort geholfen hat, kann ich diese als \"korrekt\" markieren', correct: false },
+    { id: 194071, question_id: 19407, title: 'Wenn mir eine Antwort geholfen hat, kann ich diese als "korrekt" markieren', correct: false },
     { id: 194072, question_id: 19407, title: 'Aktiver Austausch mit anderen Teilnehmer/innen hilft beim Reflektieren und Verstehen', correct: false },
     { id: 194073, question_id: 19407, title: 'Ich darf inhaltlichen Fragen nicht diskutieren, da dies als Schummeln gewertet wird', correct: true },
     { id: 194074, question_id: 19407, title: 'Das Kursteam beantwortet Fragen und freut sich über Feedback', correct: false },

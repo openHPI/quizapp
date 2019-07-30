@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { inject } from '@ember/service';
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['playerBox'],
 
-  game: Ember.inject.service()
+  game: inject()
 });

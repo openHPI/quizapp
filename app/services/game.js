@@ -1,9 +1,14 @@
-import Ember from 'ember';
+import EmberObject from '@ember/object';
+import Service from '@ember/service';
+import { computed } from '@ember/object';
+import { and, bool, filterBy, sort } from '@ember/object/computed';
 
 let playerIndex = 0;
 
-const Player = Ember.Object.extend({
+const Player = EmberObject.extend({
   init() {
+    this._super(...arguments);
+
     this.reset();
     this.number = ++playerIndex;
   },
@@ -47,10 +52,12 @@ const WasdPlayer = Player.extend({
   }
 });
 
-export default Ember.Service.extend({
-  players: [],
-
+export default Service.extend({
   init() {
+    this._super(...arguments);
+
+    this.players = this.players || [];
+
     this.get('players').pushObject(
       ArrowPlayer.create({name: 'Spieler 1'})
     );
@@ -62,9 +69,9 @@ export default Ember.Service.extend({
     this.set('started', false);
   },
 
-  joinedPlayers: Ember.computed.filterBy('players', 'joined'),
-  idlePlayers: Ember.computed.filterBy('players', 'joined', false),
-  activePlayers: Ember.computed.filterBy('players', 'active'),
+  joinedPlayers: filterBy('players', 'joined'),
+  idlePlayers: filterBy('players', 'joined', false),
+  activePlayers: filterBy('players', 'active'),
 
   start() {
     this.set('started', true);
@@ -77,8 +84,8 @@ export default Ember.Service.extend({
     this.set('started', false);
   },
 
-  hasPlayers: Ember.computed.bool('joinedPlayers.length'),
-  hasStarted: Ember.computed.and('hasPlayers', 'started'),
+  hasPlayers: bool('joinedPlayers.length'),
+  hasStarted: and('hasPlayers', 'started'),
 
   deactivateAllPlayers() {
     this.get('players').forEach(
@@ -96,11 +103,11 @@ export default Ember.Service.extend({
     return this.get('activePlayers.length') > 0;
   },
 
-  hasWinner: Ember.computed.bool('winner'),
+  hasWinner: bool('winner'),
 
-  sortByPoints: ['points:desc'],
-  sortedPlayers: Ember.computed.sort('joinedPlayers', 'sortByPoints'),
-  winner: Ember.computed('joinedPlayers.*.points', function() {
+  sortByPoints: Object.freeze(['points:desc']),
+  sortedPlayers: sort('joinedPlayers', 'sortByPoints'),
+  winner: computed('joinedPlayers.*.points', function() {
     // If there are no players, there is no winner, duh!
     if (this.get('joinedPlayers.length') === 0) {
       return;

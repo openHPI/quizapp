@@ -1,14 +1,22 @@
-import Ember from 'ember';
+import Controller from '@ember/controller';
+import { inject } from '@ember/service';
+import { computed } from '@ember/object';
+import { alias } from '@ember/object/computed';
 
-export default Ember.Controller.extend({
-  game: Ember.inject.service(),
+export default Controller.extend({
+  game: inject(),
 
   winner_phrase: '...',
-  participants: [],
 
-  players: Ember.computed.alias('game.players'),
+  players: alias('game.players'),
 
-  QRPath: Ember.computed('model', function() {
+  init() {
+    this._super(...arguments);
+
+    this.participants = this.participants || [];
+  },
+
+  QRPath: computed('model', function() {
     return '/images/' + this.get('model.id') + '.png';
   }),
 

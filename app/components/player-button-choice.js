@@ -1,15 +1,18 @@
-import Ember from 'ember';
+import Component from '@ember/component';
+import { computed } from '@ember/object';
+import { or } from '@ember/object/computed';
+import { inject } from '@ember/service';
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['playerChoiceButton'],
   classNameBindings: ['color'],
 
-  game: Ember.inject.service(),
+  game: inject(),
 
   players: null,
-  activePlayers: Ember.computed.or('players', 'game.activePlayers'),
+  activePlayers: or('players', 'game.activePlayers'),
 
-  playerKeys: Ember.computed('activePlayers', function() {
+  playerKeys: computed('activePlayers', function() {
     return this.get('activePlayers').reduce(
       (hash, player) => {
         hash[player.getKeyForColor(this.get('color'))] = player;
@@ -19,13 +22,13 @@ export default Ember.Component.extend({
     );
   }),
 
-  color: Ember.computed('index', function() {
+  color: computed('index', function() {
     return ['red', 'yellow', 'green', 'blue'][this.get('index')];
   }),
 
   actions: {
     selectedByPlayer(player) {
-      this.sendAction('onselect', player);
+      this.get('onselect')(player);
     }
   }
 });
